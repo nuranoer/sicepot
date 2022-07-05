@@ -41,7 +41,7 @@
 					<div class="vertical-middle">
 						<div class="container-fluid py-5 mx-auto">
 							<div class="center">
-								<a href="/admin"><img src="HTML/images/logo-dark.png" alt="Canvas Logo"></a>
+								<a href="/loginadmin"><img src="HTML/images/logo-dark.png" alt="Canvas Logo"></a>
 							</div>
 
 							<div class="card mx-auto rounded-0 border-0" style="max-width: 400px; background-color: rgba(255,255,255,0.93);">
