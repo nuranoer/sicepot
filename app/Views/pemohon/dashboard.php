@@ -42,7 +42,7 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-							<a href="/pemohon" class="standard-logo" data-dark-logo="HTML/images/logoimigrasi.png"><img src="HTML/images/logoimigrasi.png" alt="Imigrasi"></a>
+							<a href="/dashboardauth" class="standard-logo" data-dark-logo="HTML/images/logoimigrasi.png"><img src="HTML/images/logoimigrasi.png" alt="Imigrasi"></a>
 
 						</div><!-- #logo end -->
 
@@ -68,7 +68,7 @@
 
 							<ul class="menu-container">
 								<li class="menu-item">
-									<a class="menu-link" href="<?= base_url('pemohon'); ?>">
+									<a class="menu-link" href="/dashboardauth">
 										<div>Home</div>
 									</a>
 
