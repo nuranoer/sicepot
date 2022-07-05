@@ -38,6 +38,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/pemohon', 'Pemohon::index');
 $routes->get('/loginadmin', 'Admin::login');
+$routes->get('/dashboardadmin', 'Admin::dashboard');
 
 
 /*

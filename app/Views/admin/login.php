@@ -62,7 +62,7 @@
 											</div>
 
 											<div class="col-12 form-group justify-content-center text-center">
-                                                <a href="£" class="button button-3d button-black m-0" id="login-form-submit" name="login-form-submit" value="login">Login</a>
+                                                <a href="/dashboardadmin" class="button button-3d button-black m-0" id="login-form-submit" name="login-form-submit" value="login">Login</a>
 												<!-- <button class="button button-3d button-black m-0 position-center" id="login-form-submit" name="login-form-submit" value="login">Login</button> -->
 												
 											</div>
