@@ -1,7 +1,9 @@
 <?= $this->extend('layout/template'); ?>
 
 <?= $this->section('content'); ?>
-		
+
+<?= $this->include('layout/jumbotron'); ?>
+
 		<section id="content">
 			<div class="content-wrap">
 				<div class="container">

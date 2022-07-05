@@ -19,6 +19,8 @@
 	<link rel="stylesheet" href="HTML/css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="HTML/css/magnific-popup.css" type="text/css" />
 
+	<link rel="stylesheet" href="HTML/css/form.css" type="text/css" />
+
 	<link rel="stylesheet" href="HTML/css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -83,7 +85,7 @@
                                         </a>
                                     </li>
                                     <li class="menu-item mega-menu mega-menu-small">
-                                        <a class="menu-link" href="/auth/formulir">
+                                        <a class="menu-link" href="/formulir">
                                             <div>Formulir</div>
                                         </a>
                                     </li>
@@ -99,8 +101,6 @@
                 <div class="header-wrap-clone"></div>
             </header>
         <!-- #Navbar end -->
-
-		<?= $this->include('layout/jumbotron'); ?>
 
 		<!-- Content
 		============================================= -->
@@ -226,6 +226,8 @@
 	============================================= -->
 	<script src="HTML/js/jquery.js"></script>
 	<script src="HTML/js/plugins.min.js"></script>
+
+	<script src="HTML/js/form.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->
