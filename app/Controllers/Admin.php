@@ -5,8 +5,8 @@ use App\Controllers\BaseController;
 
 class Admin extends BaseController
 {
-    public function index()
+    public function login()
     {
-        return view('welcome_message');
+        return view('admin/login');
     }
 }
