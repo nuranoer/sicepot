@@ -1,4 +1,4 @@
-<?= $this->extend('layout/template'); ?>
+<?= $this->extend('pemohon/layout/template'); ?>
 
 <?= $this->section('content'); ?>
 		<!-- Page Title

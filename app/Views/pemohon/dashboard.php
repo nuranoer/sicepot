@@ -1,8 +1,8 @@
-<?= $this->extend('layout/template'); ?>
+<?= $this->extend('pemohon/layout/template'); ?>
 
 <?= $this->section('content'); ?>
 
-<?= $this->include('layout/jumbotron'); ?>
+<?= $this->include('pemohon/layout/jumbotron'); ?>
 
 		<section id="content">
 			<div class="content-wrap">
