@@ -49,11 +49,14 @@
                             </div><!-- #logo end -->
 
                             <div class="header-misc">
-
-                                <!-- Top Search
-                                ============================================= -->
-
-
+                                <!-- Top Admin
+                                            ============================================= -->
+                                <div class="header-misc-icon">
+                                    <a href="/loginadmin">
+                                        <i class="icon-user-tie"></i>
+                                    </a>
+                                </div>
+                                <!-- #top-search end -->
                             </div>
 
                             <div id="primary-menu-trigger">
