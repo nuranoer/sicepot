@@ -78,7 +78,7 @@
 									</a>
 								</li>
 								<li class="menu-item mega-menu mega-menu-small">
-									<a class="menu-link" href="#">
+									<a class="menu-link" href="/auth/formulir">
 										<div>Formulir</div>
 									</a>
 								</li>
