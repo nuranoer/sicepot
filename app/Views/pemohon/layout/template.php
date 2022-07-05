@@ -111,110 +111,152 @@
 		============================================= -->
 		<footer id="footer" class="dark">
 			<div class="container">
-
 				<!-- Footer Widgets
-				============================================= -->
+						============================================= -->
 				<div class="footer-widgets-wrap">
-
 					<div class="row col-mb-50">
 						<div class="col-lg-8">
-
 							<div class="row col-mb-50">
 								<div class="col-md-4">
-
 									<div class="widget clearfix">
+									<img
+										src="HTML/images/footer-widget-logo.png"
+										alt="Image"
+										class="footer-logo"
+									/>
 
-										<img src="HTML/images/footer-widget-logo.png" alt="Image" class="footer-logo">
+									<p>
+										We believe in <strong>Simple</strong>,
+										<strong>Creative</strong> &amp;
+										<strong>Flexible</strong> Design Standards.
+									</p>
 
-										<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
-
-										<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
-											<address>
-												<strong>Headquarters:</strong><br>
-												795 Folsom Ave, Suite 600<br>
-												San Francisco, CA 94107<br>
-											</address>
-											<abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>
-											<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br>
-											<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
-										</div>
-
+									<div
+										style="
+										background: url('images/world-map.png') no-repeat
+											center center;
+										background-size: 100%;
+										"
+									>
+										<address>
+										<strong>Headquarters:</strong><br />
+										795 Folsom Ave, Suite 600<br />
+										San Francisco, CA 94107<br />
+										</address>
+										<abbr title="Phone Number"
+										><strong>Phone:</strong></abbr
+										>
+										(1) 8547 632521<br />
+										<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11
+										4752 1433<br />
+										<abbr title="Email Address"
+										><strong>Email:</strong></abbr
+										>
+										info@canvas.com
 									</div>
-
+									</div>
 								</div>
-
 							</div>
-
-
-						</div><!-- .footer-widgets-wrap end -->
-
+						</div>
+					</div>
+				</div>
+				<!-- .footer-widgets-wrap end -->
+			</div>
+			<!-- Copyrights
+				============================================= -->
+			<div id="copyrights">
+				<div class="container">
+					<div class="row col-mb-30">
+					<div class="col-md-6 text-center text-md-start">
+						Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br />
+						<div class="copyright-links">
+						<a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
+						</div>
 					</div>
 
-					<!-- Copyrights
-			============================================= -->
-					<div id="copyrights">
-						<div class="container">
+					<div class="col-md-6 text-center text-md-end">
+						<div
+						class="d-flex justify-content-center justify-content-md-end"
+						>
+						<a
+							href="#"
+							class="social-icon si-small si-borderless si-facebook"
+						>
+							<i class="icon-facebook"></i>
+							<i class="icon-facebook"></i>
+						</a>
 
-							<div class="row col-mb-30">
+						<a
+							href="#"
+							class="social-icon si-small si-borderless si-twitter"
+						>
+							<i class="icon-twitter"></i>
+							<i class="icon-twitter"></i>
+						</a>
 
-								<div class="col-md-6 text-center text-md-start">
-									Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br>
-									<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
-								</div>
+						<a
+							href="#"
+							class="social-icon si-small si-borderless si-gplus"
+						>
+							<i class="icon-gplus"></i>
+							<i class="icon-gplus"></i>
+						</a>
 
-								<div class="col-md-6 text-center text-md-end">
-									<div class="d-flex justify-content-center justify-content-md-end">
-										<a href="#" class="social-icon si-small si-borderless si-facebook">
-											<i class="icon-facebook"></i>
-											<i class="icon-facebook"></i>
-										</a>
+						<a
+							href="#"
+							class="social-icon si-small si-borderless si-pinterest"
+						>
+							<i class="icon-pinterest"></i>
+							<i class="icon-pinterest"></i>
+						</a>
 
-										<a href="#" class="social-icon si-small si-borderless si-twitter">
-											<i class="icon-twitter"></i>
-											<i class="icon-twitter"></i>
-										</a>
+						<a
+							href="#"
+							class="social-icon si-small si-borderless si-vimeo"
+						>
+							<i class="icon-vimeo"></i>
+							<i class="icon-vimeo"></i>
+						</a>
 
-										<a href="#" class="social-icon si-small si-borderless si-gplus">
-											<i class="icon-gplus"></i>
-											<i class="icon-gplus"></i>
-										</a>
+						<a
+							href="#"
+							class="social-icon si-small si-borderless si-github"
+						>
+							<i class="icon-github"></i>
+							<i class="icon-github"></i>
+						</a>
 
-										<a href="#" class="social-icon si-small si-borderless si-pinterest">
-											<i class="icon-pinterest"></i>
-											<i class="icon-pinterest"></i>
-										</a>
+						<a
+							href="#"
+							class="social-icon si-small si-borderless si-yahoo"
+						>
+							<i class="icon-yahoo"></i>
+							<i class="icon-yahoo"></i>
+						</a>
 
-										<a href="#" class="social-icon si-small si-borderless si-vimeo">
-											<i class="icon-vimeo"></i>
-											<i class="icon-vimeo"></i>
-										</a>
-
-										<a href="#" class="social-icon si-small si-borderless si-github">
-											<i class="icon-github"></i>
-											<i class="icon-github"></i>
-										</a>
-
-										<a href="#" class="social-icon si-small si-borderless si-yahoo">
-											<i class="icon-yahoo"></i>
-											<i class="icon-yahoo"></i>
-										</a>
-
-										<a href="#" class="social-icon si-small si-borderless si-linkedin">
-											<i class="icon-linkedin"></i>
-											<i class="icon-linkedin"></i>
-										</a>
-									</div>
-
-									<div class="clear"></div>
-
-									<i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +1-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> CanvasOnSkype
-								</div>
-
-							</div>
-
+						<a
+							href="#"
+							class="social-icon si-small si-borderless si-linkedin"
+						>
+							<i class="icon-linkedin"></i>
+							<i class="icon-linkedin"></i>
+						</a>
 						</div>
-					</div><!-- #copyrights end -->
-		</footer><!-- #footer end -->
+
+						<div class="clear"></div>
+
+						<i class="icon-envelope2"></i> info@canvas.com
+						<span class="middot">&middot;</span>
+						<i class="icon-headphones"></i> +1-11-6541-6369
+						<span class="middot">&middot;</span>
+						<i class="icon-skype2"></i> CanvasOnSkype
+					</div>
+					</div>
+				</div>
+			</div>
+			<!-- #copyrights end -->
+		</footer>
+		<!-- #footer end -->
 
 	</div><!-- #wrapper end -->
 

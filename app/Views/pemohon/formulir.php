@@ -16,9 +16,8 @@
 					</div>
 					<div class="col-4">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">Home</a></li>
-							<li class="breadcrumb-item"><a href="#">Widgets</a></li>
-							<li class="breadcrumb-item active" aria-current="page">Billing &amp; Shipping Form</li>
+							<li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Formulir</li>
 						</ol>
 					</div>
 				</div>
