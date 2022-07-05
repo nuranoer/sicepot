@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
+
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -41,8 +42,8 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-                        <a href="/pemohon" class="standard-logo" data-dark-logo="HTML/images/logoimigrasi.png"><img src="HTML/images/logoimigrasi.png" alt="Imigrasi"></a>
-							
+							<a href="/pemohon" class="standard-logo" data-dark-logo="HTML/images/logoimigrasi.png"><img src="HTML/images/logoimigrasi.png" alt="Imigrasi"></a>
+
 						</div><!-- #logo end -->
 
 						<div class="header-misc">
@@ -54,7 +55,11 @@
 						</div>
 
 						<div id="primary-menu-trigger">
-							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+							<svg class="svg-trigger" viewBox="0 0 100 100">
+								<path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+								<path d="m 30,50 h 40"></path>
+								<path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+							</svg>
 						</div>
 
 						<!-- Primary Navigation
@@ -63,18 +68,23 @@
 
 							<ul class="menu-container">
 								<li class="menu-item">
-									<a class="menu-link" href="/pemohon"><div>Home</div></a>
-										
-										<li class="menu-item mega-menu mega-menu-small">
-											<a class="menu-link" href="#"><div>About</div></a>
-										</li>
-										<li class="menu-item mega-menu mega-menu-small">
-											<a class="menu-link" href="#"><div>Formulir</div></a>
-											
-										</li>
-										
-									</ul>
+									<a class="menu-link" href="<?= base_url('pemohon'); ?>">
+										<div>Home</div>
+									</a>
+
+								<li class="menu-item mega-menu mega-menu-small">
+									<a class="menu-link" href="#">
+										<div>About</div>
+									</a>
 								</li>
+								<li class="menu-item mega-menu mega-menu-small">
+									<a class="menu-link" href="#">
+										<div>Formulir</div>
+									</a>
+								</li>
+
+							</ul>
+							</li>
 							</ul>
 						</nav><!-- #primary-menu end -->
 
@@ -149,8 +159,8 @@
 						<div class="col-lg-7 align-self-end">
 
 							<div class="position-relative overflow-hidden">
-								<img src="<?=base_url()?>/HTML/images/services/main-fbrowser.png" data-animate="fadeInUp" data-delay="100" alt="Chrome">
-								<img src="<?=base_url()?>/HTML/images/services/main-fmobile.png" style="top: 0; left: 0; min-width: 100%; min-height: 100%;" data-animate="fadeInUp" data-delay="400" alt="iPhone" class="position-absolute">
+								<img src="HTML/images/services/main-fbrowser.png" data-animate="fadeInUp" data-delay="100" alt="Chrome">
+								<img src="HTML/images/services/main-fmobile.png" style="top: 0; left: 0; min-width: 100%; min-height: 100%;" data-animate="fadeInUp" data-delay="400" alt="iPhone" class="position-absolute">
 							</div>
 
 						</div>
@@ -238,7 +248,7 @@
 						</div>
 
 						<div class="col-lg-4 d-md-none d-lg-block text-center">
-							<img src="images/services/iphone7.png" alt="iphone 2">
+							<img src="HTML/images/services/iphone7.png" alt="iphone 2">
 						</div>
 
 						<div class="col-lg-4 col-md-6">
@@ -291,7 +301,7 @@
 
 						<div class="center bottommargin">
 							<a class="d-block position-relative" href="https://vimeo.com/101373765" data-lightbox="iframe">
-								<img src="images/services/video.jpg" alt="Video">
+								<img src="HTML/images/services/video.jpg" alt="Video">
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark">
 										<span class="overlay-trigger-icon size-lg op-ts op-07 bg-light text-dark" data-hover-animate="op-1" data-hover-animate-out="op-07" data-hover-parent=".row"><i class="icon-line-play"></i></span>
@@ -460,11 +470,11 @@
 						<div class="grid-inner">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img src="images/portfolio/4/1.jpg" alt="Open Imagination">
+									<img src="HTML/images/portfolio/4/1.jpg" alt="Open Imagination">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
-										<a href="images/portfolio/full/1.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+										<a href="HTML/images/portfolio/full/1.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
 										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
@@ -481,11 +491,11 @@
 						<div class="grid-inner">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img src="images/portfolio/4/2.jpg" alt="Locked Steel Gate">
+									<img src="HTML/images/portfolio/4/2.jpg" alt="Locked Steel Gate">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
-										<a href="images/portfolio/full/2.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+										<a href="HTML/images/portfolio/full/2.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
 										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
@@ -502,7 +512,7 @@
 						<div class="grid-inner">
 							<div class="portfolio-image">
 								<a href="#">
-									<img src="images/portfolio/4/3.jpg" alt="Mac Sunglasses">
+									<img src="HTML/images/portfolio/4/3.jpg" alt="Mac Sunglasses">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
@@ -523,12 +533,12 @@
 						<div class="grid-inner">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img src="images/portfolio/4/4.jpg" alt="Open Imagination">
+									<img src="HTML/images/portfolio/4/4.jpg" alt="Open Imagination">
 								</a>
 								<div class="bg-overlay" data-lightbox="gallery">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
-										<a href="images/portfolio/full/4.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
-										<a href="images/portfolio/full/4-1.jpg" class="d-none" data-lightbox="gallery-item"></a>
+										<a href="HTML/images/portfolio/full/4.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+										<a href="HTML/images/portfolio/full/4-1.jpg" class="d-none" data-lightbox="gallery-item"></a>
 										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
@@ -545,11 +555,11 @@
 						<div class="grid-inner">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img src="images/portfolio/4/5.jpg" alt="Console Activity">
+									<img src="HTML/images/portfolio/4/5.jpg" alt="Console Activity">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
-										<a href="images/portfolio/full/5.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+										<a href="HTML/images/portfolio/full/5.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
 										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
@@ -566,14 +576,14 @@
 						<div class="grid-inner">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img src="images/portfolio/4/6.jpg" alt="Open Imagination">
+									<img src="HTML/images/portfolio/4/6.jpg" alt="Open Imagination">
 								</a>
 								<div class="bg-overlay" data-lightbox="gallery">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
-										<a href="images/portfolio/full/6.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
-										<a href="images/portfolio/full/6-1.jpg" class="d-none" data-lightbox="gallery-item"></a>
-										<a href="images/portfolio/full/6-2.jpg" class="d-none" data-lightbox="gallery-item"></a>
-										<a href="images/portfolio/full/6-3.jpg" class="d-none" data-lightbox="gallery-item"></a>
+										<a href="HTML/images/portfolio/full/6.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+										<a href="HTML/images/portfolio/full/6-1.jpg" class="d-none" data-lightbox="gallery-item"></a>
+										<a href="HTML/images/portfolio/full/6-2.jpg" class="d-none" data-lightbox="gallery-item"></a>
+										<a href="HTML/images/portfolio/full/6-3.jpg" class="d-none" data-lightbox="gallery-item"></a>
 										<a href="portfolio-single-gallery.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
@@ -590,7 +600,7 @@
 						<div class="grid-inner">
 							<div class="portfolio-image">
 								<a href="portfolio-single-video.html">
-									<img src="images/portfolio/4/7.jpg" alt="Backpack Contents">
+									<img src="HTML/images/portfolio/4/7.jpg" alt="Backpack Contents">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
@@ -611,11 +621,11 @@
 						<div class="grid-inner">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img src="images/portfolio/4/8.jpg" alt="Sunset Bulb Glow">
+									<img src="HTML/images/portfolio/4/8.jpg" alt="Sunset Bulb Glow">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
-										<a href="images/portfolio/full/8.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+										<a href="HTML/images/portfolio/full/8.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
 										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
@@ -640,7 +650,7 @@
 
 					<div class="row align-items-center col-mb-50">
 						<div class="col-md-4 center">
-							<img data-animate="fadeInLeft" src="images/services/iphone6.png" alt="Iphone">
+							<img data-animate="fadeInLeft" src="HTML/images/services/iphone6.png" alt="Iphone">
 						</div>
 
 						<div class="col-md-8 text-center text-md-start">
@@ -669,7 +679,7 @@
 							<div class="slider-wrap">
 								<div class="slide">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="HTML/images/testimonials/3.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
 										<p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?</p>
@@ -681,7 +691,7 @@
 								</div>
 								<div class="slide">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="HTML/images/testimonials/2.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
 										<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
@@ -693,7 +703,7 @@
 								</div>
 								<div class="slide">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="HTML/images/testimonials/1.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
 										<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
@@ -723,7 +733,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="entry">
 								<div class="entry-image">
-									<a href="#"><img src="images/magazine/thumb/1.jpg" alt="Image"></a>
+									<a href="#"><img src="HTML/images/magazine/thumb/1.jpg" alt="Image"></a>
 								</div>
 								<div class="entry-title title-xs nott">
 									<h3><a href="blog-single.html">Bloomberg smart cities; change-makers economic security</a></h3>
@@ -743,7 +753,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="entry">
 								<div class="entry-image">
-									<a href="#"><img src="images/magazine/thumb/2.jpg" alt="Image"></a>
+									<a href="#"><img src="HTML/images/magazine/thumb/2.jpg" alt="Image"></a>
 								</div>
 								<div class="entry-title title-xs nott">
 									<h3><a href="blog-single.html">Medicine new approaches communities, outcomes partnership</a></h3>
@@ -763,7 +773,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="entry">
 								<div class="entry-image">
-									<a href="#"><img src="images/magazine/thumb/3.jpg" alt="Image"></a>
+									<a href="#"><img src="HTML/images/magazine/thumb/3.jpg" alt="Image"></a>
 								</div>
 								<div class="entry-title title-xs nott">
 									<h3><a href="blog-single.html">Significant altruism planned giving insurmountable challenges liberal</a></h3>
@@ -783,7 +793,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="entry">
 								<div class="entry-image">
-									<a href="#"><img src="images/magazine/thumb/4.jpg" alt="Image"></a>
+									<a href="#"><img src="HTML/images/magazine/thumb/4.jpg" alt="Image"></a>
 								</div>
 								<div class="entry-title title-xs nott">
 									<h3><a href="blog-single.html">Compassion conflict resolution, progressive; tackle</a></h3>
@@ -816,10 +826,12 @@
 
 								<div class="team">
 									<div class="team-image">
-										<img src="images/team/3.jpg" alt="John Doe">
+										<img src="HTML/images/team/3.jpg" alt="John Doe">
 									</div>
 									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>John Doe</h4><span>CEO</span></div>
+										<div class="team-title">
+											<h4>John Doe</h4><span>CEO</span>
+										</div>
 										<a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
 											<i class="icon-facebook"></i>
 											<i class="icon-facebook"></i>
@@ -841,10 +853,12 @@
 
 								<div class="team">
 									<div class="team-image">
-										<img src="images/team/2.jpg" alt="Josh Clark">
+										<img src="HTML/images/team/2.jpg" alt="Josh Clark">
 									</div>
 									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Josh Clark</h4><span>Co-Founder</span></div>
+										<div class="team-title">
+											<h4>Josh Clark</h4><span>Co-Founder</span>
+										</div>
 										<a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
 											<i class="icon-facebook"></i>
 											<i class="icon-facebook"></i>
@@ -866,10 +880,12 @@
 
 								<div class="team">
 									<div class="team-image">
-										<img src="images/team/8.jpg" alt="Mary Jane">
+										<img src="HTML/images/team/8.jpg" alt="Mary Jane">
 									</div>
 									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Mary Jane</h4><span>Sales</span></div>
+										<div class="team-title">
+											<h4>Mary Jane</h4><span>Sales</span>
+										</div>
 										<a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
 											<i class="icon-facebook"></i>
 											<i class="icon-facebook"></i>
@@ -891,10 +907,12 @@
 
 								<div class="team">
 									<div class="team-image">
-										<img src="images/team/4.jpg" alt="Nix Maxwell">
+										<img src="HTML/images/team/4.jpg" alt="Nix Maxwell">
 									</div>
 									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Nix Maxwell</h4><span>Support</span></div>
+										<div class="team-title">
+											<h4>Nix Maxwell</h4><span>Support</span>
+										</div>
 										<a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
 											<i class="icon-facebook"></i>
 											<i class="icon-facebook"></i>
@@ -921,16 +939,16 @@
 
 					<div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="60" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
 
-						<div class="oc-item"><a href="#"><img src="images/clients/1.png" alt="Clients"></a></div>
-						<div class="oc-item"><a href="#"><img src="images/clients/2.png" alt="Clients"></a></div>
-						<div class="oc-item"><a href="#"><img src="images/clients/3.png" alt="Clients"></a></div>
-						<div class="oc-item"><a href="#"><img src="images/clients/4.png" alt="Clients"></a></div>
-						<div class="oc-item"><a href="#"><img src="images/clients/5.png" alt="Clients"></a></div>
-						<div class="oc-item"><a href="#"><img src="images/clients/6.png" alt="Clients"></a></div>
-						<div class="oc-item"><a href="#"><img src="images/clients/7.png" alt="Clients"></a></div>
-						<div class="oc-item"><a href="#"><img src="images/clients/8.png" alt="Clients"></a></div>
-						<div class="oc-item"><a href="#"><img src="images/clients/9.png" alt="Clients"></a></div>
-						<div class="oc-item"><a href="#"><img src="images/clients/10.png" alt="Clients"></a></div>
+						<div class="oc-item"><a href="#"><img src="HTML/images/clients/1.png" alt="Clients"></a></div>
+						<div class="oc-item"><a href="#"><img src="HTML/images/clients/2.png" alt="Clients"></a></div>
+						<div class="oc-item"><a href="#"><img src="HTML/images/clients/3.png" alt="Clients"></a></div>
+						<div class="oc-item"><a href="#"><img src="HTML/images/clients/4.png" alt="Clients"></a></div>
+						<div class="oc-item"><a href="#"><img src="HTML/images/clients/5.png" alt="Clients"></a></div>
+						<div class="oc-item"><a href="#"><img src="HTML/images/clients/6.png" alt="Clients"></a></div>
+						<div class="oc-item"><a href="#"><img src="HTML/images/clients/7.png" alt="Clients"></a></div>
+						<div class="oc-item"><a href="#"><img src="HTML/images/clients/8.png" alt="Clients"></a></div>
+						<div class="oc-item"><a href="#"><img src="HTML/images/clients/9.png" alt="Clients"></a></div>
+						<div class="oc-item"><a href="#"><img src="HTML/images/clients/10.png" alt="Clients"></a></div>
 
 					</div>
 
@@ -956,7 +974,7 @@
 
 									<div class="widget clearfix">
 
-										<img src="images/footer-widget-logo.png" alt="Image" class="footer-logo">
+										<img src="HTML/images/footer-widget-logo.png" alt="Image" class="footer-logo">
 
 										<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
 
@@ -975,77 +993,77 @@
 
 								</div>
 
-								</div>
-
-								
-				</div><!-- .footer-widgets-wrap end -->
-
-			</div>
-
-			<!-- Copyrights
-			============================================= -->
-			<div id="copyrights">
-				<div class="container">
-
-					<div class="row col-mb-30">
-
-						<div class="col-md-6 text-center text-md-start">
-							Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br>
-							<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
-						</div>
-
-						<div class="col-md-6 text-center text-md-end">
-							<div class="d-flex justify-content-center justify-content-md-end">
-								<a href="#" class="social-icon si-small si-borderless si-facebook">
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-gplus">
-									<i class="icon-gplus"></i>
-									<i class="icon-gplus"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-pinterest">
-									<i class="icon-pinterest"></i>
-									<i class="icon-pinterest"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-vimeo">
-									<i class="icon-vimeo"></i>
-									<i class="icon-vimeo"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-github">
-									<i class="icon-github"></i>
-									<i class="icon-github"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-yahoo">
-									<i class="icon-yahoo"></i>
-									<i class="icon-yahoo"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-linkedin">
-									<i class="icon-linkedin"></i>
-									<i class="icon-linkedin"></i>
-								</a>
 							</div>
 
-							<div class="clear"></div>
 
-							<i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +1-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> CanvasOnSkype
-						</div>
+						</div><!-- .footer-widgets-wrap end -->
 
 					</div>
 
-				</div>
-			</div><!-- #copyrights end -->
+					<!-- Copyrights
+			============================================= -->
+					<div id="copyrights">
+						<div class="container">
+
+							<div class="row col-mb-30">
+
+								<div class="col-md-6 text-center text-md-start">
+									Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br>
+									<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+								</div>
+
+								<div class="col-md-6 text-center text-md-end">
+									<div class="d-flex justify-content-center justify-content-md-end">
+										<a href="#" class="social-icon si-small si-borderless si-facebook">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+
+										<a href="#" class="social-icon si-small si-borderless si-twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+
+										<a href="#" class="social-icon si-small si-borderless si-gplus">
+											<i class="icon-gplus"></i>
+											<i class="icon-gplus"></i>
+										</a>
+
+										<a href="#" class="social-icon si-small si-borderless si-pinterest">
+											<i class="icon-pinterest"></i>
+											<i class="icon-pinterest"></i>
+										</a>
+
+										<a href="#" class="social-icon si-small si-borderless si-vimeo">
+											<i class="icon-vimeo"></i>
+											<i class="icon-vimeo"></i>
+										</a>
+
+										<a href="#" class="social-icon si-small si-borderless si-github">
+											<i class="icon-github"></i>
+											<i class="icon-github"></i>
+										</a>
+
+										<a href="#" class="social-icon si-small si-borderless si-yahoo">
+											<i class="icon-yahoo"></i>
+											<i class="icon-yahoo"></i>
+										</a>
+
+										<a href="#" class="social-icon si-small si-borderless si-linkedin">
+											<i class="icon-linkedin"></i>
+											<i class="icon-linkedin"></i>
+										</a>
+									</div>
+
+									<div class="clear"></div>
+
+									<i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +1-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> CanvasOnSkype
+								</div>
+
+							</div>
+
+						</div>
+					</div><!-- #copyrights end -->
 		</footer><!-- #footer end -->
 
 	</div><!-- #wrapper end -->
@@ -1064,4 +1082,5 @@
 	<script src="HTML/js/functions.js"></script>
 
 </body>
+
 </html>
