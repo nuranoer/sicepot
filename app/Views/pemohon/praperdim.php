@@ -55,7 +55,7 @@
 											<div class="grid-content">
 												<h5 class="text-uppercase fw-medium font-body ls1 text-smaller op-07 mb-2">Pengajuan Paspor</h5>
 												<h3 class="fw-medium h2">Dewasa</h3>
-												<a href="#" class="icon-stacked rounded-circle bg-white text-danger text-center mb-0 btn-hover h5"><i class="icon-line-arrow-right"></i></a>
+												<a href="/perdimdewasa" class="icon-stacked rounded-circle bg-white text-danger text-center mb-0 btn-hover h5"><i class="icon-line-arrow-right"></i></a>
 											</div>
 										</div>
 										<div class="bg-overlay-bg" style="background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #0693e3 100%);"></div>
@@ -73,7 +73,7 @@
 											<div class="grid-content">
 											<h5 class="text-uppercase fw-medium font-body ls1 text-smaller op-07 mb-2">Pengajuan Paspor</h5>
 												<h3 class="fw-medium h2">Anak</h3>
-												<a href="#" class="icon-stacked rounded-circle bg-white text-center mb-0 btn-hover h5" style="color: brown"><i class="icon-line-arrow-right"></i></a>
+												<a href="/perdimanak" class="icon-stacked rounded-circle bg-white text-center mb-0 btn-hover h5" style="color: brown"><i class="icon-line-arrow-right"></i></a>
 											</div>
 										</div>
 										<div class="bg-overlay-bg" style="background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #fcb900 100%);"></div>

@@ -9,12 +9,17 @@ class Pemohon extends BaseController
     {
         return view('pemohon/dashboard');
     }
-    public function praformulir()
+    public function praperdim()
     {
-        return view('pemohon/praformulir');
+        return view('pemohon/praperdim');
     }
-    public function formulir()
+    public function perdimdewasa()
     {
-        return view('pemohon/formulir');
+        return view('pemohon/perdimdewasa');
+    }
+
+    public function perdimanak()
+    {
+        return view('pemohon/perdimanak');
     }
 }
