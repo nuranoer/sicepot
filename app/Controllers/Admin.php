@@ -12,11 +12,17 @@ class Admin extends BaseController
 
     public function dashboard()
     {
-        return view('admin/dashboard');
+        $data = [
+            'title' => 'Dashboard',
+        ];
+        return view('admin/dashboard', $data);
     }
 
     public function data()
     {
-        return view('admin/dataform');
+        $data = [
+            'title' => 'Data Pemohon',
+        ];
+        return view('admin/dataform', $data);
     }
 }

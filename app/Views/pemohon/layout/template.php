@@ -55,7 +55,7 @@
                                 <!-- Top Admin
                                             ============================================= -->
                                 <div class="header-misc-icon">
-                                    <a href="/loginadmin">
+                                    <a href="/dashboardadmin">
                                         <i class="icon-user-tie"></i>
                                     </a>
                                 </div>

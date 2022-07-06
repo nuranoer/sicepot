@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - Admin</title>
+  <title><?= $title; ?> | Admin</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logo/logoimigrasi.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="HTML/images/pemohon/logoimigrasi.png" type="image/gif">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -44,8 +43,8 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="/dashboardadmin" class="logo d-flex align-items-center">
-        <img src="assets/img/logo/logoimigrasi.png" alt="">
-        <span class="d-none d-lg-block">Admin</span>
+        <img src="HTML/images/pemohon/logoimigrasi.png" alt="">
+        <span class="d-none d-lg-block">Admin Sicepot</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -70,7 +69,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="HTML/images/pemohon/logoimigrasi.png" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -87,7 +86,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="/loginadmin">
+              <a class="dropdown-item d-flex align-items-center" href="/logout">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -115,8 +114,8 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="/data">
-          <i class="bi bi-person"></i>
-          <span>Profile</span>
+          <i class="bi bi-layout-text-window-reverse"></i>
+          <span>Data Pemohon</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
