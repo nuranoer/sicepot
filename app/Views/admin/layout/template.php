@@ -107,17 +107,19 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="/dashboardadmin">
+        <a class="nav-link" href="/dashboardadmin">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
+
       <li class="nav-item">
-        <a class="nav-link" data-bs-target="#tables-nav" href="/data">
-          <i class="bi bi-layout-text-window-reverse"></i>
-          <span>Tables</span>
+        <a class="nav-link collapsed" href="/data">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
         </a>
-      </li><!-- End Tables Nav -->
+      </li><!-- End Profile Page Nav -->
+
     </ul>
 
   </aside><!-- End Sidebar-->
@@ -130,13 +132,6 @@
   <footer id="footer" class="footer">
     <div class="copyright">
       &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
     </div>
   </footer><!-- End Footer -->
 
