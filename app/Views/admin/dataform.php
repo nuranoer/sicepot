@@ -8,7 +8,7 @@
   <h1>Data Pengisian Formulir</h1>
   <nav>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
       <li class="breadcrumb-item">Tables</li>
       <li class="breadcrumb-item active">Data</li>
     </ol>
@@ -17,7 +17,7 @@
 
 <section class="section">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-50">
 
       <div class="card">
         <div class="card-body">
@@ -26,49 +26,59 @@
           <table class="table datatable">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Position</th>
-                <th scope="col">Age</th>
-                <th scope="col">Start Date</th>
+                <th scope="col">No.</th>
+                <th scope="col">Id Perdim</th>
+                <th scope="col">Jenis Permohonan</th>
+                <th scope="col">Nama Lengkap</th>
+                <th scope="col">Jenis Kelamin</th>
+                <th scope="col">Tempat Lahir</th>
+                <th scope="col">Tanggal Lahir</th>
+                <th scope="col">NIK</th>
+                <th scope="col">Tempat Dikeluarkan</th>
+                <th scope="col">Alamat</th>
+                <th scope="col">No HP</th>
+                <th scope="col">Nama Ibu</th>
+                <th scope="col">Nama Ayah</th>
+                <th scope="col">Nama Kakek</th>
+                <th scope="col">Pekerjaan</th>
+                <th scope="col">Status Sipil</th>
+                <th scope="col">Tujuan</th>
+                <th scope="col">No Seri</th>
+                <th scope="col">No Registrasi</th>
+                <th scope="col">Aksi</th>
               </tr>
             </thead>
             <tbody>
+            <?php
+                if ($perdimdewasa) :
+                    $no = 1;
+                    foreach ($perdimdewasa as $pd) :
+            ?>
               <tr>
-                <th scope="row">1</th>
-                <td>Brandon Jacob</td>
-                <td>Designer</td>
-                <td>28</td>
-                <td>2016-05-25</td>
+                <th scope="row"><?= $no++; ?></th>
+                <td><?= $pd['id_perdim']; ?></td>
+                <td><?= $pd['nama_lengkap']; ?></td>
+                <td><?= $pd['jenkel']; ?></td>
+                <td><?= $pd['tempat_lahir']; ?></td>
+                <td><?= $pd['tanggal_lahir']; ?></td>
+                <td><?= $pd['nik']; ?></td>
+                <td><?= $pd['tempat_output']; ?></td>
+                <td><?= $pd['alamat']; ?></td>
+                <td><?= $pd['no_hp']; ?></td>
+                <td><?= $pd['nama_ibu']; ?></td>
+                <td><?= $pd['nama_ayah']; ?></td>
+                <td><?= $pd['nama_kakek']; ?></td>
+                <td><?= $pd['pekerjaan']; ?></td>
+                <td><?= $pd['status_sipil']; ?></td>
+                <td><?= $pd['tujuan']; ?></td>
+                <td><?= $pd['no_seri']; ?></td>
+                <td><?= $pd['no_reg']; ?></td>
+                <th>
+                    <a href="<?= base_url('perdimdewasa/edit/') . $c['id_perdim'] ?>" class="btn btn-circle btn-warning btn-sm"><i class="fa fa-edit"></i></a>
+                    <a onclick="return confirm('Yakin ingin hapus?')" href="<?= base_url('perdimdewasa/delete/') . $c['id_perdim'] ?>" class="btn btn-circle btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                </th>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Bridie Kessler</td>
-                <td>Developer</td>
-                <td>35</td>
-                <td>2014-12-05</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Ashleigh Langosh</td>
-                <td>Finance</td>
-                <td>45</td>
-                <td>2011-08-12</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Angus Grady</td>
-                <td>HR</td>
-                <td>34</td>
-                <td>2012-06-11</td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Raheem Lehner</td>
-                <td>Dynamic Division Officer</td>
-                <td>47</td>
-                <td>2011-04-19</td>
-              </tr>
+              <?php endforeach; ?>
             </tbody>
           </table>
           <!-- End Table with stripped rows -->

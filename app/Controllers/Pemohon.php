@@ -17,7 +17,6 @@ class Pemohon extends BaseController
     {
         return view('pemohon/perdimdewasa');
     }
-
     public function perdimanak()
     {
         return view('pemohon/perdimanak');
