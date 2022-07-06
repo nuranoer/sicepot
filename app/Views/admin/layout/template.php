@@ -113,12 +113,12 @@
         </a>
       </li><!-- End Dashboard Nav -->
       <li class="nav-item">
-        <a class="nav-link " href="/">
-          <i class="bi bi-grid"></i>
-          <span>Data Pengisian Formulir</span>
+        <a class="nav-link" data-bs-target="#tables-nav" href="/data">
+          <i class="bi bi-layout-text-window-reverse"></i>
+          <span>Tables</span>
         </a>
-      </li><!-- End Data Nav -->
-
+      </li><!-- End Tables Nav -->
+    </ul>
 
   </aside><!-- End Sidebar-->
 

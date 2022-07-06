@@ -85,7 +85,7 @@
                                         </a>
                                     </li>
                                     <li class="menu-item mega-menu mega-menu-small">
-                                        <a class="menu-link" href="/formulir">
+                                        <a class="menu-link" href="/praformulir">
                                             <div>Formulir</div>
                                         </a>
                                     </li>
@@ -120,9 +120,10 @@
 								<div class="col-md-4">
 									<div class="widget clearfix">
 									<img
-										src="HTML/images/footer-widget-logo.png"
+										src="HTML/images/logoimigrasi.png"
 										alt="Image"
 										class="footer-logo"
+										width="100"
 									/>
 
 									<p>

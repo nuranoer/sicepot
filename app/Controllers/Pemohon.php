@@ -9,6 +9,10 @@ class Pemohon extends BaseController
     {
         return view('pemohon/dashboard');
     }
+    public function praformulir()
+    {
+        return view('pemohon/praformulir');
+    }
     public function formulir()
     {
         return view('pemohon/formulir');

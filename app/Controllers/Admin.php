@@ -14,4 +14,9 @@ class Admin extends BaseController
     {
         return view('admin/dashboard');
     }
+
+    public function data()
+    {
+        return view('admin/dataform');
+    }
 }
