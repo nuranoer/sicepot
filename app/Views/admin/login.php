@@ -40,9 +40,59 @@
 					<div class="section bg-transparent min-vh-100 p-0 m-0">
 						<div class="vertical-middle">
 							<div class="container-fluid py-5 mx-auto">
-								<div class="card mx-auto rounded-0 border-0" style="max-width: 400px; background-color: rgba(255,255,255,0.93);">
+								<div class="card mx-auto rounded-0 border-0" style="max-width: 380px; background-color: rgba(255,255,255,0.93);">
 									<div class="card-body" style="padding: 28px;">
-										<form id="login-form" name="login-form" class="mb-0" action="#" method="post">
+									
+									<form action="<?= route_to('login') ?>" method="post">
+										<?= csrf_field() ?>
+										<div class="center">
+											<a href="/loginadmin"><img src="HTML/images/login/logo.png" alt="Imigrasi Logo" width="130"></a>
+											<h4>Imigrasi Kediri</h4>
+										</div>  
+
+										<?php if ($config->validFields === ['email']): ?>
+										<div class="form-group">
+											<label for="login">Email</label>
+											<input type="email" class="form-control <?php if(session('errors.login')) : ?>is-invalid<?php endif ?>"
+												name="login" placeholder="<?=lang('Auth.email')?>">
+											<div class="invalid-feedback">
+												<?= session('errors.login') ?>
+											</div>
+										</div>
+										<?php else: ?>
+										<div class="form-group">
+											<label for="login">NIP:</label>
+											<input type="text" class="form-control <?php if(session('errors.login')) : ?>is-invalid<?php endif ?>"
+												name="login" placeholder="<?=lang('Auth.emailOrUsername')?>">
+											<div class="invalid-feedback">
+												<?= session('errors.login') ?>
+											</div>
+										</div>
+										<?php endif; ?>
+
+										<div class="form-group">
+											<label for="password">Password</label>
+											<input type="password" name="password" class="form-control  <?php if(session('errors.password')) : ?>is-invalid<?php endif ?>" placeholder="<?=lang('Auth.password')?>">
+											<div class="invalid-feedback">
+												<?= session('errors.password') ?>
+											</div>
+										</div>
+
+										<?php if ($config->allowRemembering): ?>
+										<div class="form-check">
+											<label class="form-check-label">
+												<input type="checkbox" name="remember" class="form-check-input" <?php if(old('remember')) : ?> checked <?php endif ?>>
+												<?=lang('Auth.rememberMe')?>
+											</label>
+										</div>
+										<?php endif; ?>
+										
+										<div class="col-12 justify-content-center text-center">
+											<button type="submit" class="btn btn-dark justify-content-center text-center"><?=lang('Auth.loginAction')?></button>
+										</div>
+									</form>
+									
+									<!-- <form id="login-form" name="login-form" class="mb-0" action="#" method="post">
 											<div class="center">
 												<a href="/loginadmin"><img src="HTML/images/login/logo.png" alt="Imigrasi Logo" width="140"></a>
 												<h4>Imigrasi Kediri</h4>
@@ -60,13 +110,12 @@
 
 												<div class="col-12 form-group justify-content-center text-center">
 													<a href="/dashboardadmin" class="button button-3d button-black m-0" id="login-form-submit" name="login-form-submit" value="login">Login</a>
-													<!-- <button class="button button-3d button-black m-0 position-center" id="login-form-submit" name="login-form-submit" value="login">Login</button> -->	
 												</div>
 											</div>
-										</form>
+									</form> -->
 									</div>
 								</div>
-								<div class="text-center dark mt-3">
+								<div class="text-center dark mt-2">
 									<small>Copyrights &copy; Kantor Imigrasi Kelas II Non TPI Kediri</small>
 								</div>
 							</div>
