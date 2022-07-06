@@ -1,0 +1,68 @@
+.block-card-9 .grid-inner .btn-hover {
+  opacity: 0;
+  display: block;
+  transition: opacity 0.3s ease, transform 0.3s 0.1s ease;
+  margin-top: 15px;
+  position: absolute;
+  transform: translateY(0);
+}
+.block-card-9 .grid-inner:hover .btn-hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.block-card-9 .grid-inner .grid-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.block-card-9 .grid-inner:hover .grid-image {
+  -webkit-animation: kenburns 20s ease-out both;
+  animation: kenburns 20s ease-out both;
+}
+
+.block-card-9 .grid-inner .grid-icon,
+.block-card-9 .grid-inner .grid-content {
+  transition: transform 0.3s ease;
+}
+
+.block-card-9 .grid-inner:hover .grid-content {
+  transform: translateY(-45px);
+}
+.block-card-9 .grid-inner:hover .grid-icon {
+  transform: translateY(-5px);
+}
+
+@-webkit-keyframes kenburns {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 84%;
+    transform-origin: 84% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(20px, 15px);
+    transform: scale(1.25) translate(20px, 15px);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+  }
+}
+@keyframes kenburns {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 84%;
+    transform-origin: 84% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(20px, 15px);
+    transform: scale(1.25) translate(20px, 15px);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+  }
+}

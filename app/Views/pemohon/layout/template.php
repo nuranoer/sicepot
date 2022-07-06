@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="HTML/css/magnific-popup.css" type="text/css" />
 
 	<link rel="stylesheet" href="HTML/css/form.css" type="text/css" />
+	<link rel="stylesheet" href="HTML/css/card.css" type="text/css" />
 
 	<link rel="stylesheet" href="HTML/css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
