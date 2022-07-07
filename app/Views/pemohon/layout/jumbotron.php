@@ -33,7 +33,7 @@
         							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">You'll be surprised to see the Final Results of your Creation &amp; would crave for more.</p>
         						</div>
         					</div>
-        					<div class="swiper-slide-bg" style="background-image: url('HTML/images/slider/swiper/3.jpg'); background-position: center top;"></div>
+        					<div class="swiper-slide-bg" style="background-image: url('HTML/images/slider/swiper/ok.jpg'); background-position: center top;"></div>
         				</div>
         			</div>
         			<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
