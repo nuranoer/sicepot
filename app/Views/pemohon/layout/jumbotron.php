@@ -9,7 +9,7 @@
         							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Kantor Imigrasi Kelas II Non TPI Kediri <br>Jl. Jawa No.135, Bedrek Selatan, Grogol, Kec. Grogol, Kabupaten Kediri, Jawa Timur 64151</p>
         						</div>
         					</div>
-        					<div class="swiper-slide-bg" style="background-image: url('HTML/images/slider/swiper/imigration.jpg');"></div>
+        					<div class="swiper-slide-bg" style="background-image: url('HTML/images/slider/swiper/imigration1.jpg');"></div>
         				</div>
         				<div class="swiper-slide dark">
         					<div class="container">
