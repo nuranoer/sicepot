@@ -9,7 +9,7 @@
         							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Kantor Imigrasi Kelas II Non TPI Kediri <br>Jl. Jawa No.135, Bedrek Selatan, Grogol, Kec. Grogol, Kabupaten Kediri, Jawa Timur 64151</p>
         						</div>
         					</div>
-        					<div class="swiper-slide-bg" style="background-image: url('HTML/images/slider/swiper/imigrasi1.jpg');"></div>
+        					<div class="swiper-slide-bg" style="background-image: url('HTML/images/slider/swiper/imigration.jpg');"></div>
         				</div>
         				<div class="swiper-slide dark">
         					<div class="container">
@@ -20,8 +20,8 @@
         					</div>
         					<div class="video-wrap">
         						<video id="slide-video" poster="HTML/images/videos/explore-poster.jpg" preload="auto" loop autoplay muted>
-        							<source src='HTML/images/videos/explore.webm' type='video/webm' />
-        							<source src='HTML/images/videos/explore.mp4' type='video/mp4' />
+        							<source src='HTML/images/videos/cepot.webm' type='video/webm' />
+        							<source src='HTML/images/videos/cepot.mp4' type='video/mp4' />
         						</video>
         						<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
         					</div>
