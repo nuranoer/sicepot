@@ -139,7 +139,7 @@
 												Kab.Kediri, Jawa Timur<br />
 											</address>
 											<abbr title="Phone Number"><strong>Phone:</strong></abbr>
-											(0354) 688307<br />
+											+62 81133378284<br />
 											<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11
 											4752 1433<br />
 											<abbr title="Email Address"><strong>Email:</strong></abbr>
@@ -212,7 +212,7 @@
 
 							<i class="icon-envelope2"></i> imigrasi.kediri@gmail.com
 							<span class="middot">&middot;</span>
-							<i class="icon-headphones"></i> +1-11-6541-6369
+							<i class="icon-headphones"></i> +62 81133378284
 							<span class="middot">&middot;</span>
 							<i class="icon-skype2"></i> CanvasOnSkype
 						</div>
