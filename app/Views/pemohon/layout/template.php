@@ -135,11 +135,11 @@
 										">
 											<address>
 												<strong>Headquarters:</strong><br />
-												795 Folsom Ave, Suite 600<br />
-												San Francisco, CA 94107<br />
+												Jl. Jawa No. 135, Bedrek Selatan, Desa Grogol, Kec.Grogol, 64151<br />
+												Kab.Kediri, Jawa Timur<br />
 											</address>
 											<abbr title="Phone Number"><strong>Phone:</strong></abbr>
-											(1) 8547 632521<br />
+											(0354) 688307<br />
 											<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11
 											4752 1433<br />
 											<abbr title="Email Address"><strong>Email:</strong></abbr>
@@ -210,7 +210,7 @@
 
 							<div class="clear"></div>
 
-							<i class="icon-envelope2"></i> info@canvas.com
+							<i class="icon-envelope2"></i> imigrasi.kediri@gmail.com
 							<span class="middot">&middot;</span>
 							<i class="icon-headphones"></i> +1-11-6541-6369
 							<span class="middot">&middot;</span>
