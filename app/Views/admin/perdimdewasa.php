@@ -49,7 +49,10 @@
               </tr>
             </thead>
             <tbody>
-                
+                <?php
+                $no = 1; 
+                if ($perdimdewasa) :
+                    foreach ($perdimdewasa as $pd) : ?>
               <tr>
               <th scope="row"><?= $no++; ?></th>
                 <td><?= $pd['id_perdim']; ?></td>
@@ -74,6 +77,7 @@
                     <a onclick="return confirm('Yakin ingin hapus?')" href="<?= base_url('perdimdewasa/delete/') . $c['id_perdim'] ?>" class="btn btn-circle btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                 </th>
               </tr>
+              <?php endforeach; ?>
             </tbody>
           </table>
           <!-- End Table with stripped rows -->
