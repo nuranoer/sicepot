@@ -42,7 +42,8 @@ $routes->get('/perdimanak', 'Pemohon::perdimanak');
 $routes->get('/praperdim', 'Pemohon::praperdim');
 $routes->get('/loginadmin', 'Admin::login');
 $routes->get('/dashboardadmin', 'Admin::dashboard');
-$routes->get('/data', 'Admin::data');
+$routes->get('/dataperdimdewasa', 'Admin::dataperdimdewasa');
+$routes->get('/dataperdimanak', 'Admin::dataperdimanak');
 
 
 /*

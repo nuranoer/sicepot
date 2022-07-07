@@ -18,11 +18,18 @@ class Admin extends BaseController
         return view('admin/dashboard', $data);
     }
 
-    public function data()
+    public function dataperdimdewasa()
     {
         $data = [
-            'title' => 'Data Pemohon',
+            'title' => 'Data Perdim Dewasa',
         ];
-        return view('admin/dataform', $data);
+        return view('admin/perdimdewasa', $data);
+    }
+    public function dataperdimanak()
+    {
+        $data = [
+            'title' => 'Data Perdim Anak',
+        ];
+        return view('admin/perdimanak', $data);
     }
 }

@@ -113,11 +113,22 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/data">
-          <i class="bi bi-layout-text-window-reverse"></i>
-          <span>Data Pemohon</span>
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Data Perdim</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-      </li><!-- End Profile Page Nav -->
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="/dataperdimdewasa">
+              <i class="bi bi-circle"></i><span>Perdim Dewasa</span>
+            </a>
+          </li>
+          <li>
+            <a href="/dataperdimanak">
+              <i class="bi bi-circle"></i><span>Perdim Anak</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Tables Nav -->
 
     </ul>
 
