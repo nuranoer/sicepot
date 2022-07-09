@@ -22,6 +22,11 @@
 	<link rel="stylesheet" href="HTML/css/form.css" type="text/css" />
 	<link rel="stylesheet" href="HTML/css/card.css" type="text/css" />
 
+	<!-- Date & Time Picker CSS -->
+	<link rel="stylesheet" href="HTML/css/components/datepicker.css" type="text/css" />
+	<link rel="stylesheet" href="HTML/css/components/timepicker.css" type="text/css" />
+	<link rel="stylesheet" href="HTML/css/components/daterangepicker.css" type="text/css" />
+
 	<link rel="stylesheet" href="HTML/css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -30,6 +35,15 @@
 	<title>Si Cepot</title>
 
 </head>
+
+<style>
+	.hidden{
+		display: none;
+	}
+	.show{
+		display: block;
+	}
+</style>
 
 <body class="stretched">
 
@@ -235,6 +249,18 @@
 	<script src="HTML/js/plugins.min.js"></script>
 
 	<script src="HTML/js/form.js"></script>
+
+	<!-- Date & Time Picker JS -->
+	<script src="HTML/js/components/moment.js"></script>
+	<script src="HTML/js/components/timepicker.js"></script>
+	<script src="HTML/js/components/datepicker.js"></script>
+	<script src="HTML/js/datetime-format.js"></script>
+
+	<!-- Include Date Range Picker -->
+	<script src="HTML/js/components/daterangepicker.js"></script>
+
+	<!-- Show and Hide Input Perdim -->
+	<script src="HTML/js/show-hide-input.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->

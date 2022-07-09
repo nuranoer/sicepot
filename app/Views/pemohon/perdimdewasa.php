@@ -11,8 +11,9 @@
 						<img src="HTML/images/login/logo.png" alt="Logo Redi Dinanti" width="100">
 					</div>
 					<div class="col-7">
-						<h1>Formulir &amp; Shipping</h1>
-						<span>Forms Widget</span>
+						<br>
+						<h1>FORMULIR PEMOHON</h1>
+						<!-- <span>Forms Widget</span> -->
 					</div>
 					<div class="col-4">
 						<ol class="breadcrumb">
@@ -35,10 +36,10 @@
 
 						<div class="form-result"></div>
 
-						<label for="" id="checkout-same-as-billing">
+						<!-- <label for="" id="checkout-same-as-billing">
 							<input type="checkbox" class="me-2" value="1" checked>
 							Same as Billing
-						</label>
+						</label> -->
 
 						<form class="row" id="checkout-form" action="include/form.php" method="post" enctype="multipart/form-data">
 							<div class="form-process">
@@ -46,24 +47,105 @@
 									<div class="css3-spinner-scaler"></div>
 								</div>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-12">
 								<div class="row checkout-form-billing">
-									<div class="col-12">
-										<h3>Billing Information</h3>
+									<div class="col-12 justify-content-center text-center text-uppercase">
+										<h3>Data Pemohon</h3>
 									</div>
 									<div class="col-12 form-group">
-										<label>Name:</label>
-										<input type="text" name="checkout-form-billing-name" id="checkout-form-billing-name" class="form-control required" value="" placeholder="John Doe">
+										<label>Nama Lengkap:</label>
+										<input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control required" value="" placeholder="">
 									</div>
 									<div class="col-12 form-group">
+										<label>Jenis Kelamin:</label>
+										<select class="form-select required" name="jenis_kelamin" id="jenis_kelamin">
+											<option>-Pilih Jenis Kelamin-</option>
+											<option value="Laki-Laki">Laki-Laki</option>
+											<option value="Perempuan">Perempuan</option>
+										</select>
+									</div>
+									<!-- <div class="col-12 form-group">
 										<label>Email:</label>
 										<input type="email" name="checkout-form-billing-email" id="checkout-form-billing-email" class="form-control required" value="" placeholder="user@company.com">
+									</div> -->
+									<div class="col-12 form-group">
+										<label>Jenis Permohonan Paspor:</label>
+										<select class="form-select jenis_permohonan required" name="jenis_permohonan" id="jenis_permohonan">
+											<option>-Pilih Jenis Permohonan Paspor Anda-</option>
+											<option value="Baru">Baru</option>
+											<option value="Penggantian">Penggantian</option>
+										</select>
+									</div>
+									<div class="col-12 hidden form-group" id="alasan">
+										<label>Alasan Penggantian:</label>
+										<select class="form-select alasan_penggantian required" name="alasan_penggantian" id="alasan_penggantian">
+											<option>-Pilih Alasan Penggantian Paspor Anda-</option>
+											<option value="Habis Masa Berlaku">Habis Masa Berlaku</option>
+											<option value="Halaman Penuh">Halaman Penuh</option>
+										</select>
+									</div>
+									<div class="col-6 hidden form-group" id="seri_paspor">
+										<label>No Seri Paspor:</label><br>
+										<input type="text" name="no_seri" id="no_seri" class="form-control" value="" placeholder="">
+									</div>
+									<div class="col-6 hidden form-group" id="reg_paspor">
+										<label>No Reg Paspor:</label><br>
+										<input type="text" name="no_reg" id="no_reg" class="form-control" value="" placeholder="">
+									</div>
+									<!-- <div id="pDetails" class="hidden">
+									</div> -->
+									<div class="col-6 form-group">
+										<label>Tempat Lahir:</label><br>
+										<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control required" value="" placeholder="">
 									</div>
 									<div class="col-6 form-group">
-										<label>Company Name:</label><br>
-										<input type="text" name="checkout-form-billing-company" id="checkout-form-billing-company" class="form-control" value="" placeholder="Company Inc.">
+										<label>Tanggal Lahir:</label>
+										<input type="text" value="" class="form-control required text-start component-datepicker format" name="tanggal_lahir" id="tanggal_lahir" placeholder="DD-MM-YYYY">
 									</div>
 									<div class="col-6 form-group">
+										<label>NIK / No. KTP:</label><br>
+										<input type="text" name="nik" id="nik" class="form-control required" value="" placeholder="">
+									</div>
+									<div class="col-6 form-group">
+										<label>Tanggal Dikeluarkannya KTP:</label><br>
+										<input type="text" value="" class="form-control required text-start component-datepicker format" name="tempat_output" id="tempat_output"  placeholder="DD-MM-YYYY">
+									</div>
+									<div class="col-12 form-group">
+										<label>Alamat:</label>
+										<input type="text" name="alamat" id="alamat" class="form-control required" value="">
+									</div>
+									<div class="col-12 form-group">
+										<label>No HP:</label>
+										<input type="text" name="no_hp" id="no_hp" class="form-control required" value="">
+									</div>
+									<div class="col-6 form-group">
+										<label>Nama Ibu:</label><br>
+										<input type="text" name="nama_ibu" id="nama_ibu" class="form-control required" value="" placeholder="">
+									</div>
+									<div class="col-6 form-group">
+										<label>Nama Ayah:</label><br>
+										<input type="text" name="nama_ayah" id="nama_ayah" class="form-control required" value="" placeholder="">
+									</div>
+									<div class="col-6 form-group">
+										<label>Tujuan Pengajuan Paspor:</label>
+										<select class="form-select tujuan required" name="tujuan" id="tujuan">
+											<option>-Pilih Tujuan Anda-</option>
+											<option value="Wisata">Wisata</option>
+											<option value="Kunjungan">Kunjungan</option>
+											<option value="Belajar">Belajar</option>
+											<option value="Umroh">Umroh</option>
+											<option value="Bekerja Formal">Bekerja Formal</option>
+										</select>
+									</div>
+									<div class="col-6 hidden form-group" id="endorse_nama">
+										<label>Nama Kakek:</label><br>
+										<input type="text" name="nama_kakek" id="nama_kakek" class="form-control" value="" placeholder="">
+									</div>
+									<div class="col-12 form-group">
+										<label>Pekerjaan:</label>
+										<input type="text" name="pekerjaan" id="pekerjaan" class="form-control required" value="">
+									</div>
+									<!-- <div class="col-6 form-group">
 										<label>Country:</label>
 										<select class="form-select required" name="checkout-form-billing-country" id="checkout-form-billing-country">
 											<option value="AX">&#197;land Islands</option>
@@ -311,16 +393,9 @@
 											<option value="ZM">Zambia</option>
 											<option value="ZW">Zimbabwe</option>
 										</select>
-									</div>
-									<div class="col-12 form-group">
-										<label>Street Address:</label>
-										<input type="text" name="checkout-form-billing-street" id="checkout-form-billing-street" class="form-control required" value="">
-									</div>
-									<div class="col-12 form-group">
-										<label>Apartment, Suite, Unit etc:</label>
-										<input type="text" name="checkout-form-billing-apartment" id="checkout-form-billing-apartment" class="form-control required" value="">
-									</div>
-									<div class="col-12 form-group">
+									</div> -->
+									
+									<!-- <div class="col-12 form-group">
 										<label>City:</label>
 										<input type="text" name="checkout-form-billing-city" id="checkout-form-billing-city" class="form-control required" value="">
 									</div>
@@ -331,10 +406,10 @@
 									<div class="col-12 form-group">
 										<label>Phone:</label><br>
 										<input type="text" name="checkout-form-billing-phone" id="checkout-form-billing-phone" class="form-control required" value="" placeholder="02-232-2424">
-									</div>
+									</div> -->
 								</div>
 							</div>
-							<div class="col-lg-6 mt-5 mt-lg-0">
+							<!-- <div class="col-lg-6 mt-5 mt-lg-0">
 								<div class="row checkout-form-shipping">
 									<div class="col-12">
 										<h3>Shipping Information</h3>
@@ -617,13 +692,13 @@
 										<input type="text" name="checkout-form-shipping-phone" id="checkout-form-shipping-phone" class="form-control required" value="" placeholder="02-232-2424">
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<div class="col-12">
 								<div class="d-none">
 									<input type="text" id="checkout-form-botcheck" name="checkout-form-botcheck" value="" />
 								</div>
 								<div class="form-group center">
-									<button type="submit" name="checkout-form-submit" class="btn btn-lg btn-secondary">Checkout</button>
+									<button type="submit" name="checkout-form-submit" class="btn btn-lg btn-secondary">Submit</button>
 								</div>
 								<input type="hidden" name="prefix" value="checkout-form-">
 							</div>
