@@ -142,6 +142,15 @@
 										<input type="text" name="nama_kakek" id="nama_kakek" class="form-control" value="" placeholder="">
 									</div>
 									<div class="col-12 form-group">
+										<label>Status Sipil:</label>
+										<select class="form-select tujuan required" name="status_sipil" id="status_sipil">
+											<option>-Pilih Status Sipil Anda-</option>
+											<option value="Wisata">Kawin</option>
+											<option value="Kunjungan">Belum Kawin</option>
+											<option value="Belajar">Cerai</option>
+										</select>
+									</div>
+									<div class="col-12 form-group">
 										<label>Pekerjaan:</label>
 										<input type="text" name="pekerjaan" id="pekerjaan" class="form-control required" value="">
 									</div>
@@ -694,11 +703,14 @@
 								</div>
 							</div> -->
 							<div class="col-12">
-								<div class="d-none">
+								<!-- <div class="d-none">
 									<input type="text" id="checkout-form-botcheck" name="checkout-form-botcheck" value="" />
-								</div>
+								</div> -->
 								<div class="form-group center">
-									<button type="submit" name="checkout-form-submit" class="btn btn-lg btn-secondary">Submit</button>
+									<a href="#" class="btn btn-lg btn-secondary">
+										Submit
+										<!-- <button type="submit" name="checkout-form-submit" class="btn btn-lg btn-secondary">Submit</button> -->
+									</a>
 								</div>
 								<input type="hidden" name="prefix" value="checkout-form-">
 							</div>
