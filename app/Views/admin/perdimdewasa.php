@@ -21,39 +21,39 @@
 
       <div class="card">
         <div class="card-body">
-          <!-- Table with stripped rows -->
-          <table class="table datatable">
-            <thead>
-              <tr>
-              <th scope="col">No.</th>
-                <th scope="col">Id Perdim</th>
-                <th scope="col">Jenis Permohonan</th>
-                <th scope="col">Nama Lengkap</th>
-                <th scope="col">Jenis Kelamin</th>
-                <th scope="col">Tempat Lahir</th>
-                <th scope="col">Tanggal Lahir</th>
-                <th scope="col">NIK</th>
-                <th scope="col">Tempat Dikeluarkan</th>
-                <th scope="col">Alamat</th>
-                <th scope="col">No HP</th>
-                <th scope="col">Nama Ibu</th>
-                <th scope="col">Nama Ayah</th>
-                <th scope="col">Nama Kakek</th>
-                <th scope="col">Pekerjaan</th>
-                <th scope="col">Status Sipil</th>
-                <th scope="col">Tujuan</th>
-                <th scope="col">No Seri</th>
-                <th scope="col">No Registrasi</th>
-                <th scope="col">Aksi</th>
-
-              </tr>
-            </thead>
-            <tbody>
             <?php
                 if ($perdimdewasa) :
                     $no = 1;
                     foreach ($perdimdewasa as $pd) :
                         ?>
+          <!-- Table with stripped rows -->
+                <table class="table datatable">
+                  <thead>
+                    <tr>
+                      <th scope="col">No.</th>
+                      <th scope="col">Id Perdim</th>
+                      <th scope="col">Jenis Permohonan</th>
+                      <th scope="col">Nama Lengkap</th>
+                      <th scope="col">Jenis Kelamin</th>
+                      <th scope="col">Tempat Lahir</th>
+                      <th scope="col">Tanggal Lahir</th>
+                      <th scope="col">NIK</th>
+                      <th scope="col">Tempat Dikeluarkan</th>
+                      <th scope="col">Alamat</th>
+                      <th scope="col">No HP</th>
+                      <th scope="col">Nama Ibu</th>
+                      <th scope="col">Nama Ayah</th>
+                      <th scope="col">Nama Kakek</th>
+                      <th scope="col">Pekerjaan</th>
+                      <th scope="col">Status Sipil</th>
+                      <th scope="col">Tujuan</th>
+                      <th scope="col">No Seri</th>
+                      <th scope="col">No Registrasi</th>
+                      <th scope="col">Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
                         <th scope="row"><?= $no++; ?></th>
                         <td><?= $pd['id_perdim']; ?></td>
                         <td><?= $pd['nama_lengkap']; ?></td>
@@ -72,22 +72,17 @@
                         <td><?= $pd['tujuan']; ?></td>
                         <td><?= $pd['no_seri']; ?></td>
                         <td><?= $pd['no_reg']; ?></td>
-                <th>
-                    <a href="<?= base_url('perdimdewasa/edit/') . $c['id_perdim'] ?>" class="btn btn-circle btn-warning btn-sm"><i class="fa fa-edit"></i></a>
-                    <a onclick="return confirm('Yakin ingin hapus?')" href="<?= base_url('perdimdewasa/delete/') . $c['id_perdim'] ?>" class="btn btn-circle btn-danger btn-sm"><i class="fa fa-trash"></i></a>
-                </th>
-              </tr>
-                    <?php endforeach; ?>
-                <?php else : ?>
-                    <tr>
-                        <td colspan="6" class="text-center">
-                            Data Kosong
-                        </td>
                     </tr>
-                <?php endif; ?>
-            </tbody>
-          </table>
+                  </tbody>
+                </table>
           <!-- End Table with stripped rows -->
+              <?php endforeach; ?>
+          <?php else : ?>
+              <div class="justify-content-center text-center">
+                <img src="assets/img/Empty-Pana.png" alt="No Records Found" width="300">
+                <h4 class="text-center">No Records Found</h4>
+              </div>
+          <?php endif; ?>
 
         </div>
       </div>

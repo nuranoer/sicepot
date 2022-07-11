@@ -22,35 +22,30 @@
       <div class="card">
         <div class="card-body">
           <!-- Table with stripped rows -->
-          <table class="table datatable">
-            <thead>
-              <tr>
-              <th scope="col">No.</th>
-                <th scope="col">Id Perdim</th>
-                <th scope="col">Jenis Permohonan</th>
-                <th scope="col">Nama Lengkap</th>
-                <th scope="col">Jenis Kelamin</th>
-                <th scope="col">Tempat Lahir</th>
-                <th scope="col">Tanggal Lahir</th>
-                <th scope="col">NIK</th>
-                <th scope="col">Tempat Dikeluarkan</th>
-                <th scope="col">Alamat</th>
-                <th scope="col">No HP</th>
-                <th scope="col">Nama Ibu</th>
-                <th scope="col">Nama Ayah</th>
-                <th scope="col">Nama Kakek</th>
-                <th scope="col">Pekerjaan</th>
-                <th scope="col">Status Sipil</th>
-                <th scope="col">Tujuan</th>
-                <th scope="col">No Seri</th>
-                <th scope="col">No Registrasi</th>
-                <th scope="col">Aksi</th>
-
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
+                <table class="table datatable">
+                  <thead>
+                    <tr>
+                      <th scope="col">No.</th>
+                      <th scope="col">Id Perdim</th>
+                      <th scope="col">Jenis Permohonan</th>
+                      <th scope="col">Nama Lengkap</th>
+                      <th scope="col">Jenis Kelamin</th>
+                      <th scope="col">NIK</th>
+                      <th scope="col">Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Id Perdim</td>
+                        <td>Jenis Permohonan</td>
+                        <td>Nama Lengkap</td>
+                        <td>Jenis Kelamin</td>
+                        <td>NIK</td>
+                        <td><a href="#" class="btn btn-primary">Print</a></td>
+                    </tr>
+                  </tbody>
+                </table>
           <!-- End Table with stripped rows -->
 
         </div>
