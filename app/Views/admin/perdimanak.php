@@ -49,31 +49,6 @@
               </tr>
             </thead>
             <tbody>
-                
-              <tr>
-              <th scope="row"><?= $no++; ?></th>
-                <td><?= $pd['id_perdim']; ?></td>
-                <td><?= $pd['nama_lengkap']; ?></td>
-                <td><?= $pd['jenkel']; ?></td>
-                <td><?= $pd['tempat_lahir']; ?></td>
-                <td><?= $pd['tanggal_lahir']; ?></td>
-                <td><?= $pd['nik']; ?></td>
-                <td><?= $pd['tempat_output']; ?></td>
-                <td><?= $pd['alamat']; ?></td>
-                <td><?= $pd['no_hp']; ?></td>
-                <td><?= $pd['nama_ibu']; ?></td>
-                <td><?= $pd['nama_ayah']; ?></td>
-                <td><?= $pd['nama_kakek']; ?></td>
-                <td><?= $pd['pekerjaan']; ?></td>
-                <td><?= $pd['status_sipil']; ?></td>
-                <td><?= $pd['tujuan']; ?></td>
-                <td><?= $pd['no_seri']; ?></td>
-                <td><?= $pd['no_reg']; ?></td>
-                <th>
-                    <a href="<?= base_url('perdimdewasa/edit/') . $c['id_perdim'] ?>" class="btn btn-circle btn-warning btn-sm"><i class="fa fa-edit"></i></a>
-                    <a onclick="return confirm('Yakin ingin hapus?')" href="<?= base_url('perdimdewasa/delete/') . $c['id_perdim'] ?>" class="btn btn-circle btn-danger btn-sm"><i class="fa fa-trash"></i></a>
-                </th>
-              </tr>
             </tbody>
           </table>
           <!-- End Table with stripped rows -->

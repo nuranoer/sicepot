@@ -17,14 +17,6 @@ class Admin extends BaseController
         ];
         return view('admin/dashboard', $data);
     }
-
-    public function dataperdimdewasa()
-    {
-        $data = [
-            'title' => 'Data Perdim Dewasa',
-        ];
-        return view('admin/perdimdewasa', $data);
-    }
     public function dataperdimanak()
     {
         $data = [
