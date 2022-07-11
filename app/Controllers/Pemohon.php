@@ -21,4 +21,8 @@ class Pemohon extends BaseController
     {
         return view('pemohon/perdimanak');
     }
+    public function createperdimdewasa()
+    {
+        dd($this->request->getVar());
+    }
 }

@@ -35,11 +35,16 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+//Halaman Pemohon
 $routes->get('/', 'Home::index');
 $routes->get('/dashboard', 'Pemohon::index');
 $routes->get('/perdimdewasa', 'Pemohon::perdimdewasa');
+$routes->post('/createperdimdewasa', 'Pemohon::createperdimdewasa');
 $routes->get('/perdimanak', 'Pemohon::perdimanak');
 $routes->get('/praperdim', 'Pemohon::praperdim');
+
+//Halaman Admin
 $routes->get('/loginadmin', 'Admin::login');
 $routes->get('/dashboardadmin', 'Admin::dashboard');
 $routes->get('/dataperdimdewasa', 'DataPerdimDewasa::dataperdimdewasa');
