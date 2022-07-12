@@ -9,7 +9,7 @@ class PerdimDewasaModel extends Model
     protected $table      = 'perdim_dewasa';
     protected $primaryKey = 'id_perdim';
 
-    protected $useAutoIncrement = false;
+    protected $useAutoIncrement = true;
 
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
@@ -19,7 +19,7 @@ class PerdimDewasaModel extends Model
     'nama_ayah','nama_kakek','pekerjaan','status_sipil','tujuan','no_seri','no_reg'];
 
 
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     
     protected $validationRules    = [];
     protected $validationMessages = [];
