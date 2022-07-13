@@ -1,26 +1,26 @@
-var checkboxSame = $("#checkout-same-as-billing input[type=checkbox]");
+var checkboxSame = $("#anak-same-as-ortu input[type=checkbox]");
 
-function sameAsBilling() {
+function sameAsInput() {
   if (checkboxSame.is(":checked")) {
-    jQuery(".checkout-form-shipping").find(":input").prop("disabled", true);
+    jQuery(".form-ortu").find(":input").prop("disabled", true);
   } else {
-    jQuery(".checkout-form-shipping").find(":input").prop("disabled", false);
+    jQuery(".form-ortu").find(":input").prop("disabled", false);
   }
 }
 
 jQuery(document).ready(function () {
-  sameAsBilling();
+  sameAsInput();
 
   checkboxSame.on("change", function () {
-    sameAsBilling();
+    sameAsInput();
   });
 
-  jQuery(".checkout-form-billing")
+  jQuery(".form-anak")
     .find(":input")
     .on("change", function () {
       var billing = $(this).attr("id"),
         billingVal = $(this).val(),
-        shipping = billing.replace("billing", "shipping"),
+        shipping = billing.replace("ibu", "ayah"),
         shippingEl = $("#" + shipping);
 
       if (shippingEl.length > 0) {

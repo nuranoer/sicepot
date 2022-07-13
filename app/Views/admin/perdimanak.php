@@ -35,16 +35,30 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Id Perdim</td>
-                        <td>Jenis Permohonan</td>
-                        <td>Nama Lengkap</td>
-                        <td>Jenis Kelamin</td>
-                        <td>NIK</td>
-                        <td><a href="#" class="btn btn-primary">Print</a></td>
-                    </tr>
-                  </tbody>
+                  <?php
+                    if ($perdimanak) :
+                        $no = 1;
+                        foreach ($perdimanak as $pa) :
+                            ?>
+                        <tr>
+                            <th scope="row"><?= $no++; ?></th>
+                            <td><?= $pa['jenis_permohonan']; ?></td>
+                            <td><?= $pa['nama_anak']; ?></td>
+                            <td><?= $pa['jenis_kelamin']; ?></td>
+                            <td><?= $pa['nik']; ?></td>
+                            <td><?= $pa['created_at']; ?></td>
+                            <td>
+                              <a href="#" class="btn btn-primary">Print</a>
+                            </td>
+                        </tr>
+                      </tbody>
+                      <?php endforeach; ?>
+                  <?php else : ?>
+                      <div class="justify-content-center text-center">
+                        <img src="assets/img/Empty-Pana.png" alt="No Records Found" width="300">
+                        <h4 class="text-center">No Records Found</h4>
+                      </div>
+                  <?php endif; ?>
                 </table>
           <!-- End Table with stripped rows -->
 

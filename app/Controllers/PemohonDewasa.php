@@ -42,6 +42,7 @@ class PemohonDewasa extends BaseController
             'no_reg' => $this->request->getVar('no_reg')
         ]);
 
+        session()->setFlashdata('success', 'Data berhasil ditambahkan!');
         return redirect()->to('/perdimdewasa');
     }
 }

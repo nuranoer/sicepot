@@ -47,11 +47,12 @@ $routes->post('/createperdimdewasa', 'PemohonDewasa::createperdimdewasa');
 
 //Pemohon Anak
 $routes->get('/perdimanak', 'PemohonAnak::perdimanak');
+$routes->post('/createperdimanak', 'PemohonAnak::createperdimanak');
 
 //Halaman Admin
 $routes->get('/loginadmin', 'Admin::login');
 $routes->get('/dashboardadmin', 'Admin::dashboard');
-$routes->get('/dataperdimdewasa', 'DataPerdimDewasa::dataperdimdewasa');
+$routes->get('/dataperdimdewasa', 'Admin::dataperdimdewasa');
 $routes->get('/dataperdimanak', 'Admin::dataperdimanak');
 
 
