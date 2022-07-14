@@ -36,6 +36,16 @@
 					<div class="sb-msg"><i class="icon-check"></i><strong>Success!</strong> <?= session()->getFlashdata('success'); ?></div>
 				</div>
 			<?php endif; ?>
+
+			<?php if(session()->getFlashdata('error')) : ?>
+				<div class="style-msg errormsg">
+					<div class="sb-msg"><i class="icon-remove"></i>
+						<strong>Data anda tidak valid!</strong>
+						<?= session()->getFlashdata('error'); ?>
+					</div>
+				</div>
+			<?php endif; ?>
+
 			<form class="row" action="/createperdimdewasa" method="post">
 				<?= csrf_field(); ?>
 				<div class="form-process">
@@ -50,11 +60,11 @@
 						</div>
 						<div class="col-12 form-group">
 							<label>Nama Lengkap:</label>
-							<input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control required" value="" placeholder="">
+							<input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control <?= ($validation->hasError('nama_lengkap')) ? 'is-invalid' : '' ?>" value="" placeholder="">
 						</div>
 						<div class="col-12 form-group">
 							<label>Jenis Kelamin:</label>
-							<select class="form-select required" name="jenis_kelamin" id="jenis_kelamin">
+							<select class="form-select <?= ($validation->hasError('jenis_kelamin')) ? 'is-invalid' : '' ?>" name="jenis_kelamin" id="jenis_kelamin">
 								<option>-Pilih Jenis Kelamin-</option>
 								<option value="Laki-Laki">Laki-Laki</option>
 								<option value="Perempuan">Perempuan</option>
@@ -62,7 +72,7 @@
 						</div>
 						<div class="col-12 form-group">
 							<label>Jenis Permohonan Paspor:</label>
-							<select class="form-select jenis_permohonan required" name="jenis_permohonan" id="jenis_permohonan">
+							<select class="form-select jenis_permohonan <?= ($validation->hasError('jenis_permohonan')) ? 'is-invalid' : '' ?>" name="jenis_permohonan" id="jenis_permohonan">
 								<option>-Pilih Jenis Permohonan Paspor Anda-</option>
 								<option value="Baru">Baru</option>
 								<option value="Penggantian">Penggantian</option>
@@ -86,39 +96,39 @@
 						</div>
 						<div class="col-6 form-group">
 							<label>Tempat Lahir:</label><br>
-							<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control required" value="" placeholder="">
+							<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control <?= ($validation->hasError('tempat_lahir')) ? 'is-invalid' : '' ?>" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group">
 							<label>Tanggal Lahir:</label>
-							<input type="text" value="" class="form-control required text-start component-datepicker format" name="tanggal_lahir" id="tanggal_lahir" placeholder="DD-MM-YYYY">
+							<input type="text" value="" class="form-control <?= ($validation->hasError('tanggal_lahir')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tanggal_lahir" id="tanggal_lahir" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-6 form-group">
 							<label>NIK / No. KTP:</label><br>
-							<input type="text" name="nik" id="nik" class="form-control required" value="" placeholder="">
+							<input type="text" name="nik" id="nik" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group">
 							<label>Tanggal Dikeluarkannya KTP:</label><br>
-							<input type="text" value="" class="form-control required text-start component-datepicker format" name="tempat_output" id="tempat_output" placeholder="DD-MM-YYYY">
+							<input type="text" value="" class="form-control <?= ($validation->hasError('tempat_output')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tempat_output" id="tempat_output" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-12 form-group">
 							<label>Alamat:</label>
-							<input type="text" name="alamat" id="alamat" class="form-control required" value="">
+							<input type="text" name="alamat" id="alamat" class="form-control <?= ($validation->hasError('alamat')) ? 'is-invalid' : '' ?>" value="">
 						</div>
 						<div class="col-12 form-group">
 							<label>No HP:</label>
-							<input type="text" name="no_hp" id="no_hp" class="form-control required" value="">
+							<input type="text" name="no_hp" id="no_hp" class="form-control <?= ($validation->hasError('no_hp')) ? 'is-invalid' : '' ?>" value="">
 						</div>
 						<div class="col-6 form-group">
 							<label>Nama Ibu:</label><br>
-							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control required" value="" placeholder="">
+							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group">
 							<label>Nama Ayah:</label><br>
-							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control required" value="" placeholder="">
+							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group">
 							<label>Tujuan Pengajuan Paspor:</label>
-							<select class="form-select tujuan required" name="tujuan" id="tujuan">
+							<select class="form-select tujuan <?= ($validation->hasError('tujuan')) ? 'is-invalid' : '' ?>" name="tujuan" id="tujuan">
 								<option>-Pilih Tujuan Anda-</option>
 								<option value="Wisata">Wisata</option>
 								<option value="Kunjungan">Kunjungan</option>
@@ -133,7 +143,7 @@
 						</div>
 						<div class="col-12 form-group">
 							<label>Status Sipil:</label>
-							<select class="form-select tujuan required" name="status_sipil" id="status_sipil">
+							<select class="form-select tujuan <?= ($validation->hasError('status_sipil')) ? 'is-invalid' : '' ?>" name="status_sipil" id="status_sipil">
 								<option>-Pilih Status Sipil Anda-</option>
 								<option value="Kawin">Kawin</option>
 								<option value="Belum Kawin">Belum Kawin</option>
@@ -143,7 +153,7 @@
 						</div>
 						<div class="col-12 form-group">
 							<label>Pekerjaan:</label>
-							<input type="text" name="pekerjaan" id="pekerjaan" class="form-control required" value="">
+							<input type="text" name="pekerjaan" id="pekerjaan" class="form-control <?= ($validation->hasError('pekerjaan')) ? 'is-invalid' : '' ?>" value="">
 						</div>
 					</div>
 				</div>
