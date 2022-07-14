@@ -31,7 +31,7 @@
                       <th scope="col">Jenis Kelamin</th>
                       <th scope="col">NIK</th>
                       <th scope="col">Tanggal Upload</th>
-                      <th scope="col">Aksi</th>
+                      <th scope="col">Print</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -48,7 +48,7 @@
                         <td><?= $pd['nik']; ?></td>
                         <td><?= $pd['created_at']; ?></td>
                         <td>
-                          <a href="#" class="btn btn-primary">Print</a>
+                          <a href="#"> <button type="button" class="btn btn-primary"><i class="bi bi-printer-fill"></i></button></a>
                         </td>
                     </tr>
                   </tbody>
