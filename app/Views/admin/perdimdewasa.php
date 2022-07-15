@@ -48,7 +48,7 @@
                         <td><?= $pd['nik']; ?></td>
                         <td><?= $pd['created_at']; ?></td>
                         <td>
-                          <a href="#"> <button type="button" class="btn btn-primary"><i class="bi bi-printer-fill"></i></button></a>
+                          <a href="/cetak"> <button type="button" class="btn btn-primary"><i class="bi bi-printer-fill"></i></button></a>
                         </td>
                     </tr>
                   </tbody>

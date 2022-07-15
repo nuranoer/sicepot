@@ -55,6 +55,9 @@ $routes->get('/dashboardadmin', 'Admin::dashboard');
 $routes->get('/dataperdimdewasa', 'Admin::dataperdimdewasa');
 $routes->get('/dataperdimanak', 'Admin::dataperdimanak');
 
+//Cetak
+$routes->get('/cetak', 'maincontrol::senddata');
+
 
 /*
  * --------------------------------------------------------------------
