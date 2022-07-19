@@ -107,8 +107,8 @@
 							<input type="text" name="nik" id="nik" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group">
-							<label>Tanggal Dikeluarkannya KTP:</label><br>
-							<input type="text" value="" class="form-control <?= ($validation->hasError('tempat_output')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tempat_output" id="tempat_output" placeholder="DD-MM-YYYY">
+							<label>Tempat Dikeluarkan KTP:</label><br>
+							<input type="text" value="" class="form-control <?= ($validation->hasError('tempat_output')) ? 'is-invalid' : '' ?>" name="tempat_output" id="tempat_output" placeholder="">
 						</div>
 						<div class="col-12 form-group">
 							<label>Alamat:</label>
