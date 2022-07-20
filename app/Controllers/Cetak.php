@@ -1,15 +1,86 @@
 <?php
 
-namespace App\Controllers;
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Cetak extends BaseController
-{
-    public function index()
-    {
-        $mpdf = new \Mpdf\Mpdf();
+class maincontrol extends CI_Controller {
 
-        $pecah = array_reverse(explode('","', $this->request->getPost('data')));
+    function __construct() {
+        parent::__construct();
+		$this->load->library('session');
+        $this->load->model('mod_siskar');
+        $this->load->database();
+    }
 
+    public function index() {
+		
+        $this->load->view('landingpage');
+
+        
+    }
+
+    public function cleardata() {
+        
+        file_put_contents("d:/KTP/_Log_Transaksi_lengkap.txt", "");
+        redirect('maincontrol/index');
+
+        
+    }
+
+        public function getdata() {
+        
+                $file = 'c:/KTP/_Log_Transaksi_lengkap.txt';
+        $searchfor = 'KTP-el --> ASCII';
+
+// the following line prevents the browser from parsing this as HTML.
+        header('Content-Type: text/plain');
+
+// get the file contents, assuming the file to be readable (and exist)
+        $contents = file_get_contents($file);
+// escape special characters in the query
+        $pattern = preg_quote($searchfor, '/');
+// finalise the regular expression, matching the whole line
+        $pattern = "/^.*$pattern.*\$/m";
+// search, and store all matching occurences in $matches
+        if(preg_match_all($pattern, $contents, $matches)){
+           $result = implode("\n", $matches[0]);
+           $result = substr($result, 39);
+        }
+        else{
+           $result = "No matches found";
+        }
+
+        $this->senddata($result);
+
+        
+    }
+
+
+
+    public function senddata(){
+
+        $file = 'c:/KTP/_Log_Transaksi_lengkap.txt';
+        $timestamp = filemtime($file);
+        $lastmodified = date('yyyy-mm-dd H:i:s', $timestamp);
+
+        $searchfor = 'KTP-el --> ASCII';
+
+// get the file contents, assuming the file to be readable (and exist)
+        $contents = file_get_contents($file);
+// escape special characters in the query
+        $pattern = preg_quote($searchfor, '/');
+// finalise the regular expression, matching the whole line
+        $pattern = "/^.*$pattern.*\$/m";
+// search, and store all matching occurences in $matches
+        if(preg_match_all($pattern, $contents, $matches)){
+           $result = implode("\n", $matches[0]);
+      //     $result = substr($result, 39);
+        }
+        else{
+           $result = "No matches found";
+        }
+
+        $pecah = array_reverse(explode('","', $result));
+        
         $nik = substr($pecah[20],-16);
         $jeniskelamin = $pecah[12];
         $alamat = $pecah[19];
@@ -23,85 +94,86 @@ class Cetak extends BaseController
         $data['nik']=$nik; 
         $data['alamat']=$alamat;
         $data['pekerjaan']=$pekerjaan; 
-        $data['status_sipil']=$statussipil; 
-        $data['tempat_output']=$kotaterbit;
-        $data['tempat_lahir']=$tempatlahir;
-        $data['tanggal_lahir']=$tanggallahir;
-        $data['nama_lengkap']=$nama;
-        $data['jenis_kelamin']=$jeniskelamin;
+        $data['statussipil']=$statussipil; 
+        $data['kotaterbit']=$kotaterbit;
+        $data['tempatlahir']=$tempatlahir;
+        $data['tanggallahir']=$tanggallahir;
+        $data['nama']=$nama;
+        $data['jeniskelamin']=$jeniskelamin;
         
 
-        $namaibu = $this->input->post('nama_ibu');
-        $namaayah = $this->input->post('nama_ayah');
-        $namakakek = $this->input->post('nama_kakek');
-        $jenispermohonan = $this->input->post('jenis_permohonan');
+        $namaibu = $this->input->post('namaibu');
+        $namaayah = $this->input->post('namaayah');
+        $namakakek = $this->input->post('namakakek');
+        $jenispermohonan = $this->input->post('jenispermohonan');
         $tujuan = $this->input->post('tujuan');
-        $nopaspor = $this->input->post('no_paspor');
-        $noregister = $this->input->post('no_register');
-        $nohp = $this->input->post('no_hp');
+        $nopaspor = $this->input->post('nopaspor');
+        $noregister = $this->input->post('noregister');
+        $nohp = $this->input->post('nohp');
+        $jenisganti = $this->input->post('jenisganti');
+
+        if ($jenispermohonan == 'Baru'){
+            $centangbaru = "<input type='checkbox' checked>";
+            $centangganti = "<input type='checkbox'>";
+        }else{
+            $centangbaru = "<input type='checkbox'>";
+            $centangganti = "<input type='checkbox' checked>";
+        }
 
         $tgl = strtotime("now");
         $tglpermohonan = date("d F Y",$tgl);
         $data['tglpermohonan']=$tglpermohonan;
 
-        $data['nama_ibu']=$namaibu;
-        $data['nama_ayah']=$namaayah;
-        $data['nama_kakek']=$namakakek;
-        $data['no_seri']=$nopaspor;
-        $data['no_reg']=$noregister;
-        $data['jenis_permohonan']=$jenispermohonan;
+        $data['namaibu']=$namaibu;
+        $data['namaayah']=$namaayah;
+        $data['namakakek']=$namakakek;
+        $data['nopaspor']=$nopaspor;
+        $data['noregister']=$noregister;
+        $data['jenispermohonan']=$jenispermohonan;
+        $data['centangganti']=$centangganti;
+        $data['centangbaru']=$centangbaru;  
         $data['tujuan']=$tujuan;
         $data['nohp']=$nohp;  
+        $data['jenisganti']=$jenisganti; 
+        $data['result']=$result; 
 
-		$html = view('admin/cetak/perdim',[]);
-		$mpdf->WriteHTML($html);
+        
+       // $this->load->view('result',$data);
         if ($jenispermohonan == 'Baru'){
             if ($tujuan=='Umroh'||$tujuan=='umroh'||$tujuan=='umrah'||$tujuan=='Umrah'||$tujuan=='Haji'||$tujuan=='haji'){  
-        $html = view('admin/cetak/perdim',$data);
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/perdim2',$data);
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/suratpernyataanumum',$data);
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/suratpernyataanendorse',$data);
-        $mpdf->WriteHTML($html);
+        $this->load->view('perdim',$data);
+        $this->load->view('perdim2',$data);
+        $this->load->view('suratpernyataanumum',$data);
+        $this->load->view('suratpernyataanendorse',$data);
             }else{       
-        $html = view('admin/cetak/perdim',$data);
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/perdim2',$data);
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/suratpernyataanumum',$data); 
-        $mpdf->WriteHTML($html);
+        $this->load->view('perdim',$data);
+        $this->load->view('perdim2',$data);
+        $this->load->view('suratpernyataanumum',$data); 
             }
         }
         elseif ($jenispermohonan == 'Penggantian') {
             if ($tujuan=='Umroh'||$tujuan=='umroh'||$tujuan=='umrah'||$tujuan=='Umrah'||$tujuan=='Haji'||$tujuan=='haji'){ 
-        $html = view('admin/cetak/perdim',$data);
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/perdim2',$data);
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/suratpernyataanumum',$data);
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/suratpernyataanganti',$data); 
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/suratpernyataanendorse',$data);
-        $mpdf->WriteHTML($html);  
+        $this->load->view('perdim',$data);
+        $this->load->view('perdim2',$data);
+        $this->load->view('suratpernyataanumum',$data);
+        $this->load->view('suratpernyataanganti',$data); 
+        $this->load->view('suratpernyataanendorse',$data);  
             }else{
-        $html = view('admin/cetak/perdim',$data);
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/perdim2',$data);
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/suratpernyataanumum',$data);
-        $mpdf->WriteHTML($html);
-        $html = view('admin/cetak/suratpernyataanganti',$data);
-        $mpdf->WriteHTML($html); 
+        $this->load->view('perdim',$data);
+        $this->load->view('perdim2',$data);
+        $this->load->view('suratpernyataanumum',$data);
+        $this->load->view('suratpernyataanganti',$data); 
             } 
         }
-		$this->response->setHeader('Content-Type', 'application/pdf');
-		$mpdf->Output('arjun.pdf','I'); // opens in browser
-		//$mpdf->Output('arjun.pdf','D'); // it downloads the file into the user system, with give name
-		//return view('welcome_message');
 
-        
-    }
+
 }
+    
+
+  
+
+
+      
+ 
+}
+

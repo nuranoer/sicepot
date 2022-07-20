@@ -134,6 +134,7 @@
 								<option value="Kunjungan">Kunjungan</option>
 								<option value="Belajar">Belajar</option>
 								<option value="Umroh">Umroh</option>
+								<option value="Umroh">Haji</option>
 								<option value="Bekerja Formal">Bekerja Formal</option>
 							</select>
 						</div>
