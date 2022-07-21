@@ -14,8 +14,8 @@
         				<div class="swiper-slide dark">
         					<div class="container">
         						<div class="slider-caption slider-caption-center">
-        							<h2 data-animate="fadeInUp">Beautifully Flexible</h2>
-        							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
+        							<h2 data-animate="fadeInUp">Mudah dan Cepat</h2>
+        							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Pemohon dapat langsung mengakses si Cepot dalam alamat website</p>
         						</div>
         					</div>
         					<div class="video-wrap">
@@ -29,8 +29,8 @@
         				<div class="swiper-slide">
         					<div class="container">
         						<div class="slider-caption">
-        							<h2 data-animate="fadeInUp">Great Performance</h2>
-        							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">You'll be surprised to see the Final Results of your Creation &amp; would crave for more.</p>
+        							<h2 data-animate="fadeInUp">Im Redi DInanti</h2>
+        							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Kami Siap Melayani dengan Tulus</p>
         						</div>
         					</div>
         					<div class="swiper-slide-bg" style="background-image: url('HTML/images/slider/swiper/ok.jpg'); background-position: center top;"></div>
