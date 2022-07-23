@@ -24,4 +24,9 @@ class PerdimDewasaModel extends Model
     protected $validationRules    = [];
     protected $validationMessages = [];
     protected $skipValidation     = false;
+
+    public function getPerdimDewasa()
+    {
+        return $this->findAll();
+    }
 }
