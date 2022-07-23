@@ -799,7 +799,7 @@ tags will be replaced.-->
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapecah[21]; ?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapecah[22]; ?></td>
   <td class=xl1517069></td>
-  <?php if ($jeniskelamin == 'LAKI-LAKI'){
+  <?php if ($jeniskelamin == 'Laki-Laki'){
   		$jk = '1';
 	}else{
 		$jk = '2';
