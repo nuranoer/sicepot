@@ -2,23 +2,25 @@
 namespace App\Controllers;
 use App\Models\PerdimDewasaModel;
 
+
 class Cetak1 extends BaseController {
 
     public function index()
     {
        $mpdf = new \Mpdf\Mpdf();
-       $result = new PerdimDewasaModel();
-         $data = $result->getPerdimDewasa();
+       $mpdf = new PerdimDewasaModel();
+         $request = \Config\Services::request();
 
-        $nik = $this->input->post('nik');
-        $jeniskelamin = $this->input->post('jenis_kelamin');
-        $alamat = $this->input->post('alamat');
-        $tempatlahir = $this->input->post('tempat_lahir');
-        $tanggallahir = $this->input->post('tanggal_lahir');
-        $nama = $this->input->post('nama_lengkap');
-        $pekerjaan = $this->input->post('pekerjaan');
-        $statussipil = $this->input->post('status_sipil');
-        $kotaterbit = $this->input->post('tempat_output');
+
+        $nik = $request->getPost('nik');
+        $jeniskelamin = $request->getPost('jenis_kelamin');
+        $alamat = $request->getPost('alamat');
+        $tempatlahir = $request->getPost('tempat_lahir');
+        $tanggallahir = $request->getPost('tanggal_lahir');
+        $nama = $request->getPost('nama_lengkap');
+        $pekerjaan = $request->getPost('pekerjaan');
+        $statussipil = $request->getPost('status_sipil');
+        $kotaterbit = $request->getPost('tempat_output');
         $data['nik']=$nik; 
         $data['alamat']=$alamat;
         $data['pekerjaan']=$pekerjaan; 
@@ -30,14 +32,14 @@ class Cetak1 extends BaseController {
         $data['jenis_kelamin']=$jeniskelamin;
         
 
-        $namaibu = $this->input->post('nama_ibu');
-        $namaayah = $this->input->post('nama_ayah');
-        $namakakek = $this->input->post('nama_kakek');
-        $jenispermohonan = $this->input->post('jenis_permohonan');
-        $tujuan = $this->input->post('tujuan');
-        $nopaspor = $this->input->post('no_seri');
-        $noregister = $this->input->post('no_reg');
-        $nohp = $this->input->post('no_hp');
+        $namaibu = $request->getPost('nama_ibu');
+        $namaayah = $request->getPost('nama_ayah');
+        $namakakek = $request->getPost('nama_kakek');
+        $jenispermohonan = $request->getPost('jenis_permohonan');
+        $tujuan = $request->getPost('tujuan');
+        $nopaspor = $request->getPost('no_seri');
+        $noregister = $request->getPost('no_reg');
+        $nohp = $request->getPost('no_hp');
 
         $tgl = strtotime("SELECT CAST(created_at AS DATE) DateOnly
         FROM perdim_dewasa");
@@ -51,37 +53,59 @@ class Cetak1 extends BaseController {
         $data['no_reg']=$noregister;
         $data['jenis_permohonan']=$jenispermohonan;
         $data['tujuan']=$tujuan;
-        $data['no_hp']=$nohp;   
-        $data = $this->load->view('hasilPrint', [], TRUE);
-		$mpdf->WriteHTML($data);
-		$mpdf->Output();
+        $data['no_hp']=$nohp;
+        
 
         
        // $this->load->view('result',$data);
         if ($jenispermohonan == 'Baru'){
-            if ($tujuan=='Umroh'||$tujuan=='Haji'){  
-        return view('admin/cetak/perdim',$data);
-        return view('admin/cetak/perdim2',$data);
-        return view('admin/cetak/suratpernyataanumum',$data);
-        return view('admin/cetak/suratpernyataanendorse',$data);
-            }else{       
-        return view('admin/cetak/perdim',$data);
-        return view('admin/cetak/perdim2',$data);
-        return view('admin/cetak/suratpernyataanumum',$data); 
+            if ($tujuan=='Umroh'||$tujuan=='Haji'){ 
+        $data = $this->load->view('admin/cetak/perdim',$data,true);         
+        $mpdf->WriteHTML('admin/cetak/perdim');
+        $data = $this->load->view('admin/cetak/perdim2',$data,true);
+        $mpdf->WriteHTML('admin/cetak/perdim2');
+        $data = $this->load->view('admin/cetak/suratpernyataanumum',$data,true);
+        $mpdf->WriteHTML('admin/cetak/suratpernyataanumum');
+        $data = $this->load->view('admin/cetak/suratpernyataanendorse',$data,true);
+        $mpdf->WriteHTML('admin/cetak/suratpernyataanendorse');
+        $mpdf -> Output();
+        $mpdf-> Output('perdim.pdf', 'I');
+            }else{
+                $data = $this->load->view('admin/cetak/perdim',$data,true);       
+                $mpdf->WriteHTML('admin/cetak/perdim');
+                $data = $this->load->view('admin/cetak/perdim2',$data,true);
+                $mpdf->WriteHTML('admin/cetak/perdim2');
+                $data = $this->load->view('admin/cetak/suratpernyataanumum',$data,true);
+                $mpdf->WriteHTML('admin/cetak/suratpernyataanumum');
+                $mpdf -> Output();
+                $mpdf-> Output('perdim.pdf', 'I'); 
             }
         }
         elseif ($jenispermohonan == 'Penggantian') {
-            if ($tujuan=='Umroh'||$tujuan=='Haji'){ 
-        return view('admin/cetak/perdim',$data);
-        return view('admin/cetak/perdim2',$data);
-        return view('admin/cetak/suratpernyataanumum',$data);
-        return view('admin/cetak/suratpernyataanganti',$data); 
-        return view('admin/cetak/suratpernyataanendorse',$data);  
+            if ($tujuan=='Umroh'||$tujuan=='Haji'){
+                $data = $this->load->view('admin/cetak/perdim',$data,true);  
+                $mpdf->WriteHTML('admin/cetak/perdim');
+                $data = $this->load->view('admin/cetak/perdim2',$data,true);
+                $mpdf->WriteHTML('admin/cetak/perdim2');
+                $data = $this->load->view('admin/cetak/suratpernyataanumum',$data,true);
+                $mpdf->WriteHTML('admin/cetak/suratpernyataanumum');
+                $data = $this->load->view('admin/cetak/suratpernyataanganti',$data,true);
+                $mpdf->WriteHTML('admin/cetak/suratpernyataanganti'); 
+                $data = $this->load->view('admin/cetak/suratpernyataanendorse',$data,true);
+                $mpdf->WriteHTML('admin/cetak/suratpernyataanendorse');
+                $mpdf -> Output();
+                $mpdf-> Output('perdim.pdf', 'D');   
             }else{
-                return view('admin/cetak/perdim',$data);
-                return view('admin/cetak/perdim2',$data);
-                return view('admin/cetak/suratpernyataanumum',$data);
-                return view('admin/cetak/suratpernyataanganti',$data); 
+                $data = $this->load->view('admin/cetak/perdim',$data,true);  
+                $mpdf->WriteHTML('admin/cetak/perdim');
+                $data = $this->load->view('admin/cetak/perdim2',$data,true);
+                $mpdf->WriteHTML('admin/cetak/perdim2');
+                $data = $this->load->view('admin/cetak/suratpernyataanumum',$data,true);
+                $mpdf->WriteHTML('admin/cetak/suratpernyataanumum');
+                $data = $this->load->view('admin/cetak/suratpernyataanganti',$data,true);
+                $mpdf->WriteHTML('admin/cetak/suratpernyataanganti');
+                $mpdf -> Output();
+                $mpdf-> Output('perdim.pdf', 'D'); 
             } 
         }
 
