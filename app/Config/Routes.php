@@ -57,6 +57,7 @@ $routes->get('/dataperdimanak', 'Admin::dataperdimanak');
 
 //Cetak
 $routes->get('/cetak', 'cetak1::index');
+$routes->get('/cetakanak', 'cetak2::index');
 
 
 /*
