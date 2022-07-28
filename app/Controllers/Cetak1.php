@@ -66,7 +66,6 @@ class Cetak1 extends BaseController {
                 $cetak = view('admin/cetak/suratpernyataanumum',[]);
                 $cetak = view('admin/cetak/suratpernyataanendorse',[]);
                 $mpdf ->WriteHTML($cetak);
-                $this->response->setHeader('Content-Type', 'application/pdf');
 		        $mpdf->Output('Perdim','I');
 
             }else{
@@ -74,7 +73,7 @@ class Cetak1 extends BaseController {
                 $cetak = view('admin/cetak/perdim2',[]);
                 $cetak = view('admin/cetak/suratpernyataanumum',[]);
                 $mpdf ->WriteHTML($cetak);
-                $this->response->setHeader('Content-Type', 'application/pdf');
+                
             }
         } elseif($jenispermohonan == 'Penggantian'){
             if($tujuan=='Umroh'||$tujuan=='Haji'){
@@ -84,7 +83,6 @@ class Cetak1 extends BaseController {
                 $cetak = view('admin/cetak/suratpernyataanganti',[]);
                 $cetak = view('admin/cetak/suratpernyataanendorse',[]);
                 $mpdf ->WriteHTML($cetak);
-                $this->response->setHeader('Content-Type', 'application/pdf');
                 $mpdf->Output('Perdim','I');
         }else{
             $cetak = view('admin/cetak/perdim',[]);
@@ -92,7 +90,6 @@ class Cetak1 extends BaseController {
             $cetak = view('admin/cetak/suratpernyataanumum',[]);
             $cetak = view('admin/cetak/suratpernyataanganti',[]);
             $mpdf ->WriteHTML($cetak);
-            $this->response->setHeader('Content-Type', 'application/pdf');
             $mpdf->Output('Perdim','I');
         }
         }
