@@ -10,7 +10,7 @@ class Home extends BaseController
     // }
     public function index()
     {
-        return view('pemohon/dashboard');
+        return view('admin/dashboard');
     }
     public function praperdim()
     {
