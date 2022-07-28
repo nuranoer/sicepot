@@ -73,6 +73,7 @@ class Cetak1 extends BaseController {
                 $cetak = view('admin/cetak/perdim2',[]);
                 $cetak = view('admin/cetak/suratpernyataanumum',[]);
                 $mpdf ->WriteHTML($cetak);
+                $mpdf->Output('Perdim','I');
                 
             }
         } elseif($jenispermohonan == 'Penggantian'){
