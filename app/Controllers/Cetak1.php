@@ -106,6 +106,6 @@ class Cetak1 extends BaseController
         // echo $id;
         $cetak = $this->PerdimDewasaModel->getCetakPerdimDewasa($id);
         // dd($cetak);
-        return view ('admin/cetak/suratpernyataanumum', $cetak);
+        // return view ('admin/cetak/suratpernyataanumum', $cetak);
     }
 }
