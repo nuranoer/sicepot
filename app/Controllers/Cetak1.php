@@ -100,4 +100,11 @@ class Cetak1 extends BaseController
             }
         }
     }
+
+    public function cetak($id)
+    {
+        // echo $id;
+        $cetak = $this->PerdimDewasaModel->getCetakPerdimDewasa($id);
+        dd($cetak);
+    }
 }

@@ -56,7 +56,8 @@ $routes->get('/dataperdimdewasa', 'Admin::dataperdimdewasa');
 $routes->get('/dataperdimanak', 'Admin::dataperdimanak');
 
 //Cetak
-$routes->get('/cetak/{id}', 'Cetak1::index');
+$routes->get('/cetak', 'Cetak1::index');
+$routes->get('/cetak/(:any)', 'Cetak1::cetak/$1');
 $routes->get('/cetakanak', 'cetak2::index');
 
 
