@@ -380,7 +380,7 @@ tags will be replaced.-->
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl15464 style='height:15.5pt'></td>
   <td class=xl63464>Nama</td>
-  <td class=xl63464>: <?php echo $nama; ?></td>
+  <td class=xl63464>: <?php echo $nama_lengkap; ?></td>
   <td class=xl63464></td>
   <td class=xl63464></td>
  </tr>
@@ -394,7 +394,7 @@ tags will be replaced.-->
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl15464 style='height:15.5pt'></td>
   <td class=xl63464>Tempat/Tanggal Lahir</td>
-  <td class=xl63464>: <?php echo $tempatlahir.' / '.$tanggallahir; ?></td>
+  <td class=xl63464>: <?php echo $tempat_lahir.' / '.$tanggal_lahir; ?></td>
   <td class=xl63464></td>
   <td class=xl63464></td>
  </tr>
@@ -436,7 +436,13 @@ tags will be replaced.-->
   <td height=21 class=xl15464 style='height:15.5pt'></td>
   <td class=xl63464><span style='mso-spacerun:yes'>   </span>2. Saya belum
   memiliki paspor</td>
-  <td class=xl66464>: <?php echo $centangbaru; ?></td>
+  <td class=xl66464>: 
+      <?php if($jenis_permohonan=='Baru'){
+        echo "<input type='checkbox' checked>";
+      } else {
+        echo "<input type='checkbox'>";
+      } ?> 
+  </td>
   <td class=xl63464></td>
   <td class=xl63464></td>
  </tr>
@@ -451,7 +457,13 @@ tags will be replaced.-->
   <td height=21 class=xl15464 style='height:15.5pt'></td>
   <td class=xl63464><span style='mso-spacerun:yes'>       </span>Saya Sudah
   memiliki paspor</td>
-  <td class=xl63464>: <?php echo $centangganti; ?></td>
+  <td class=xl66464>: 
+      <?php if($jenis_permohonan=='Penggantian'){
+        echo "<input type='checkbox' checked>";
+      } else {
+        echo "<input type='checkbox'>";
+      } ?> 
+  </td>
   <td class=xl63464></td>
   <td class=xl63464></td>
  </tr>
@@ -590,7 +602,7 @@ tags will be replaced.-->
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl15464 style='height:15.5pt'></td>
   <td class=xl15464></td>
-  <td class=xl69464>Kediri, <?php echo $tglpermohonan;?></td>
+  <td class=xl69464>Kediri, <?php echo $created_at;?></td>
   <td class=xl63464></td>
   <td class=xl63464></td>
  </tr>
@@ -611,6 +623,20 @@ tags will be replaced.-->
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl15464 style='height:15.5pt'></td>
   <td class=xl15464></td>
+  <td class=xl15464></td>
+  <td class=xl15464></td>
+  <td class=xl63464></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl15464 style='height:15.5pt'></td>
+  <td class=xl15464></td>
+  <td class=xl15464></td>
+  <td class=xl15464></td>
+  <td class=xl63464></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl15464 style='height:15.5pt'></td>
+  <td class=xl15464></td>
   <td class=xl69464>Rp 10.000,-</td>
   <td class=xl63464></td>
   <td class=xl63464></td>
@@ -624,10 +650,24 @@ tags will be replaced.-->
  </tr>
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl15464 style='height:15.5pt'></td>
+  <td class=xl15464></td>
+  <td class=xl15464></td>
+  <td class=xl15464></td>
   <td class=xl63464></td>
-  <td class=xl69464><?php echo $nama ?></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl15464 style='height:15.5pt'></td>
+  <td class=xl63464></td>
+  <td class=xl69464><?php echo $nama_lengkap ?></td>
   <td class=xl15464></td>
   <td class=xl15464></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl15464 style='height:15.5pt'></td>
+  <td class=xl15464></td>
+  <td class=xl15464></td>
+  <td class=xl15464></td>
+  <td class=xl63464></td>
  </tr>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl15464 style='height:14.5pt'></td>
@@ -674,7 +714,7 @@ tags will be replaced.-->
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl15464 style='height:14.5pt'></td>
   <td class=xl64464 colspan=2><span style='mso-spacerun:yes'>  </span>banyak Rp
-  500.000.000,- (lima ratus juta rupiah).</td>
+  500.000.000,- (lima ratus juta rupiah). </td>
   <td class=xl64464></td>
   <td class=xl68464></td>
  </tr>
