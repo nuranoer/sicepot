@@ -21,7 +21,7 @@ $(function () {
 
   $(".tujuan").change(function () {
     var responseID = $(this).val();
-    if (responseID == "Umroh") {
+    if (responseID == "Umroh" || responseID == "Haji") {
       $("#endorse_nama").removeClass("hidden");
       $("#endorse_nama").addClass("show");
     } else {
