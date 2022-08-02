@@ -103,9 +103,105 @@ class Cetak1 extends BaseController
 
     public function cetak($id)
     {
-        // echo $id;
-        $cetak = $this->PerdimDewasaModel->getCetakPerdimDewasa($id);
         // dd($cetak);
-        // return view ('admin/cetak/suratpernyataanumum', $cetak);
+        // $jenispermohonan = $this->request->getVar('jenis_permohonan');
+        // echo view ('admin/cetak/perdim', $cetak);
+        // echo view ('admin/cetak/perdim2', $cetak);
+        // echo view ('admin/cetak/suratpernyataanumum', $cetak);
+        // $tujuan = $this->request->getVar('tujuan');
+
+        $cetak = $this->PerdimDewasaModel->getCetakPerdimDewasa($id);
+
+        //get permohonan baru from PerdimDewasaModel
+        $baru_bekerja = $this->PerdimDewasaModel->getBaruBekerjaPerdim($id);
+        $baru_belajar = $this->PerdimDewasaModel->getBaruBelajarPerdim($id);
+        $baru_berobat = $this->PerdimDewasaModel->getBaruBerobatPerdim($id);
+        $baru_haji = $this->PerdimDewasaModel->getBaruHajiPerdim($id);
+        $baru_haji_endorse = $this->PerdimDewasaModel->getBaruHajiEndorsePerdim($id);
+        $baru_kunjungan = $this->PerdimDewasaModel->getBaruKunjunganPerdim($id);
+        $baru_umroh = $this->PerdimDewasaModel->getBaruUmrohPerdim($id);
+        $baru_wisata = $this->PerdimDewasaModel->getBaruWisataPerdim($id);
+
+        $penggantian_bekerja = $this->PerdimDewasaModel->getPenggantianBekerjaPerdim($id);
+        $penggantian_belajar = $this->PerdimDewasaModel->getPenggantianBelajarPerdim($id);
+        $penggantian_berobat = $this->PerdimDewasaModel->getPenggantianBerobatPerdim($id);
+        $penggantian_haji = $this->PerdimDewasaModel->getPenggantianHajiPerdim($id);
+        $penggantian_kunjungan = $this->PerdimDewasaModel->getPenggantianKunjunganPerdim($id);
+        $penggantian_umroh = $this->PerdimDewasaModel->getPenggantianUmrohPerdim($id);
+        $penggantian_wisata = $this->PerdimDewasaModel->getPenggantianWisataPerdim($id);
+
+        if($baru_bekerja){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($baru_belajar){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($baru_berobat){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($baru_belajar){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($baru_haji){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($baru_haji_endorse){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+            echo view('admin/cetak/suratpernyataanendorse', $cetak);
+        } elseif($baru_kunjungan){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($baru_umroh){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($baru_wisata){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+            echo view('admin/cetak/suratpernyataanendorse', $cetak);
+        } elseif($penggantian_bekerja){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($penggantian_belajar){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($penggantian_berobat){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($penggantian_belajar){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($penggantian_haji){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+            echo view('admin/cetak/suratpernyataanendorse', $cetak);
+        } elseif($penggantian_kunjungan){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        } elseif($penggantian_umroh){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+            echo view('admin/cetak/suratpernyataanendorse', $cetak);
+        } elseif($penggantian_wisata){
+            echo view('admin/cetak/perdim', $cetak);
+            echo view('admin/cetak/perdim2', $cetak);
+            echo view('admin/cetak/suratpernyataanumum', $cetak);
+        }
     }
 }

@@ -130,12 +130,13 @@
 							<label>Tujuan Pengajuan Paspor:</label>
 							<select class="form-select tujuan <?= ($validation->hasError('tujuan')) ? 'is-invalid' : '' ?>" name="tujuan" id="tujuan">
 								<option>-Pilih Tujuan Anda-</option>
-								<option value="Wisata">Wisata</option>
-								<option value="Kunjungan">Kunjungan</option>
+								<option value="Bekerja">Bekerja</option>
 								<option value="Belajar">Belajar</option>
-								<option value="Umroh">Umroh</option>
+								<option value="Berobat">Berobat</option>
 								<option value="Haji">Haji</option>
-								<option value="Bekerja Formal">Bekerja Formal</option>
+								<option value="Kunjungan">Kunjungan</option>
+								<option value="Umroh">Umroh</option>
+								<option value="Wisata">Wisata</option>
 							</select>
 						</div>
 						<div class="col-6 hidden form-group" id="endorse_nama">
