@@ -59,11 +59,11 @@
 							<h3>Data Pemohon</h3>
 						</div>
 						<div class="col-12 form-group">
-							<label>Nama Lengkap:</label>
+							<label>Nama Lengkap: <span class="text-danger">*</span></label>
 							<input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control <?= ($validation->hasError('nama_lengkap')) ? 'is-invalid' : '' ?>" value="" placeholder="">
 						</div>
 						<div class="col-12 form-group">
-							<label>Jenis Kelamin:</label>
+							<label>Jenis Kelamin: <span class="text-danger">*</span></label>
 							<select class="form-select <?= ($validation->hasError('jenis_kelamin')) ? 'is-invalid' : '' ?>" name="jenis_kelamin" id="jenis_kelamin">
 								<option>-Pilih Jenis Kelamin-</option>
 								<option value="Laki-Laki">Laki-Laki</option>
@@ -71,7 +71,7 @@
 							</select>
 						</div>
 						<div class="col-12 form-group">
-							<label>Jenis Permohonan Paspor:</label>
+							<label>Jenis Permohonan Paspor: <span class="text-danger">*</span></label>
 							<select class="form-select jenis_permohonan <?= ($validation->hasError('jenis_permohonan')) ? 'is-invalid' : '' ?>" name="jenis_permohonan" id="jenis_permohonan">
 								<option>-Pilih Jenis Permohonan Paspor Anda-</option>
 								<option value="Baru">Baru</option>
@@ -95,39 +95,39 @@
 							<input type="text" name="no_reg" id="no_reg" class="form-control" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group">
-							<label>Tempat Lahir:</label><br>
+							<label>Tempat Lahir: <span class="text-danger">*</span></label><br>
 							<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control <?= ($validation->hasError('tempat_lahir')) ? 'is-invalid' : '' ?>" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group">
-							<label>Tanggal Lahir:</label>
+							<label>Tanggal Lahir: <span class="text-danger">*</span></label>
 							<input type="text" value="" class="form-control <?= ($validation->hasError('tanggal_lahir')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tanggal_lahir" id="tanggal_lahir" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-6 form-group">
-							<label>NIK / No. KTP:</label><br>
+							<label>NIK / No. KTP: <span class="text-danger">*</span></label><br>
 							<input type="text" name="nik" id="nik" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group">
-							<label>Tempat Dikeluarkan KTP:</label><br>
+							<label>Tempat Dikeluarkan KTP: <span class="text-danger">*</span></label><br>
 							<input type="text" value="" class="form-control <?= ($validation->hasError('tempat_output')) ? 'is-invalid' : '' ?>" name="tempat_output" id="tempat_output" placeholder="">
 						</div>
 						<div class="col-12 form-group">
-							<label>Alamat:</label>
+							<label>Alamat: <span class="text-danger">*</span></label>
 							<input type="text" name="alamat" id="alamat" class="form-control <?= ($validation->hasError('alamat')) ? 'is-invalid' : '' ?>" value="">
 						</div>
 						<div class="col-12 form-group">
-							<label>No HP:</label>
+							<label>No HP: <span class="text-danger">*</span></label>
 							<input type="text" name="no_hp" id="no_hp" class="form-control <?= ($validation->hasError('no_hp')) ? 'is-invalid' : '' ?>" value="">
 						</div>
 						<div class="col-6 form-group">
-							<label>Nama Ibu:</label><br>
+							<label>Nama Ibu: <span class="text-danger">*</span></label><br>
 							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group">
-							<label>Nama Ayah:</label><br>
+							<label>Nama Ayah: <span class="text-danger">*</span></label><br>
 							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control" value="" placeholder="">
 						</div>
-						<div class="col-6 form-group">
-							<label>Tujuan Pengajuan Paspor:</label>
+						<div class="col-4 form-group">
+							<label>Tujuan Pengajuan Paspor: <span class="text-danger">*</span></label>
 							<select class="form-select tujuan <?= ($validation->hasError('tujuan')) ? 'is-invalid' : '' ?>" name="tujuan" id="tujuan">
 								<option>-Pilih Tujuan Anda-</option>
 								<option value="Bekerja">Bekerja</option>
@@ -139,12 +139,20 @@
 								<option value="Wisata">Wisata</option>
 							</select>
 						</div>
-						<div class="col-6 hidden form-group" id="endorse_nama">
+						<div class="col-4 form-group">
+							<label>Ingin Tambah (Endorse) Nama? <span class="text-danger">*</span></label>
+							<select class="form-select endorse" name="endorse" id="endorse">
+								<option>-Pilihan Anda-</option>
+								<option value="Ya">Ya</option>
+								<option value="Tidak">Tidak</option>
+							</select>
+						</div>
+						<div class="col-4 hidden form-group" id="endorse_nama">
 							<label>Nama Kakek:</label><br>
 							<input type="text" name="nama_kakek" id="nama_kakek" class="form-control" value="" placeholder="">
 						</div>
 						<div class="col-12 form-group">
-							<label>Status Sipil:</label>
+							<label>Status Sipil: <span class="text-danger">*</span></label>
 							<select class="form-select tujuan <?= ($validation->hasError('status_sipil')) ? 'is-invalid' : '' ?>" name="status_sipil" id="status_sipil">
 								<option>-Pilih Status Sipil Anda-</option>
 								<option value="Kawin">Kawin</option>
@@ -154,7 +162,7 @@
 							</select>
 						</div>
 						<div class="col-12 form-group">
-							<label>Pekerjaan:</label>
+							<label>Pekerjaan: <span class="text-danger">*</span></label>
 							<input type="text" name="pekerjaan" id="pekerjaan" class="form-control <?= ($validation->hasError('pekerjaan')) ? 'is-invalid' : '' ?>" value="">
 						</div>
 					</div>

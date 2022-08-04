@@ -59,11 +59,11 @@
 							<h3>Data Pemohon</h3>
 						</div>
 						<div class="col-12 form-group">
-							<label>Nama Lengkap Anak:</label>
+							<label>Nama Lengkap Anak: <span class="text-danger">*</span></label>
 							<input type="text" name="nama_anak" id="nama_anak" class="form-control <?= ($validation->hasError('nama_anak')) ? 'is-invalid' : '' ?>" value="" placeholder="">
 						</div>
 						<div class="col-12 form-group">
-							<label>Jenis Kelamin Anak:</label>
+							<label>Jenis Kelamin Anak: <span class="text-danger">*</span></label>
 							<select class="form-select <?= ($validation->hasError('jenis_kelamin')) ? 'is-invalid' : '' ?>" name="jenis_kelamin" id="jenis_kelamin">
 								<option>-Pilih Jenis Kelamin-</option>
 								<option value="Laki-Laki">Laki-Laki</option>
@@ -71,7 +71,7 @@
 							</select>
 						</div>
 						<div class="col-12 form-group">
-							<label>Jenis Permohonan Paspor:</label>
+							<label>Jenis Permohonan Paspor: <span class="text-danger">*</span></label>
 							<select class="form-select jenis_permohonan <?= ($validation->hasError('jenis_permohonan')) ? 'is-invalid' : '' ?>" name="jenis_permohonan" id="jenis_permohonan">
 								<option>-Pilih Jenis Permohonan Paspor Anda-</option>
 								<option value="Baru">Baru</option>
@@ -95,11 +95,11 @@
 							<input type="text" name="no_reg_anak" id="no_reg_anak" class="form-control" value="" placeholder="">
 						</div>
 						<div class="col-12 form-group">
-							<label>Tempat/Tanggal Lahir Anak:</label><br>
+							<label>Tempat/Tanggal Lahir Anak: <span class="text-danger">*</span></label><br>
 							<input type="text" name="ttl_anak" id="ttl_anak" class="form-control <?= ($validation->hasError('ttl_anak')) ? 'is-invalid' : '' ?>" value="" placeholder="Kediri, 01-01-2010">
 						</div>
 						<div class="col-4 form-group">
-							<label>NIK / No. KIA:</label><br>
+							<label>NIK / No. KIA: <span class="text-danger">*</span></label><br>
 							<input type="text" name="nik" id="nik" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" value="" placeholder="">
 							<div class="invalid-feedback">
 								NIK harus terdiri dari 16 digit.
@@ -114,15 +114,11 @@
 							<input type="text" name="rentang_tgl_kia" id="rentang_tgl_kia" class="form-control" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group form-anak">
-							<label>Alamat Anak:</label>
+							<label>Alamat Anak: <span class="text-danger">*</span></label>
 							<input type="text" name="alamat_anak" id="alamat_anak" class="form-control <?= ($validation->hasError('alamat_anak')) ? 'is-invalid' : '' ?>" value="">
-							<!-- <label for="" id="anak-same-as-ortu" class="text-danger">
-								<input type="checkbox" class="me-2" value="1"> 
-								Alamat Anak Sama Dengan Alamat Orang Tua
-							</label> -->
 						</div>
 						<div class="col-6 form-group">
-							<label>Alamat Anak Sama Dengan Alamat Orang Tua:</label>
+							<label>Alamat Anak Sama Dengan Alamat Orang Tua: <span class="text-danger">*</span></label>
 							<select class="form-select address_ortu required" name="address_ortu" id="address_ortu">
 								<option value="Ya">Ya, sama</option>
 								<option value="Tidak">Tidak sama</option>
@@ -137,7 +133,7 @@
 							<input type="text" name="alamat_ayah" id="alamat_ayah" class="form-control required" value="">
 						</div>
 						<div class="col-12 form-group">
-							<label>No HP Ortu:</label>
+							<label>No HP Ortu: <span class="text-danger">*</span></label>
 							<input type="text" name="no_hp" id="no_hp" class="form-control <?= ($validation->hasError('no_hp')) ? 'is-invalid' : '' ?>" value="">
 						</div>
 						<div class="col-6 form-group">
@@ -191,7 +187,7 @@
 							<input type="text" name="no_paspor_ayah" id="no_paspor_ayah" class="form-control" value="" placeholder="">
 						</div>
 						<div class="col-4 form-group">
-							<label>Tujuan Pengajuan Paspor:</label>
+							<label>Tujuan Pengajuan Paspor: <span class="text-danger">*</span></label>
 							<select class="form-select tujuan <?= ($validation->hasError('tujuan')) ? 'is-invalid' : '' ?>" name="tujuan" id="tujuan">
 								<option>-Pilih Tujuan Anda-</option>
 								<option value="Wisata">Wisata</option>

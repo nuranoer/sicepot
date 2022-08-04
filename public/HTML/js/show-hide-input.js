@@ -19,9 +19,9 @@ $(function () {
     console.log(responseID);
   });
 
-  $(".tujuan").change(function () {
+  $(".endorse").change(function () {
     var responseID = $(this).val();
-    if (responseID == "Umroh" || responseID == "Haji") {
+    if (responseID == "Ya") {
       $("#endorse_nama").removeClass("hidden");
       $("#endorse_nama").addClass("show");
     } else {
