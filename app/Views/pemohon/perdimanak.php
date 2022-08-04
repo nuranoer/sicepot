@@ -182,7 +182,7 @@
 							<label>Berlaku s/d:</label><br>
 							<input type="text" name="rentang_ktp_ayah" id="rentang_ktp_ayah" class="form-control" value="" placeholder="">
 						</div>
-						<div class="col-4 form-group">
+						<div class="col-12 form-group">
 							<label>No. Paspor Ayah:</label><br>
 							<input type="text" name="no_paspor_ayah" id="no_paspor_ayah" class="form-control" value="" placeholder="">
 						</div>
@@ -203,11 +203,11 @@
 							<input type="text" name="nama_kakek" id="nama_kakek" class="form-control" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group">
-							<label>Negara Tujuan:</label><br>
+							<label>Negara Tujuan: <span class="text-danger">*</span></label><br>
 							<input type="text" name="negara" id="negara" class="form-control <?= ($validation->hasError('negara')) ? 'is-invalid' : '' ?>" value="" placeholder="">
 						</div>
 						<div class="col-6 form-group">
-							<label>Status Sipil:</label>
+							<label>Status Sipil: <span class="text-danger">*</span></label>
 							<select class="form-select tujuan <?= ($validation->hasError('status_sipil')) ? 'is-invalid' : '' ?>" name="status_sipil" id="status_sipil">
 								<option>-Pilih Status Sipil Anak-</option>
 								<option value="Kawin">Kawin</option>
@@ -215,7 +215,7 @@
 							</select>
 						</div>
 						<div class="col-12 form-group">
-							<label>Pekerjaan:</label>
+							<label>Pekerjaan: <span class="text-danger">*</span></label>
 							<input type="text" name="pekerjaan" id="pekerjaan" class="form-control <?= ($validation->hasError('pekerjaan')) ? 'is-invalid' : '' ?>" value="">
 						</div>
 					</div>
