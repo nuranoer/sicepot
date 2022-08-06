@@ -48,7 +48,7 @@
                             <td><?= $pa['nik']; ?></td>
                             <td><?= $pa['created_at']; ?></td>
                             <td>
-                              <a href="/cetak"> <button type="button" class="btn btn-primary"><i class="bi bi-printer-fill"></i></button></a>
+                              <a href="/cetak-perdim-anak/<?= $pa['id_perdim']; ?>"> <button type="button" class="btn btn-primary"><i class="bi bi-printer-fill"></i></button></a>
                             </td>
                         </tr>
                       </tbody>

@@ -84,4 +84,14 @@ class PerdimDewasaModel extends Model
                         ->first();
         }
     }
+    public function getEndorse($id = false)
+    {
+        if($id == false){
+            return $this->findAll();
+        } else {
+            return $this->where(['id_perdim' => $id])
+                        ->where(['endorse' => 'Ya'])
+                        ->first();
+        }
+    }
 }

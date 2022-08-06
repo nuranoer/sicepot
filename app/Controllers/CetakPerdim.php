@@ -7,7 +7,7 @@ use App\Controllers\BaseController;
 use MPDF;
 
 
-class Cetak1 extends BaseController
+class CetakPerdim extends BaseController
 {
 
     protected $PerdimDewasaModel;
