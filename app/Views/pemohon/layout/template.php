@@ -93,12 +93,6 @@
 									<a class="menu-link" href="/dashboard">
 										<div>Home</div>
 									</a>
-
-								<li class="menu-item mega-menu mega-menu-small">
-									<a class="menu-link" href="#">
-										<div>About</div>
-									</a>
-								</li>
 								<li class="menu-item mega-menu mega-menu-small">
 									<a class="menu-link" href="/praperdim">
 										<div>Formulir</div>

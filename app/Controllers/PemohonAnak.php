@@ -29,7 +29,7 @@ class PemohonAnak extends BaseController
             'tempat_lahir' => 'required',
             'tanggal_lahir' => 'required',
             'alamat' => 'required',
-            'no_hp' => 'required|max_length[13]',
+            'no_hp' => 'required|max_length[16]',
             'tujuan' => 'required',
             'endorse' => 'required',
             'negara' => 'required',

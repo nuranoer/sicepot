@@ -24,7 +24,7 @@ class CetakPerdimAnak extends BaseController {
         $endorse = $this->PerdimAnakModel->getEndorse($id);
 
         if ($permohonanBaru) {
-            if ($permohonanUmroh || $permohonanHaji) {
+            if ($permohonanUmroh || $permohonanHaji || $endorse) {
                 echo view('admin/cetak/perdim', $cetak);
                 echo view('admin/cetak/perdim2', $cetak);
                 echo view('admin/cetak/suratpernyataanortu',$cetak);
@@ -37,7 +37,7 @@ class CetakPerdimAnak extends BaseController {
                 echo view('admin/cetak/suratpernyataanumum', $cetak);
             }
         } elseif ($permohonanPenggantian) {
-            if ($permohonanUmroh || $permohonanHaji) {
+            if ($permohonanUmroh || $permohonanHaji || $endorse) {
                 echo view('admin/cetak/perdim', $cetak);
                 echo view('admin/cetak/perdim2', $cetak);
                 echo view('admin/cetak/suratpernyataanortu',$cetak);
