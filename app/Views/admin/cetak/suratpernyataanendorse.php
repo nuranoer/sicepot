@@ -130,6 +130,7 @@ tags will be replaced.-->
   <td class=xl1523148 width=351 style='width:263pt'></td>
   <td class=xl1523148 width=225 style='width:169pt'></td>
  </tr>
+ <br>
  <tr height=28 style='height:21.0pt'>
   <td colspan=4 height=28 class=xl6523148 style='height:21.0pt'>SURAT
   PERNYATAAN</td>
@@ -160,7 +161,7 @@ tags will be replaced.-->
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl1523148 style='height:15.5pt'></td>
   <td class=xl6323148>Nama</td>
-  <td class=xl6323148>:<span style='mso-spacerun:yes'>  </span><?php echo $nama ?></td>
+  <td class=xl6323148>          :<span style='mso-spacerun:yes'>  </span><?php echo $nama_lengkap ?></td>
   <td class=xl1523148></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -171,9 +172,9 @@ tags will be replaced.-->
  </tr>
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl1523148 style='height:15.5pt'></td>
-  <td class=xl6323148>Tempat/Tgl. Lah<span style='display:none'>ir</span></td>
-  <td class=xl6323148>:<span style='mso-spacerun:yes'> 
-  </span><?php echo $tempatlahir.' / '.$tanggallahir ?></td>
+  <td class=xl6323148>Tempat/Tgl. Lahir</td>
+  <td class=xl6323148>          :<span style='mso-spacerun:yes'> 
+  </span><?php echo $tempat_lahir.' / '.$tanggal_lahir ?></td>
   <td class=xl1523148></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -185,13 +186,7 @@ tags will be replaced.-->
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl1523148 style='height:15.5pt'></td>
   <td class=xl6323148>Alamat</td>
-  <td class=xl6323148>:<span style='mso-spacerun:yes'>  </span><?php echo $alamat ?></td>
-  <td class=xl1523148></td>
- </tr>
- <tr height=21 style='height:15.5pt'>
-  <td height=21 class=xl1523148 style='height:15.5pt'></td>
-  <td class=xl6323148></td>
-  <td class=xl6323148></td>
+  <td class=xl6323148>          :<span style='mso-spacerun:yes'>  </span><?php echo $alamat ?></td>
   <td class=xl1523148></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -220,7 +215,7 @@ tags will be replaced.-->
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl1523148 style='height:15.5pt'></td>
   <td class=xl6323148>nama saya</td>
-  <td class=xl6323148>:<span style='mso-spacerun:yes'>  </span><?php echo $nama.' '.$namaayah.' '.$namakakek ?></td>
+  <td class=xl6323148>          :<strong><span style='mso-spacerun:yes'>  </span><?php echo $nama_lengkap.' '.$nama_ayah.' '.$nama_kakek ?></strong></td>
   <td class=xl1523148></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -231,7 +226,13 @@ tags will be replaced.-->
  </tr>
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl1523148 style='height:15.5pt'></td>
-  <td class=xl6323148 colspan=3>pada paspor yang akan saya gunakan untuk tujuan
+  <td class=xl1523148></td>
+  <td class=xl6323148></td>
+  <td class=xl1523148></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl1523148 style='height:15.5pt'></td>
+  <td class=xl6323148 colspan=3>Pada paspor yang akan saya gunakan untuk tujuan
   Ibadah Umroh/Haji pada tahun</td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -254,8 +255,8 @@ tags will be replaced.-->
  </tr>
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl1523148 style='height:15.5pt'></td>
-  <td class=xl6323148>Nama Ayah Kan<span style='display:none'>dung</span></td>
-  <td class=xl6323148>:<span style='mso-spacerun:yes'>  </span><?php echo $namaayah ?></td>
+  <td class=xl6323148>Nama Ayah Kandung</td>
+  <td class=xl6323148>          :<span style='mso-spacerun:yes'>  </span><?php echo $nama_ayah ?></td>
   <td class=xl1523148></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -266,8 +267,8 @@ tags will be replaced.-->
  </tr>
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl1523148 style='height:15.5pt'></td>
-  <td class=xl6323148>Nama Kakek Ka<span style='display:none'>ndung</span></td>
-  <td class=xl6323148>:<span style='mso-spacerun:yes'>  </span><?php echo $namakakek ?></td>
+  <td class=xl6323148>Nama Kakek Kandung</td>
+  <td class=xl6323148>          :<span style='mso-spacerun:yes'>  </span><?php echo $nama_kakek ?></td>
   <td class=xl1523148></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -315,7 +316,14 @@ tags will be replaced.-->
   <td height=21 class=xl1523148 style='height:15.5pt'></td>
   <td class=xl1523148></td>
   <td class=xl1523148></td>
-  <td class=xl6623148>Kediri, <?php echo $tglpermohonan ?></td>
+  <?php $getTanggal = str_split($created_at) ?>
+  <td class=xl6623148>Kediri, <?php echo $getTanggal[8];?><?php echo $getTanggal[9];?>-<?php echo $getTanggal[5];?><?php echo $getTanggal[6];?>-<?php echo $getTanggal[0];?><?php echo $getTanggal[1];?><?php echo $getTanggal[2];?><?php echo $getTanggal[3];?></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl1523148 style='height:15.5pt'></td>
+  <td class=xl6323148></td>
+  <td class=xl1523148></td>
+  <td class=xl6423148></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl1523148 style='height:15.5pt'></td>
@@ -345,7 +353,13 @@ tags will be replaced.-->
   <td height=19 class=xl1523148 style='height:14.5pt'></td>
   <td class=xl1523148></td>
   <td class=xl1523148></td>
-  <td class=xl6423148>( <?php echo $nama ?> )</td>
+  <td class=xl6423148></td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl1523148 style='height:14.5pt'></td>
+  <td class=xl1523148></td>
+  <td class=xl1523148></td>
+  <td class=xl6423148>( <?php echo $nama_lengkap ?> )</td>
  </tr>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1523148 style='height:14.5pt'></td>
