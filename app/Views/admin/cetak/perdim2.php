@@ -11,13 +11,16 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <!--table
 	{mso-displayed-decimal-separator:"\.";
 	mso-displayed-thousand-separator:"\,";}
-.xl159716
+*
+{
+	font-size:10.6pt;
+}
+  .xl159716
 	{padding-top:1px;
 	padding-right:1px;
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -35,7 +38,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -54,7 +56,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -72,7 +73,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -91,7 +91,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -113,7 +112,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -135,7 +133,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -157,7 +154,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -179,7 +175,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -201,7 +196,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -223,7 +217,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -245,7 +238,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -267,7 +259,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -289,7 +280,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -311,7 +301,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -333,7 +322,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -355,7 +343,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:10.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -377,7 +364,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:10.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -399,7 +385,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -421,7 +406,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -439,7 +423,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -461,7 +444,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -483,7 +465,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -505,7 +486,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -570,21 +550,21 @@ tags will be replaced.-->
   <td class=xl709716 width=22 style='width:17pt'>&nbsp;</td>
  </tr>
  <?php
- 	$kerja1 = "";
- 	$kerja2 = "";
- 	$kerja3 = "";
- 	$kerja4 = "";
- 	$kerja5 = "";
- 	if ($pekejaan == 'PEJABAT NEGARA'){
+  $kerja1 = "";
+  $kerja2 = "";
+  $kerja3 = "";
+  $kerja4 = "";
+  $kerja5 = "";
+ 	if ($pekerjaan == 'PEJABAT NEGARA'){
  		$kerja1 = "<strong>X</strong>";
  		$lainnya = '';
- 	}elseif ($pekejaan == 'PEGAWAI NEGERI SIPIL (PNS)') {
+ 	}elseif ($pekerjaan == 'PNS' || $pekerjaan == 'Pegawai Negeri Sipil') {
  		$kerja2 = "<strong>X</strong>";
  		$lainnya = '';
- 	}elseif ($pekejaan == 'TNI' || $pekerjaan == 'POLRI') {
+ 	}elseif ($pekerjaan == 'TNI' || $pekerjaan == 'POLRI') {
  		$kerja3 = "<strong>X</strong>";
  		$lainnya = '';
- 	}elseif ($pekejaan == 'KARYAWAN SWASTA') {
+ 	}elseif ($pekerjaan == 'KARYAWAN SWASTA') {
  		$kerja4 = "<strong>X</strong>";
  		$lainnya = '';
  	}else {
@@ -596,13 +576,13 @@ tags will be replaced.-->
  	$statussipil2="";
  	$statussipil3="";
  	$statussipil4="";
- 	if ($statussipil == "KAWIN"){
+ 	if ($status_sipil == "Kawin"){
  		$statussipil1="<strong>X</strong>";
- 	}elseif($statussipil == "BELUM KAWIN"){
+ 	}elseif($status_sipil == "Belum Kawin"){
  		$statussipil2="<strong>X</strong>";
- 	}elseif($statussipil == "CERAI MATI"){
+ 	}elseif($status_sipil == "Cerai Mati"){
  		$statussipil3="<strong>X</strong>";
- 	}elseif($statussipil == "CERAI HIDUP"){
+ 	}elseif($status_sipil == "Cerai Hidup"){
  		$statussipil4="<strong>X</strong>";
  	}
  	
@@ -683,40 +663,40 @@ tags will be replaced.-->
   <td class=xl159716></td>
   <td class=xl729716>&nbsp;</td>
  </tr>
- <tr height=19 style='height:14.5pt'>
-  <td height=19 class=xl159716 style='height:14.5pt'></td>
-  <td class=xl749716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl669716>&nbsp;</td>
-  <td class=xl739716>&nbsp;</td>
+ <tr>
+  <td></td>
+  <td></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl669716></td>
+  <td class=xl739716></td>
  </tr>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl649716 align=right style='height:14.5pt'>4</td>
@@ -845,7 +825,7 @@ tags will be replaced.-->
   <td class=xl159716></td>
   <td class=xl159716></td>
   <td class=xl159716></td>
-  <td class=xl669716>&nbsp;<?php echo $nama; ?></td>
+  <td class=xl669716>&nbsp;<?php echo $nama_lengkap; ?></td>
   <td class=xl669716>&nbsp;</td>
   <td class=xl669716>&nbsp;</td>
   <td class=xl669716>&nbsp;</td>
@@ -2387,9 +2367,9 @@ tags will be replaced.-->
 <!----------------------------->
 <!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
 <!----------------------------->
-/* <script type="text/javascript">
+<script type="text/javascript">
   window.print();
-</script> */
+</script>
 </body>
 
 </html>
