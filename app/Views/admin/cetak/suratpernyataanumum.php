@@ -345,7 +345,7 @@ tags will be replaced.-->
  <tr height=28 style='height:21.0pt'>
   <td height=28 class=xl70464 colspan=3 style='height:21.0pt'><span
   style='mso-spacerun:yes'>                                         
-               </span><span style='mso-spacerun:yes'>            </span>SURAT PERNYATAAN</td>
+               </span><span style='mso-spacerun:yes'>                                          </span>SURAT PERNYATAAN</td>
   <td class=xl70464></td>
   <td class=xl15464></td>
  </tr>
@@ -602,7 +602,15 @@ tags will be replaced.-->
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl15464 style='height:15.5pt'></td>
   <td class=xl15464></td>
-  <td class=xl69464>Kediri, <?php echo $created_at;?></td>
+  <?php $getTanggal = str_split($created_at) ?>
+  <td class=xl69464>Kediri, <?php echo $getTanggal[8];?><?php echo $getTanggal[9];?>-<?php echo $getTanggal[5];?><?php echo $getTanggal[6];?>-<?php echo $getTanggal[0];?><?php echo $getTanggal[1];?><?php echo $getTanggal[2];?><?php echo $getTanggal[3];?></td>
+  <td class=xl63464></td>
+  <td class=xl63464></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl15464 style='height:15.5pt'></td>
+  <td class=xl63464></td>
+  <td class=xl63464></td>
   <td class=xl63464></td>
   <td class=xl63464></td>
  </tr>
@@ -618,20 +626,6 @@ tags will be replaced.-->
   <td class=xl15464></td>
   <td class=xl69464>Materai</td>
   <td class=xl63464></td>
-  <td class=xl63464></td>
- </tr>
- <tr height=21 style='height:15.5pt'>
-  <td height=21 class=xl15464 style='height:15.5pt'></td>
-  <td class=xl15464></td>
-  <td class=xl15464></td>
-  <td class=xl15464></td>
-  <td class=xl63464></td>
- </tr>
- <tr height=21 style='height:15.5pt'>
-  <td height=21 class=xl15464 style='height:15.5pt'></td>
-  <td class=xl15464></td>
-  <td class=xl15464></td>
-  <td class=xl15464></td>
   <td class=xl63464></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -758,9 +752,9 @@ tags will be replaced.-->
 <!----------------------------->
 <!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
 <!----------------------------->
-/* <script type="text/javascript">
+<script type="text/javascript">
   window.print();
-</script> */
+</script>
 </body>
 
 </html>
