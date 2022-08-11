@@ -64,6 +64,7 @@ class PerdimDewasaModel extends Model
                         ->first();
         }
     }
+    
     public function getUmrohPerdim($id = false)
     {
         if($id == false){
@@ -74,6 +75,7 @@ class PerdimDewasaModel extends Model
                         ->first();
         }
     }
+
     public function getHajiPerdim($id = false)
     {
         if($id == false){
@@ -84,6 +86,7 @@ class PerdimDewasaModel extends Model
                         ->first();
         }
     }
+
     public function getEndorse($id = false)
     {
         if($id == false){
@@ -93,6 +96,11 @@ class PerdimDewasaModel extends Model
                         ->where(['endorse' => 'Ya'])
                         ->first();
         }
+    }
+
+    public function total()
+    {
+        return $this->countAll();
     }
     
 }
