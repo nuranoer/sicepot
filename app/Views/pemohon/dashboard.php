@@ -19,8 +19,7 @@
 				<div class="col-lg-7 align-self-end">
 
 					<div class="position-relative overflow-hidden">
-						<img src="HTML/images/services/main-fbrowser.png" data-animate="fadeInUp" data-delay="100" alt="Chrome">
-						<img src="HTML/images/services/main-fmobile.png" style="top: 0; left: 0; min-width: 100%; min-height: 100%;" data-animate="fadeInUp" data-delay="400" alt="iPhone" class="position-absolute">
+						<img src="HTML/images/dashboard/mockuplappy.png" data-animate="fadeInUp" data-delay="100" alt="Chrome">
 					</div>
 
 				</div>
@@ -89,14 +88,14 @@
 							<a href="#"><i class="icon-line-paper"></i></a>
 						</div>
 						<div class="fbox-content">
-						<h3>Form Perdim Pemohon Anak Anak</h3>
+							<h3>Form Perdim Pemohon Anak Anak</h3>
 							<p>Form Perdim yang diperuntukkan umur 17 tahun ke bawah yang belum memiliki KTP pribadi dan harus didampingi orang tua</p>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-lg-4 d-md-none d-lg-block text-center">
-					<img src="HTML/images/services/iphone7.png" alt="iphone 2">
+					<img src="HTML/images/dashboard/iphone3.png" alt="iphone 2">
 				</div>
 
 				<div class="col-lg-4 col-md-6">
@@ -106,7 +105,7 @@
 							<a href="#"><i class="icon-line-power"></i></a>
 						</div>
 						<div class="fbox-content">
-						<h3>Form Perdim Pemohon Dewasa</h3>
+							<h3>Form Perdim Pemohon Dewasa</h3>
 							<p>Form Perdim yang diperuntukkan umur 17 tahun ke atas yang sudah memiliki KTP pribadi</p>
 						</div>
 					</div>
@@ -124,7 +123,7 @@
 			</div>
 
 		</div>
-		</div>
+	</div>
 </section>
 
 <?= $this->endSection(); ?>
