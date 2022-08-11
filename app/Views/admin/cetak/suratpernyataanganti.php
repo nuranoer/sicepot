@@ -331,9 +331,9 @@ tags will be replaced.-->
 <!----------------------------->
 <!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
 <!----------------------------->
-<script type="text/javascript">
+/* <script type="text/javascript">
   window.print();
-</script>
+</script> */
 </body>
 
 </html>

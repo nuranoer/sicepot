@@ -13,13 +13,15 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <!--table
 	{mso-displayed-decimal-separator:"\.";
 	mso-displayed-thousand-separator:"\,";}
+  *{
+	font-size:10.6pt;
+  }
 .xl1517069
 	{padding-top:1px;
 	padding-right:1px;
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -37,7 +39,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -56,7 +57,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -74,7 +74,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -92,7 +91,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -114,7 +112,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -136,7 +133,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -158,7 +154,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -180,7 +175,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -202,7 +196,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -224,7 +217,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -246,7 +238,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -268,7 +259,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -290,7 +280,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
@@ -312,7 +301,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -331,7 +319,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
-	font-size:11.0pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -707,14 +694,14 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <?php
 
-  if ($jenispermohonan == 'Penggantian'){
-  	if ($jenisganti == 'Habis Berlaku'){
+  if ($jenis_permohonan == 'Penggantian'){
+  	if ($alasan_penggantian == 'Habis Masa Berlaku'){
 	$isi = '1';
-  	}elseif($jenisganti == 'Halaman Penuh'){
+  	}elseif($alasan_penggantian == 'Halaman Penuh'){
 	$isi = '2';
-  	}elseif($jenisganti == 'Hilang'){
+  	}elseif($alasan_penggantian == 'Hilang'){
 	$isi = '3';
-  	}elseif($jenisganti == 'Rusak'){
+  	}elseif($alasan_penggantian == 'Rusak'){
 	$isi = '4';
   	}
   }else{
@@ -771,7 +758,7 @@ tags will be replaced.-->
   <td class=xl7317069>&nbsp;</td>
   <td class=xl7417069>&nbsp;</td>
  </tr>
-   <?php $namapecah = str_split($nama);
+   <?php $namapecah = str_split($nama_lengkap);
    ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
@@ -799,7 +786,7 @@ tags will be replaced.-->
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapecah[21]; ?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapecah[22]; ?></td>
   <td class=xl1517069></td>
-  <?php if ($jeniskelamin == 'Laki-Laki'){
+  <?php if ($jenis_kelamin == 'Laki-Laki'){
   		$jk = '1';
 	}else{
 		$jk = '2';
@@ -927,7 +914,7 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <td class=xl7017069>&nbsp;</td>
  </tr>
- <?php $tempatlahirpecah = str_split($tempatlahir);
+ <?php $tempatlahirpecah = str_split($tempat_lahir);
    ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
@@ -954,7 +941,7 @@ tags will be replaced.-->
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatlahirpecah[20]; ?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatlahirpecah[21]; ?></td>
   <td class=xl1517069></td>
-  <?php $tgllahirpecah = str_split($tanggallahir); ?>
+  <?php $tgllahirpecah = str_split($tanggal_lahir); ?>
   <td class=xl6317069>&nbsp;<?php echo $tgllahirpecah[0] ?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirpecah[1] ?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirpecah[3] ?></td>
@@ -1014,12 +1001,13 @@ tags will be replaced.-->
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $nikpecah[20];?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $nikpecah[21];?></td>
   <td class=xl1517069></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <?php $tempatoutputpecah = str_split($tempat_output); ?>
+  <td class=xl6317069>&nbsp;<?php echo $tempatoutputpecah[0] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatoutputpecah[1] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatoutputpecah[3] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatoutputpecah[4] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatoutputpecah[8] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatoutputpecah[9] ?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;</td>
  </tr>
  <tr height=19 style='height:14.5pt'>
@@ -1245,7 +1233,7 @@ tags will be replaced.-->
   <td class=xl6317069 style='border-top:none;border-left:none'>&nbsp;<?php echo $alamatpecah[41]; ?></td>
   <td class=xl6317069 style='border-top:none;border-left:none'>&nbsp;<?php echo $alamatpecah[42]; ?></td>
 
-  <?php $nohppecah = str_split($nohp); ?>
+  <?php $nohppecah = str_split($no_hp); ?>
   <td class=xl1517069 colspan=3><span style='mso-spacerun:yes'> </span>TELP/HP</td>
   <td class=xl6317069 style='border-top:none'>&nbsp;<?php echo $nohppecah[0]; ?></td>
   <td class=xl6317069 style='border-top:none;border-left:none'>&nbsp;<?php echo $nohppecah[1]; ?></td>
@@ -1357,7 +1345,7 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <td class=xl7017069>&nbsp;</td>
  </tr>
- <?php $namaibupecah = str_split($namaibu); ?>
+ <?php $namaibupecah = str_split($nama_ibu); ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
   <td class=xl6317069>&nbsp;<?php echo $namaibupecah[0]; ?></td>
@@ -1542,7 +1530,7 @@ tags will be replaced.-->
   <td class=xl7017069>&nbsp;</td>
  </tr>
 
-  <?php $namaayahpecah = str_split($namaayah); ?>
+  <?php $namaayahpecah = str_split($nama_ayah); ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
   <td class=xl6317069>&nbsp;<?php echo $namaayahpecah[0]; ?></td>
@@ -1987,5 +1975,3 @@ tags will be replaced.-->
 </body>
 
 </html>
-
-<p style="page-break-after: always;">&nbsp;</p>
