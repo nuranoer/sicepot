@@ -19,7 +19,6 @@
       }
     </style>
 
-    <title>perdim ortu</title>
   </head>
   <body class="lh-1">
     <div class="p-3">
@@ -73,7 +72,7 @@
                 <p>Nama Ayah</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : <?php echo $nama_ayah ?></p>
+                <p>&emsp;&emsp;    : <?php echo $nama_ayah ?></p>
               </div>
             </div>
             <div class="row">
@@ -81,7 +80,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : <?php echo $ttl_ayah ?></p>
+                <p>&emsp;&emsp;    : <?php echo $ttl_ayah ?></p>
               </div>
             </div>
             <div class="row">
@@ -89,7 +88,7 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : <?php echo $alamat_ayah ?></p>
+                <p>&emsp;&emsp;    : <?php echo $alamat_ayah ?></p>
               </div>
             </div>
             <div class="row pt-3">
@@ -97,7 +96,7 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang KTP No&emsp;&emsp;&emsp;&emsp; :
+                      Pemegang KTP No&emsp;&emsp;&emsp;  :
                       <?php echo $no_ktp_ayah ?>
                     </p>
                   </div>
@@ -126,7 +125,7 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang Paspor No&emsp;&emsp;&emsp;:
+                      Pemegang Paspor No&emsp;&emsp; :
                       <?php echo $no_paspor_ayah ?>
                     </p>
                   </div>
@@ -162,7 +161,7 @@
                 <p>Nama Ibu</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : <?php echo $nama_ibu ?></p>
+                <p>&emsp;&emsp;    : <?php echo $nama_ibu ?></p>
               </div>
             </div>
             <div class="row">
@@ -170,7 +169,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : <?php echo $ttl_ibu ?></p>
+                <p>&emsp;&emsp;    : <?php echo $ttl_ibu ?></p>
               </div>
             </div>
             <div class="row">
@@ -178,7 +177,7 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : <?php echo $alamat_ibu ?></p>
+                <p>&emsp;&emsp;    : <?php echo $alamat_ibu ?></p>
               </div>
             </div>
             <div class="row pt-3">
@@ -186,7 +185,7 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang KTP No&emsp;&emsp;&emsp;&emsp; :
+                      Pemegang KTP No&emsp;&emsp;&emsp;  :
                       <?php echo $no_ktp_ibu ?>
                     </p>
                   </div>
@@ -215,13 +214,10 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang Paspor No&emsp;&emsp;&emsp;:
+                      Pemegang Paspor No&emsp;&emsp; :
                       <?php echo $no_paspor_ibu ?>
                     </p>
                   </div>
-                  <!-- <div class="col-6">
-                    <p>: (KTP)</p>
-                  </div> -->
                 </div>
               </div>
               <div class="col-4">
@@ -258,7 +254,7 @@
                 <p>Nama</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : <?php echo $nama_lengkap ?></p>
+                <p>&emsp;&emsp;   : <?php echo $nama_lengkap ?></p>
               </div>
             </div>
             <div class="row">
@@ -266,7 +262,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : <?php echo $tempat_lahir ?>, <?php echo $tanggal_lahir ?></p>
+                <p>&emsp;&emsp;   : <?php echo $tempat_lahir ?>, <?php echo $tanggal_lahir ?></p>
               </div>
             </div>
             <div class="row">
@@ -274,7 +270,7 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : <?php echo $alamat ?></p>
+                <p>&emsp;&emsp;   : <?php echo $alamat ?></p>
               </div>
             </div>
             <div class="row pt-3">
@@ -282,7 +278,7 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang NIK No&emsp;&emsp;&emsp;&emsp; :
+                      Pemegang NIK No&emsp;&emsp;&emsp;  :
                       <?php echo $nik ?>
                     </p>
                   </div>
@@ -311,7 +307,7 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang Paspor No&emsp;&emsp;&emsp;:
+                      Pemegang Paspor No&emsp;&emsp;:
                       <?php echo $no_seri ?>
                     </p>
                   </div>
@@ -346,8 +342,8 @@
                   Adalah benar, sah, dan tidak palsu atau dipalsukan serta
                   dengan ini saya menyatakan tidak keberatan terhadap anak saya
                   untuk bepergian ke luar negeri dalam rangka
-                  <strong>(Tujuan)</strong> yaitu ke negara
-                  <strong>(Negara)</strong>. Bahwa keberangkatan anak saya
+                  <strong><?php echo $tujuan ?></strong> yaitu ke negara
+                  <strong><?php echo $negara ?></strong>. Bahwa keberangkatan anak saya
                   tersebut sepenuhnya menjadi tanggungan
                   pribadi/perusahaan/kantor/lembaga pendidikan***)
                 </p>

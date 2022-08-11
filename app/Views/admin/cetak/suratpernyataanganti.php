@@ -93,9 +93,10 @@ tags will be replaced.-->
   <td class=xl157019 width=380 style='width:285pt'></td>
   <td class=xl157019 width=108 style='width:81pt'></td>
  </tr>
+ <?php $getTanggal = str_split($created_at) ?>
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl157019 style='height:15.5pt'></td>
-  <td class=xl637019 colspan=2>Kediri, <?php echo $tglpermohonan; ?></td>
+  <td class=xl637019 colspan=2>Kediri, <?php echo $getTanggal[8];?><?php echo $getTanggal[9];?>-<?php echo $getTanggal[5];?><?php echo $getTanggal[6];?>-<?php echo $getTanggal[0];?><?php echo $getTanggal[1];?><?php echo $getTanggal[2];?><?php echo $getTanggal[3];?></td>
   <td class=xl157019></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -124,7 +125,7 @@ tags will be replaced.-->
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl157019 style='height:15.5pt'></td>
   <td class=xl637019 colspan=2><span
-  style='mso-spacerun:yes'>                   </span>Dengan hormat,</td>
+  style='mso-spacerun:yes'></span>Dengan hormat,</td>
   <td class=xl157019></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -141,14 +142,14 @@ tags will be replaced.-->
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl157019 style='height:15.5pt'></td>
   <td class=xl637019>Nama</td>
-  <td class=xl157019>:<span style='mso-spacerun:yes'>  </span><?php echo $nama; ?></td>
+  <td class=xl157019>:<span style='mso-spacerun:yes'>  </span><?php echo $nama_lengkap; ?></td>
   <td class=xl157019></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl157019 style='height:15.5pt'></td>
   <td class=xl637019>Tempat/Tgl. Lahir</td>
   <td class=xl157019>:<span style='mso-spacerun:yes'> 
-  </span><?php echo $tempatlahir.' / '.$tanggallahir; ?></td>
+  </span><?php echo $tempat_lahir.' / '.$tanggal_lahir; ?></td>
   <td class=xl157019></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -173,8 +174,8 @@ tags will be replaced.-->
   <td height=21 class=xl157019 style='height:15.5pt'></td>
   <td class=xl637019 colspan=2>adalah pemegang paspor Nomor Seri<span
   style='mso-spacerun:yes'>  </span>:<span style='mso-spacerun:yes'> 
-  </span><strong><?php echo $nopaspor; ?></strong><span style='mso-spacerun:yes'>      </span>Nomor reg
-  : <?php echo $noregister; ?></td>
+  </span><strong><?php echo $no_seri; ?></strong><span style='mso-spacerun:yes'>      </span>Nomor reg
+  : <?php echo $no_reg; ?></td>
   <td class=xl157019></td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -248,8 +249,7 @@ tags will be replaced.-->
  </tr>
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl157019 style='height:15.5pt'></td>
-  <td class=xl637019 colspan=3><span style='mso-spacerun:yes'>                 
-  </span>Demikian permohonan ini saya buat, atas kebijaksanaannya saya ucapkan
+  <td class=xl637019 colspan=3></span>Demikian permohonan ini saya buat, atas kebijaksanaannya saya ucapkan
   terima</td>
  </tr>
  <tr height=21 style='height:15.5pt'>
@@ -305,7 +305,7 @@ tags will be replaced.-->
  </tr>
  <tr height=21 style='height:15.5pt'>
   <td height=21 class=xl157019 style='height:15.5pt'></td>
-  <td class=xl647019>( <?php echo $nama; ?> )</td>
+  <td class=xl647019>    ( <?php echo $nama_lengkap; ?> )</td>
   <td class=xl157019></td>
   <td class=xl157019></td>
  </tr>
@@ -331,9 +331,9 @@ tags will be replaced.-->
 <!----------------------------->
 <!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
 <!----------------------------->
-/* <script type="text/javascript">
+<script type="text/javascript">
   window.print();
-</script> */
+</script>
 </body>
 
 </html>
