@@ -12,31 +12,11 @@ class Dashboard extends BaseController
         $this->PerdimAnakModel = new PerdimAnakModel();
     }
 
-    public function total_data_baru_dewasa(){
-        $this->db->select('id_perdim');
-        $this->db->from('perdim_dewasa');
-        $this->db->where('jenis_permohonan', 'Baru');
-        $num_results = $this->db->count_all_results();
+    public function index(){
+        $data['title'] = 'Dashboard';
+        $data['perdim_dewasa'] = $this->PerdimDewasaModel->count('perdim_dewasa');
+        $data['perdim_anak'] = $this->PerdimAnakModel->count('perdim_anak');
+        return view('admin/dashboard/index', $data);
     }
 
-    public function total_data_pergantian_dewasa(){
-        $this->db->select('id_perdim');
-        $this->db->from('perdim_dewasa');
-        $this->db->where('jenis_permohonan', 'Penggantian');
-        $num_results = $this->db->count_all_results();
-    }
-
-    public function total_data_baru_anak(){
-        $this->db->select('id_perdim');
-        $this->db->from('perdim_anak');
-        $this->db->where('jenis_permohonan', 'Baru');
-        $num_results = $this->db->count_all_results();
-    }
-
-    public function total_data_pergantian_anak(){
-        $this->db->select('id_perdim');
-        $this->db->from('perdim_anak');
-        $this->db->where('jenis_permohonan', 'Penggantian');
-        $num_results = $this->db->count_all_results();
-    }
 }
