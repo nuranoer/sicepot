@@ -345,16 +345,9 @@ tags will be replaced.-->
  <tr height=28 style='height:21.0pt'>
   <td height=28 class=xl70464 colspan=3 style='height:21.0pt'><span
   style='mso-spacerun:yes'>                                         
-               </span><span style='mso-spacerun:yes'>                                          </span>SURAT PERNYATAAN</td>
+               </span><span style='mso-spacerun:yes'>                               </span>SURAT PERNYATAAN</td>
   <td class=xl70464></td>
   <td class=xl15464></td>
- </tr>
- <tr height=28 style='height:21.0pt'>
-  <td height=28 class=xl15464 style='height:21.0pt'></td>
-  <td class=xl15464></td>
-  <td class=xl15464></td>
-  <td class=xl15464></td>
-  <td class=xl70464></td>
  </tr>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl15464 style='height:14.5pt'></td>

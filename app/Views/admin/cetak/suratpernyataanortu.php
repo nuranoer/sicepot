@@ -59,7 +59,7 @@
       <!-- end of judul -->
 
       <!-- Isi -->
-      <section id="isi" style="font-size: 10.5px">
+      <section id="isi" style="font-size: 10px">
         <div class="container">
           <!-- Ayah -->
           <small>
@@ -73,7 +73,7 @@
                 <p>Nama Ayah</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : (Nama Ayah)</p>
+                <p>&emsp;&emsp;&emsp;   : <?php echo $nama_ayah ?></p>
               </div>
             </div>
             <div class="row">
@@ -81,7 +81,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : (Tempat/Tgl Lahir)</p>
+                <p>&emsp;&emsp;&emsp;   : <?php echo $ttl_ayah ?></p>
               </div>
             </div>
             <div class="row">
@@ -89,16 +89,16 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : (Alamat)</p>
+                <p>&emsp;&emsp;&emsp;   : <?php echo $alamat_ayah ?></p>
               </div>
             </div>
             <div class="row pt-3">
-              <div class="col-6">
+              <div class="col-5">
                 <div class="row">
                   <div class="col-12">
                     <p>
                       Pemegang KTP No&emsp;&emsp;&emsp;&emsp; :
-                      <strong>(KTP)</strong>
+                      <?php echo $no_ktp_ayah ?>
                     </p>
                   </div>
                   <!-- <div class="col-6">
@@ -106,58 +106,43 @@
                   </div> -->
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <div class="row">
-                  <div class="col-6">
-                    <p>tgl diberikan</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (tgl)</p>
+                  <div class="col-12">
+                    <p>tgl diberikan&emsp;: <?php echo $tgl_ktp_ayah ?></p>
                   </div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="row">
-                  <div class="col-6">
-                    <p>berlaku s/d</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (berlaku)</p>
+                  <div class="col-12">
+                    <p>berlaku s/d&emsp;: <?php echo $rentang_ktp_ayah ?></p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-5">
                 <div class="row">
                   <div class="col-12">
                     <p>
                       Pemegang Paspor No&emsp;&emsp;&emsp;:
-                      <strong>(Paspor)</strong>
+                      <?php echo $no_paspor_ayah ?>
                     </p>
                   </div>
-                  <!-- <div class="col-6">
-                    <p>: (KTP)</p>
-                  </div> -->
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <div class="row">
-                  <div class="col-6">
-                    <p>tgl diberikan</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (tgl)</p>
+                  <div class="col-12">
+                    <p>tgl diberikan&emsp;: <?php echo $tgl_paspor_ayah ?></p>
                   </div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="row">
-                  <div class="col-6">
-                    <p>berlaku s/d</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (berlaku)</p>
+                  <div class="col-12">
+                    <p>berlaku s/d&emsp;: <?php echo $rentang_paspor_ayah ?></p>
                   </div>
                 </div>
               </div>
@@ -177,7 +162,7 @@
                 <p>Nama Ibu</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : (Nama Ibu)</p>
+                <p>&emsp;&emsp;&emsp;   : <?php echo $nama_ibu ?></p>
               </div>
             </div>
             <div class="row">
@@ -185,7 +170,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : (Tempat/Tgl Lahir)</p>
+                <p>&emsp;&emsp;&emsp;   : <?php echo $ttl_ibu ?></p>
               </div>
             </div>
             <div class="row">
@@ -193,16 +178,16 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : (Alamat)</p>
+                <p>&emsp;&emsp;&emsp;   : <?php echo $alamat_ibu ?></p>
               </div>
             </div>
             <div class="row pt-3">
-              <div class="col-6">
+              <div class="col-5">
                 <div class="row">
                   <div class="col-12">
                     <p>
                       Pemegang KTP No&emsp;&emsp;&emsp;&emsp; :
-                      <strong>(KTP)</strong>
+                      <?php echo $no_ktp_ibu ?>
                     </p>
                   </div>
                   <!-- <div class="col-6">
@@ -210,34 +195,28 @@
                   </div> -->
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <div class="row">
-                  <div class="col-6">
-                    <p>tgl diberikan</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (tgl)</p>
+                  <div class="col-12">
+                    <p>tgl diberikan&emsp;: <?php echo $tgl_ktp_ibu ?></p>
                   </div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="row">
-                  <div class="col-6">
-                    <p>berlaku s/d</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (berlaku)</p>
+                  <div class="col-12">
+                    <p>berlaku s/d&emsp;: <?php echo $rentang_ktp_ibu ?></p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-5">
                 <div class="row">
                   <div class="col-12">
                     <p>
                       Pemegang Paspor No&emsp;&emsp;&emsp;:
-                      <strong>(Paspor)</strong>
+                      <?php echo $no_paspor_ibu ?>
                     </p>
                   </div>
                   <!-- <div class="col-6">
@@ -245,23 +224,17 @@
                   </div> -->
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <div class="row">
-                  <div class="col-6">
-                    <p>tgl diberikan</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (tgl)</p>
+                  <div class="col-12">
+                    <p>tgl diberikan&emsp;: <?php echo $tgl_paspor_ibu ?></p>
                   </div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="row">
-                  <div class="col-6">
-                    <p>berlaku s/d</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (berlaku)</p>
+                  <div class="col-12">
+                    <p>berlaku s/d&emsp;: <?php echo $rentang_paspor_ibu ?></p>
                   </div>
                 </div>
               </div>
@@ -285,7 +258,7 @@
                 <p>Nama</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : (Nama Anak)</p>
+                <p>&emsp;&emsp;&emsp;   : <?php echo $nama_lengkap ?></p>
               </div>
             </div>
             <div class="row">
@@ -293,7 +266,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : (Tempat/Tgl Lahir)</p>
+                <p>&emsp;&emsp;&emsp;   : <?php echo $tempat_lahir ?>, <?php echo $tanggal_lahir ?></p>
               </div>
             </div>
             <div class="row">
@@ -301,16 +274,16 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;   : (Alamat)</p>
+                <p>&emsp;&emsp;&emsp;   : <?php echo $alamat ?></p>
               </div>
             </div>
             <div class="row pt-3">
-              <div class="col-6">
+              <div class="col-5">
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang KTP No&emsp;&emsp;&emsp;&emsp; :
-                      <strong>(KTP)</strong>
+                      Pemegang NIK No&emsp;&emsp;&emsp;&emsp; :
+                      <?php echo $nik ?>
                     </p>
                   </div>
                   <!-- <div class="col-6">
@@ -318,34 +291,28 @@
                   </div> -->
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <div class="row">
-                  <div class="col-6">
-                    <p>tgl diberikan</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (tgl)</p>
+                  <div class="col-12">
+                    <p>tgl diberikan&emsp;: <?php echo $tempat_output ?></p>
                   </div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="row">
-                  <div class="col-6">
-                    <p>berlaku s/d</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (berlaku)</p>
+                  <div class="col-12">
+                    <p>berlaku s/d&emsp;: <?php echo $rentang_tgl_kia ?></p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-5">
                 <div class="row">
                   <div class="col-12">
                     <p>
                       Pemegang Paspor No&emsp;&emsp;&emsp;:
-                      <strong>(Paspor)</strong>
+                      <?php echo $no_seri ?>
                     </p>
                   </div>
                   <!-- <div class="col-6">
@@ -353,23 +320,17 @@
                   </div> -->
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <div class="row">
-                  <div class="col-6">
-                    <p>tgl diberikan</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (tgl)</p>
+                  <div class="col-12">
+                    <p>tgl diberikan&emsp;: </p>
                   </div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="row">
-                  <div class="col-6">
-                    <p>berlaku s/d</p>
-                  </div>
-                  <div class="col-6">
-                    <p>: (berlaku)</p>
+                  <div class="col-12">
+                    <p>berlaku s/d&emsp;: </p>
                   </div>
                 </div>
               </div>
@@ -411,8 +372,9 @@
             <div class="container">
               <div class="row pt-3">
                 <div class="col-12">
+                <?php $getTanggal = str_split($created_at) ?>
                   <p class="text-center">
-                    Kediri, (tanggal)<br />
+                    Kediri, <?php echo $getTanggal[8];?><?php echo $getTanggal[9];?>-<?php echo $getTanggal[5];?><?php echo $getTanggal[6];?>-<?php echo $getTanggal[0];?><?php echo $getTanggal[1];?><?php echo $getTanggal[2];?><?php echo $getTanggal[3];?><br />
                     Yang menyatakan
                   </p>
                 </div>
@@ -420,7 +382,7 @@
                   <div class="row px-4 justify-content-center">
                     <div class="col-3 text-end">
                       <br /><br /><br /><br /><br /><br /><br />
-                      <p>( Nama Ayah )</p>
+                      <p>( <?php echo $nama_ayah ?> )</p>
                     </div>
                     <div class="col-3">
                       <div class="card">
@@ -432,7 +394,7 @@
                     </div>
                     <div class="col-3">
                       <br /><br /><br /><br /><br /><br /><br />
-                      <p>( Nama Ibu )</p>
+                      <p>( <?php echo $nama_ibu ?> )</p>
                     </div>
                   </div>
                 </div>
@@ -456,3 +418,5 @@
     </script> -->
   </body>
 </html>
+
+<p style="page-break-after: always;">&nbsp;</p>
