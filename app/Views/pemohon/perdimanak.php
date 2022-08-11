@@ -60,12 +60,12 @@
 						</div>
 						<div class="col-12 form-group">
 							<label>Nama Lengkap Anak: <span class="text-danger">*</span></label>
-							<input type="text" name="nama_anak" id="nama_anak" class="form-control <?= ($validation->hasError('nama_anak')) ? 'is-invalid' : '' ?> required" value="" placeholder="">
+							<input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control <?= ($validation->hasError('nama_lengkap')) ? 'is-invalid' : '' ?> required" value="<?= old('nama_lengkap');?>" placeholder="">
 						</div>
 						<div class="col-12 form-group">
 							<label>Jenis Kelamin Anak: <span class="text-danger">*</span></label>
 							<select class="form-select <?= ($validation->hasError('jenis_kelamin')) ? 'is-invalid' : '' ?> required" name="jenis_kelamin" id="jenis_kelamin">
-								<option>-Pilih Jenis Kelamin-</option>
+								<option>-PILIH JENIS KELAMIN-</option>
 								<option value="Laki-Laki">Laki-Laki</option>
 								<option value="Perempuan">Perempuan</option>
 							</select>
@@ -73,7 +73,7 @@
 						<div class="col-12 form-group">
 							<label>Jenis Permohonan Paspor: <span class="text-danger">*</span></label>
 							<select class="form-select jenis_permohonan <?= ($validation->hasError('jenis_permohonan')) ? 'is-invalid' : '' ?> required" name="jenis_permohonan" id="jenis_permohonan">
-								<option>-Pilih Jenis Permohonan Paspor Anda-</option>
+								<option>-PILIH JENIS PERMOHONAN PASPOR ANDA-</option>
 								<option value="Baru">Baru</option>
 								<option value="Penggantian">Penggantian</option>
 							</select>
@@ -81,45 +81,45 @@
 						<div class="col-12 hidden form-group" id="alasan">
 							<label>Alasan Penggantian:</label>
 							<select class="form-select alasan_penggantian required" name="alasan_penggantian" id="alasan_penggantian">
-								<option value="">-Pilih Alasan Penggantian Paspor Anda-</option>
+								<option value="">-PILIH ALASAN PENGGANTIAN PASPOR ANDA-</option>
 								<option value="Habis Masa Berlaku">Habis Masa Berlaku</option>
 								<option value="Halaman Penuh">Halaman Penuh</option>
 							</select>
 						</div>
 						<div class="col-6 hidden form-group" id="seri_paspor">
 							<label>No Seri Paspor Anak:</label><br>
-							<input type="text" name="no_paspor_anak" id="no_paspor_anak" class="form-control" value="" placeholder="">
+							<input type="text" name="no_seri" id="no_seri" class="form-control" value="<?= old('no_seri');?>" placeholder="">
 						</div>
 						<div class="col-6 hidden form-group" id="reg_paspor">
 							<label>No Reg Paspor Anak:</label><br>
-							<input type="text" name="no_reg_anak" id="no_reg_anak" class="form-control" value="" placeholder="">
+							<input type="text" name="no_reg" id="no_reg" class="form-control" value="<?= old('no_reg');?>" placeholder="">
 						</div>
 						<div class="col-6 form-group">
 							<label>Tempat Lahir Anak: <span class="text-danger">*</span></label><br>
-							<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control required <?= ($validation->hasError('tempat_lahir')) ? 'is-invalid' : '' ?>" value="">
+							<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control required <?= ($validation->hasError('tempat_lahir')) ? 'is-invalid' : '' ?>" value="<?= old('tempat_lahir');?>">
 						</div>
 						<div class="col-6 form-group">
 							<label>Tanggal Lahir Anak: <span class="text-danger">*</span></label>
-							<input type="text" value="" class="form-control required <?= ($validation->hasError('tgl_lahir')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tgl_lahir" id="tgl_lahir" placeholder="DD-MM-YYYY">
+							<input type="text" value="" class="form-control required <?= ($validation->hasError('tanggal_lahir')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tanggal_lahir" id="tanggal_lahir" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-4 form-group">
 							<label>NIK / No. KIA: <span class="text-danger">*</span></label><br>
-							<input type="text" name="nik" id="nik" class="form-control required <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" value="" placeholder="">
+							<input type="text" name="nik" id="nik" class="form-control required <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" value="<?= old('nik');?>" placeholder="">
 							<div class="invalid-feedback">
 								NIK harus terdiri dari 16 digit.
 							</div>
 						</div>
 						<div class="col-4 form-group">
 							<label>Tgl Diberikan:</label><br>
-							<input type="text" name="tgl_berlaku_kia" id="tgl_berlaku_kia" class="form-control text-start component-datepicker format" value="" placeholder="e.g: 01-12-2012">
+							<input type="text" name="tempat_output" id="tempat_output" class="form-control text-start component-datepicker format" value="<?= old('tempat_output');?>" placeholder="e.g: 01-12-2012">
 						</div>
 						<div class="col-4 form-group">
 							<label>berlaku s/d:</label><br>
-							<input type="text" name="rentang_tgl_kia" id="rentang_tgl_kia" class="form-control" value="" placeholder="">
+							<input type="text" name="rentang_tgl_kia" id="rentang_tgl_kia" class="form-control" value="<?= old('rentang_tgl_kia');?>" placeholder="">
 						</div>
 						<div class="col-6 form-group form-anak">
 							<label>Alamat Anak: <span class="text-danger">*</span></label>
-							<input type="text" name="alamat_anak" id="alamat_anak" class="form-control required <?= ($validation->hasError('alamat_anak')) ? 'is-invalid' : '' ?>" value="">
+							<input type="text" name="alamat" id="alamat" class="form-control required <?= ($validation->hasError('alamat')) ? 'is-invalid' : '' ?>" value="<?= old('alamat');?>">
 						</div>
 						<div class="col-6 form-group">
 							<label>Alamat Anak Sama Dengan Alamat Orang Tua: <span class="text-danger">*</span></label>
@@ -130,87 +130,87 @@
 						</div>
 						<div class="col-6 hidden form-group form-ortu" id="address_ibu">
 							<label>Alamat Ibu:</label>
-							<input type="text" name="alamat_ibu" id="alamat_ibu" class="form-control required" value="">
+							<input type="text" name="alamat_ibu" id="alamat_ibu" class="form-control required" value="<?= old('alamat_ibu');?>">
 						</div>
 						<div class="col-6 hidden form-group form-ortu" id="address_ayah">
 							<label>Alamat Ayah:</label>
-							<input type="text" name="alamat_ayah" id="alamat_ayah" class="form-control required" value="">
+							<input type="text" name="alamat_ayah" id="alamat_ayah" class="form-control required" value="<?= old('alamat_ayah');?>">
 						</div>
 						<div class="col-12 form-group">
 							<label>No HP Ortu: <small>(salah satu)</small> <span class="text-danger">*</span></label>
-							<input type="text" name="no_hp" id="no_hp" class="form-control required <?= ($validation->hasError('no_hp')) ? 'is-invalid' : '' ?>" value="">
+							<input type="text" name="no_hp" id="no_hp" class="form-control required <?= ($validation->hasError('no_hp')) ? 'is-invalid' : '' ?>" value="<?= old('no_hp');?>">
 						</div>
 						<div class="col-6 form-group">
 							<label>Nama Ibu:</label><br>
-							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control" value="" placeholder="">
+							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control" value="<?= old('nama_ibu');?>" placeholder="">
 						</div>
 						<div class="col-6 form-group">
 							<label>Tempat/Tanggal Lahir Ibu:</label><br>
-							<input type="text" name="ttl_ibu" id="ttl_ibu" class="form-control" value="" placeholder="Kediri, 03-12-1986">
+							<input type="text" name="ttl_ibu" id="ttl_ibu" class="form-control" value="<?= old('ttl_ibu');?>" placeholder="Kediri, 03-12-1986">
 						</div>
 						
 						<div class="col-4 form-group">
 							<label>No. KTP Ibu:</label><br>
-							<input type="text" name="no_ktp_ibu" id="no_ktp_ibu" class="form-control" value="" placeholder="">
+							<input type="text" name="no_ktp_ibu" id="no_ktp_ibu" class="form-control" value="<?= old('no_ktp_ibu');?>" placeholder="">
 						</div>
 						<div class="col-4 form-group">
 							<label>Tgl Diberikan KTP Ibu:</label><br>
-							<input type="text" name="tgl_ktp_ibu" id="tgl_ktp_ibu" class="form-control text-start component-datepicker format" value="" placeholder="DD-MM-YYYY">
+							<input type="text" name="tgl_ktp_ibu" id="tgl_ktp_ibu" class="form-control text-start component-datepicker format" value="<?= old('tgl_ktp_ibu');?>" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-4 form-group">
 							<label>Berlaku s/d:</label><br>
-							<input type="text" name="rentang_ktp_ibu" id="rentang_ktp_ibu" class="form-control" value="" placeholder="">
+							<input type="text" name="rentang_ktp_ibu" id="rentang_ktp_ibu" class="form-control" value="<?= old('rentang_ktp_ibu');?>" placeholder="">
 						</div>
 						<div class="col-4 form-group">
 							<label>No. Paspor Ibu:</label><br>
-							<input type="text" name="no_paspor_ibu" id="no_paspor_ibu" class="form-control" value="" placeholder="">
+							<input type="text" name="no_paspor_ibu" id="no_paspor_ibu" class="form-control" value="<?= old('no_paspor_ibu');?>" placeholder="">
 						</div>
 						<div class="col-4 form-group">
 							<label>Tgl Diberikan Paspor Ibu:</label><br>
-							<input type="text" name="tgl_paspor_ibu" id="tgl_paspor_ibu" class="form-control text-start component-datepicker format" value="" placeholder="DD-MM-YYYY">
+							<input type="text" name="tgl_paspor_ibu" id="tgl_paspor_ibu" class="form-control text-start component-datepicker format" value="<?= old('tgl_paspor_ibu');?>" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-4 form-group">
 							<label>Berlaku s/d:</label><br>
-							<input type="text" name="rentang_paspor_ibu" id="rentang_paspor_ibu" class="form-control text-start component-datepicker format" value="" placeholder="DD-MM-YYYY">
+							<input type="text" name="rentang_paspor_ibu" id="rentang_paspor_ibu" class="form-control text-start component-datepicker format" value="<?= old('rentang_paspor_ibu');?>" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-6 form-group">
 							<label>Nama Ayah:</label><br>
-							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control" value="" placeholder="">
+							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control" value="<?= old('nama_ayah');?>" placeholder="">
 						</div>
 						<div class="col-6 form-group">
 							<label>Tempat/Tanggal Lahir Ayah:</label><br>
-							<input type="text" name="ttl_ayah" id="ttl_ayah" class="form-control" value="" placeholder="Kediri, 02-02-1985">
+							<input type="text" name="ttl_ayah" id="ttl_ayah" class="form-control" value="<?= old('ttl_ayah');?>" placeholder="Kediri, 02-02-1985">
 						</div>
 						
 						<div class="col-4 form-group">
 							<label>No. KTP Ayah:</label><br>
-							<input type="text" name="no_ktp_ayah" id="no_ktp_ayah" class="form-control" value="" placeholder="">
+							<input type="text" name="no_ktp_ayah" id="no_ktp_ayah" class="form-control" value="<?= old('no_ktp_ayah');?>" placeholder="">
 						</div>
 						<div class="col-4 form-group">
 							<label>Tgl Diberikan KTP Ayah:</label><br>
-							<input type="text" name="tgl_ktp_ayah" id="tgl_ktp_ayah" class="form-control text-start component-datepicker format" value="" placeholder="DD-MM-YYYY">
+							<input type="text" name="tgl_ktp_ayah" id="tgl_ktp_ayah" class="form-control text-start component-datepicker format" value="<?= old('tgl_ktp_ayah');?>" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-4 form-group">
 							<label>Berlaku s/d:</label><br>
-							<input type="text" name="rentang_ktp_ayah" id="rentang_ktp_ayah" class="form-control" value="" placeholder="">
+							<input type="text" name="rentang_ktp_ayah" id="rentang_ktp_ayah" class="form-control" value="<?= old('rentang_ktp_ayah');?>" placeholder="">
 						</div>
 						<div class="col-4 form-group">
 							<label>No. Paspor Ayah:</label><br>
-							<input type="text" name="no_paspor_ayah" id="no_paspor_ayah" class="form-control" value="" placeholder="">
+							<input type="text" name="no_paspor_ayah" id="no_paspor_ayah" class="form-control" value="<?= old('no_paspor_ayah');?>" placeholder="">
 						</div>
 						<div class="col-4 form-group">
 							<label>Tgl Diberikan Paspor Ayah:</label><br>
-							<input type="text" name="tgl_paspor_ayah" id="tgl_paspor_ayah" class="form-control text-start component-datepicker format" value="" placeholder="DD-MM-YYYY">
+							<input type="text" name="tgl_paspor_ayah" id="tgl_paspor_ayah" class="form-control text-start component-datepicker format" value="<?= old('tgl_paspor_ayah');?>" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-4 form-group">
 							<label>Berlaku s/d:</label><br>
-							<input type="text" name="rentang_paspor_ayah" id="rentang_paspor_ayah" class="form-control text-start component-datepicker format" value="" placeholder="DD-MM-YYYY">
+							<input type="text" name="rentang_paspor_ayah" id="rentang_paspor_ayah" class="form-control text-start component-datepicker format" value="<?= old('rentang_paspor_ayah');?>" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-4 form-group">
 							<label>Tujuan Pengajuan Paspor: <span class="text-danger">*</span></label>
 							<select class="form-select tujuan required <?= ($validation->hasError('tujuan')) ? 'is-invalid' : '' ?>" name="tujuan" id="tujuan">
-								<option>-Pilih Tujuan Anda-</option>
-								<option value="Wisata">Wisata</option>
+								<option>-PILIH TUJUAN PENGAJUAN ANDA-</option>
+								<option value="Wisata" >Wisata</option>
 								<option value="Kunjungan">Kunjungan</option>
 								<option value="Belajar">Belajar</option>
 								<option value="Umroh">Umroh</option>
@@ -221,27 +221,19 @@
 						<div class="col-4 form-group">
 							<label>Ingin Tambah (Endorse) Nama? <span class="text-danger">*</span></label>
 							<select class="form-select endorse required" name="endorse" id="endorse">
-								<option>-Pilihan Anda-</option>
+								<option>-PILIHAN ANDA-</option>
 								<option value="Ya">Ya</option>
 								<option value="Tidak">Tidak</option>
 							</select>
 						</div>
 						<div class="col-4 hidden form-group" id="endorse_nama">
 							<label>Nama Kakek:</label><br>
-							<input type="text" name="nama_kakek" id="nama_kakek" class="form-control" value="" placeholder="">
+							<input type="text" name="nama_kakek" id="nama_kakek" class="form-control" value="<?= old('nama_kakek');?>" placeholder="">
 						</div>
 						<div class="col-6 form-group">
 							<label>Negara Tujuan: <span class="text-danger">*</span></label><br>
 							<input type="text" name="negara" id="negara" class="form-control required <?= ($validation->hasError('negara')) ? 'is-invalid' : '' ?>" value="" placeholder="">
 						</div>
-						<!-- <div class="col-6 form-group">
-							<label>Status Sipil: <span class="text-danger">*</span></label>
-							<select class="form-select tujuan" name="status_sipil" id="status_sipil">
-								<option>-Pilih Status Sipil Anak-</option>
-								<option value="Kawin">Kawin</option>
-								<option value="Belum Kawin">Belum Kawin</option>
-							</select>
-						</div> -->
 						<div class="col-6 form-group">
 							<label>Pekerjaan: <span class="text-danger">*</span></label>
 							<input type="text" name="pekerjaan" id="pekerjaan" class="form-control required <?= ($validation->hasError('pekerjaan')) ? 'is-invalid' : '' ?>" value="">
@@ -251,8 +243,6 @@
 				
 				<div class="col-12 center">
 					<button class="btn btn-secondary btn-lg" href="/cetak" type="submit">Submit</button>
-					<!-- <a class="btn btn-secondary btn-lg"></a> -->
-					<!-- <input type="hidden" name="prefix" value="checkout-form-"> -->
 				</div>
 				
 			</form>

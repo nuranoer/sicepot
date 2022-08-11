@@ -28,7 +28,7 @@
         <div class="container">
           <div class="row">
             <div class="col-8"></div>
-            <div class="col-4" style="font-size: 8px">
+            <div class="col-4" style="font-size: 10px">
               <small>
                 Lampiran : <br />
                 Surat Edaran Direktur Jenderal keimigrasian <br />
@@ -48,7 +48,7 @@
           <div class="col text-center">
             <h6
               class="fw-bold text-uppercase text-decoration-underline"
-              style="font-size: 15px"
+              style="font-size: 13px"
             >
               surat pernyataan orang tua
             </h6>
@@ -59,7 +59,7 @@
       <!-- end of judul -->
 
       <!-- Isi -->
-      <section id="isi" style="font-size: 13px">
+      <section id="isi" style="font-size: 10.5px">
         <div class="container">
           <!-- Ayah -->
           <small>
@@ -73,7 +73,7 @@
                 <p>Nama Ayah</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;: (Nama Ayah)</p>
+                <p>&emsp;&emsp;&emsp;   : (Nama Ayah)</p>
               </div>
             </div>
             <div class="row">
@@ -81,7 +81,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;: (Tempat/Tgl Lahir)</p>
+                <p>&emsp;&emsp;&emsp;   : (Tempat/Tgl Lahir)</p>
               </div>
             </div>
             <div class="row">
@@ -89,7 +89,7 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;: (Alamat)</p>
+                <p>&emsp;&emsp;&emsp;   : (Alamat)</p>
               </div>
             </div>
             <div class="row pt-3">
@@ -177,7 +177,7 @@
                 <p>Nama Ibu</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;: (Nama Ibu)</p>
+                <p>&emsp;&emsp;&emsp;   : (Nama Ibu)</p>
               </div>
             </div>
             <div class="row">
@@ -185,7 +185,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;: (Tempat/Tgl Lahir)</p>
+                <p>&emsp;&emsp;&emsp;   : (Tempat/Tgl Lahir)</p>
               </div>
             </div>
             <div class="row">
@@ -193,7 +193,7 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;: (Alamat)</p>
+                <p>&emsp;&emsp;&emsp;   : (Alamat)</p>
               </div>
             </div>
             <div class="row pt-3">
@@ -285,7 +285,7 @@
                 <p>Nama</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;: (Nama Anak)</p>
+                <p>&emsp;&emsp;&emsp;   : (Nama Anak)</p>
               </div>
             </div>
             <div class="row">
@@ -293,7 +293,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;: (Tempat/Tgl Lahir)</p>
+                <p>&emsp;&emsp;&emsp;   : (Tempat/Tgl Lahir)</p>
               </div>
             </div>
             <div class="row">
@@ -301,7 +301,7 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;&emsp;: (Alamat)</p>
+                <p>&emsp;&emsp;&emsp;   : (Alamat)</p>
               </div>
             </div>
             <div class="row pt-3">

@@ -43,7 +43,7 @@
                         <tr>
                             <th scope="row"><?= $no++; ?></th>
                             <td><?= $pa['jenis_permohonan']; ?></td>
-                            <td><?= $pa['nama_anak']; ?></td>
+                            <td><?= $pa['nama_lengkap']; ?></td>
                             <td><?= $pa['jenis_kelamin']; ?></td>
                             <td><?= $pa['nik']; ?></td>
                             <td><?= $pa['created_at']; ?></td>
