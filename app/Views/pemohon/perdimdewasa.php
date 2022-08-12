@@ -168,7 +168,7 @@
 					</div>
 				</div>
 				<div class="col-12 center">
-					<button class="btn btn-secondary btn-lg" href="/cetak" type="submit">Submit</button>
+					<button class="btn btn-secondary btn-lg" href="/cetak-perdim-dewasa/" type="submit">Submit</button>
 					<!-- <a class="btn btn-secondary btn-lg"></a> -->
 					<!-- <input type="hidden" name="prefix" value="checkout-form-"> -->
 				</div>

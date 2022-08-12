@@ -242,7 +242,7 @@
 				</div>
 				
 				<div class="col-12 center">
-					<button class="btn btn-secondary btn-lg" href="/cetak" type="submit">Submit</button>
+					<button class="btn btn-secondary btn-lg" href="/cetak-perdim-anak/" type="submit">Submit</button>
 				</div>
 				
 			</form>
