@@ -131,9 +131,7 @@
 										<img src="HTML/images/logoimigrasi.png" alt="Image" class="footer-logo" width="100" />
 
 										<p>
-											We believe in <strong>Simple</strong>,
-											<strong>Creative</strong> &amp;
-											<strong>Flexible</strong> Design Standards.
+											Kami Siap Melayani <strong>Dengan Tulus</strong>
 										</p>
 
 										<div style="
@@ -142,14 +140,12 @@
 										background-size: 100%;
 										">
 											<address>
-												<strong>Headquarters:</strong><br />
+												<strong>Alamat Kantor:</strong><br />
 												Jl. Jawa No. 135, Bedrek Selatan, Desa Grogol, Kec.Grogol, 64151<br />
 												Kab.Kediri, Jawa Timur<br />
 											</address>
 											<abbr title="Phone Number"><strong>Phone:</strong></abbr>
-											+62 81133378284<br />
-											<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11
-											4752 1433<br />
+											(0354) 688307<br />
 											<abbr title="Email Address"><strong>Email:</strong></abbr>
 											imigrasi.kediri@gmail.com
 										</div>
@@ -167,7 +163,7 @@
 				<div class="container">
 					<div class="row col-mb-30">
 						<div class="col-md-6 text-center text-md-start">
-							Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br />
+							Copyrights &copy; Internship Imigrasi Kediri (2022)<br />
 							<div class="copyright-links">
 								<a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
 							</div>
@@ -220,9 +216,8 @@
 
 							<i class="icon-envelope2"></i> imigrasi.kediri@gmail.com
 							<span class="middot">&middot;</span>
-							<i class="icon-headphones"></i> +62 81133378284
+							<i class="icon-headphones"></i> (0354) 688307
 							<span class="middot">&middot;</span>
-							<i class="icon-skype2"></i> CanvasOnSkype
 						</div>
 					</div>
 				</div>

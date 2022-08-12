@@ -30,7 +30,7 @@ class Admin extends BaseController
     }
     public function dataperdimanak()
     {
-        $data['title'] = "Data Perdim Dewasa";
+        $data['title'] = "Data Perdim Anak";
         $perdimanakModel = new \App\Models\PerdimAnakModel();
         $perdimanak = $perdimanakModel->findAll();
         $data = array('perdimanak' => $perdimanak);

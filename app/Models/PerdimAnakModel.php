@@ -28,7 +28,7 @@ class PerdimAnakModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
-    //SHOW DATA PERDIM DEWASA
+    //SHOW DATA PERDIM ANAK
     public function getPerdimAnak()
     {
         return $this->findAll();
