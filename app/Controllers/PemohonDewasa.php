@@ -18,10 +18,9 @@ class PemohonDewasa extends BaseController
         ];
         return view('pemohon/perdimdewasa', $data);
     }
+    
     public function createperdimdewasa()
     {
-        // dd($this->request->getVar());
-
         //validate input
         if (!$this->validate([
             'jenis_permohonan' => 'required',

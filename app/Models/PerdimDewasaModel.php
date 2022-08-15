@@ -64,28 +64,6 @@ class PerdimDewasaModel extends Model
                         ->first();
         }
     }
-    
-    public function getUmrohPerdim($id = false)
-    {
-        if($id == false){
-            return $this->findAll();
-        } else {
-            return $this->where(['id_perdim' => $id])
-                        ->where(['tujuan' => 'Umroh'])
-                        ->first();
-        }
-    }
-
-    public function getHajiPerdim($id = false)
-    {
-        if($id == false){
-            return $this->findAll();
-        } else {
-            return $this->where(['id_perdim' => $id])
-                        ->where(['tujuan' => 'Haji'])
-                        ->first();
-        }
-    }
 
     public function getEndorse($id = false)
     {
@@ -97,10 +75,64 @@ class PerdimDewasaModel extends Model
                         ->first();
         }
     }
-
-    public function total()
+    
+    public function getLatestId()
     {
-        return $this->countAll();
+        return $this->orderBy('id_perdim','desc')->limit(1);
+        // return $this->selectMax('id_perdim')->first();
+        // $id = $this->selectMax('id_perdim')->first();
+        // return $this->where(['id_perdim' => $id])->findAll();
+        // return $this->where(['id_perdim' => $this->selectMax('id_perdim')]);
+        // $this->db->insert_id();
+                    // ->orderBy('id_perdim')->limit(1);
     }
+
+    public function getLatestBaru()
+    {
+        return $this->where(['jenis_permohonan' => 'Baru'])
+                    ->where(['id_perdim' => $this->getLatestId()]);
+    }
+
+    public function getLatestPenggantian()
+    {
+        return $this->where(['id_perdim' => $this->getLatestId()])
+                    ->where(['jenis_permohonan' => 'Penggantian']);
+        // if($id == false){
+        //     return $this->findAll();
+        // } else {
+        // }
+    }
+
+    public function getLatestEndorse()
+    {
+        return $this->where(['id_perdim' => $this->getLatestId()])
+                    ->where(['endorse' => 'Ya']);
+        // if($id == false){
+        //     return $this->findAll();
+        // } else {
+        // }
+    }
+    
+    // public function getUmrohPerdim($id = false)
+    // {
+    //     if($id == false){
+    //         return $this->findAll();
+    //     } else {
+    //         return $this->where(['id_perdim' => $id])
+    //                     ->where(['tujuan' => 'Umroh'])
+    //                     ->first();
+    //     }
+    // }
+
+    // public function getHajiPerdim($id = false)
+    // {
+    //     if($id == false){
+    //         return $this->findAll();
+    //     } else {
+    //         return $this->where(['id_perdim' => $id])
+    //                     ->where(['tujuan' => 'Haji'])
+    //                     ->first();
+    //     }
+    // }
     
 }

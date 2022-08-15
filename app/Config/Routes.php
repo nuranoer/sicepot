@@ -44,10 +44,12 @@ $routes->get('/praperdim', 'Home::praperdim');
 //Pemohon Dewasa
 $routes->get('/perdimdewasa', 'PemohonDewasa::perdimdewasa');
 $routes->post('/createperdimdewasa', 'PemohonDewasa::createperdimdewasa');
+$routes->get('/cetak-perdim-dewasa', 'CetakPerdim::cetakperdim');
 
 //Pemohon Anak
 $routes->get('/perdimanak', 'PemohonAnak::perdimanak');
 $routes->post('/createperdimanak', 'PemohonAnak::createperdimanak');
+$routes->get('/cetak-perdim-anak', 'CetakPerdim::cetakperdim');
 
 //Halaman Admin
 $routes->get('/loginadmin', 'Admin::login');

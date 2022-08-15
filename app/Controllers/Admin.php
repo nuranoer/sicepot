@@ -13,12 +13,6 @@ class Admin extends BaseController
 
     public function dashboard()
     {
-        // $data['title'] = 'Dashboard';
-        // $perdimanakModel = new \App\Models\PerdimAnakModel();
-        // $perdimdewasaModel = new \App\Models\PerdimDewasaModel();
-        // $perdimanak = $perdimanakModel->countAllResults();
-        // $perdimdewasa = $perdimdewasaModel->countAllResults();
-        // $data = array('perdimanak'=> $perdimanak, 'perdimdewasa' => $perdimdewasa);
         $data = [
             'title' => 'Dashboard',
             'total_anak_baru' => $this->TotalModel->total_anak_baru(),
@@ -28,6 +22,7 @@ class Admin extends BaseController
         ];
         return view('admin/dashboard', $data);
     }
+    
     public function dataperdimanak()
     {
         $data['title'] = "Data Perdim Anak";

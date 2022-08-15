@@ -31,6 +31,9 @@
 <section id="content">
 	<div class="content-wrap">
 		<div class="container clearfix">
+			<div class="style-msg successmsg">
+					<div class="sb-msg"><i class="icon-check"></i><strong>Success!</strong> Klik <a href="/cetak-perdim-dewasa"><strong>di sini</strong></a> untuk print</div>
+				</div>
 			<?php if(session()->getFlashdata('success')) : ?>
 				<div class="style-msg successmsg">
 					<div class="sb-msg"><i class="icon-check"></i><strong>Success!</strong> <?= session()->getFlashdata('success'); ?></div>
@@ -168,7 +171,7 @@
 					</div>
 				</div>
 				<div class="col-12 center">
-					<button class="btn btn-secondary btn-lg" href="/cetak-perdim-dewasa/" type="submit">Submit</button>
+					<button class="btn btn-secondary btn-lg" href="/cetak-perdim-dewasa" type="submit">Submit</button>
 					<!-- <a class="btn btn-secondary btn-lg"></a> -->
 					<!-- <input type="hidden" name="prefix" value="checkout-form-"> -->
 				</div>
