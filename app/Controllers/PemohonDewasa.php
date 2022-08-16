@@ -21,6 +21,26 @@ class PemohonDewasa extends BaseController
     
     public function createperdimdewasa()
     {
+        $data = [
+                'jenis_permohonan' => $this->request->getVar('jenis_permohonan'),
+                'nama_lengkap' => $this->request->getVar('nama_lengkap'),
+                'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
+                'tempat_lahir' => $this->request->getVar('tempat_lahir'),
+                'tanggal_lahir' => $this->request->getVar('tanggal_lahir'),
+                'nik' => $this->request->getVar('nik'),
+                'tempat_output' => $this->request->getVar('tempat_output'),
+                'alamat' => $this->request->getVar('alamat'),
+                'no_hp' => $this->request->getVar('no_hp'),
+                'nama_ibu' => $this->request->getVar('nama_ibu'),
+                'nama_ayah' => $this->request->getVar('nama_ayah'),
+                'nama_kakek' => $this->request->getVar('nama_kakek'),
+                'pekerjaan' => $this->request->getVar('pekerjaan'),
+                'status_sipil' => $this->request->getVar('status_sipil'),
+                'tujuan' => $this->request->getVar('tujuan'),
+                'alasan_penggantian' => $this->request->getVar('alasan_penggantian'),
+                'no_seri' => $this->request->getVar('no_seri'),
+                'no_reg' => $this->request->getVar('no_reg')
+        ];
         //validate input
         if (!$this->validate([
             'jenis_permohonan' => 'required',
@@ -42,29 +62,20 @@ class PemohonDewasa extends BaseController
 
         else{
 
-            $this->PerdimDewasaModel->save([
-                'jenis_permohonan' => $this->request->getVar('jenis_permohonan'),
-                'nama_lengkap' => $this->request->getVar('nama_lengkap'),
-                'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
-                'tempat_lahir' => $this->request->getVar('tempat_lahir'),
-                'tanggal_lahir' => $this->request->getVar('tanggal_lahir'),
-                'nik' => $this->request->getVar('nik'),
-                'tempat_output' => $this->request->getVar('tempat_output'),
-                'alamat' => $this->request->getVar('alamat'),
-                'no_hp' => $this->request->getVar('no_hp'),
-                'nama_ibu' => $this->request->getVar('nama_ibu'),
-                'nama_ayah' => $this->request->getVar('nama_ayah'),
-                'nama_kakek' => $this->request->getVar('nama_kakek'),
-                'pekerjaan' => $this->request->getVar('pekerjaan'),
-                'status_sipil' => $this->request->getVar('status_sipil'),
-                'tujuan' => $this->request->getVar('tujuan'),
-                'alasan_penggantian' => $this->request->getVar('alasan_penggantian'),
-                'no_seri' => $this->request->getVar('no_seri'),
-                'no_reg' => $this->request->getVar('no_reg')
-            ]);
-    
-            session()->setFlashdata('success', 'Data berhasil ditambahkan!');
-            return redirect()->to('/perdimdewasa');
+            $this->PerdimDewasaModel->insert($data);
+            $id = $this->PerdimDewasaModel->insertID();
+
+            $perdimdewasa = $this->PerdimDewasaModel->findAll();
+            $data = [
+                'perdimdewasa' => $perdimdewasa
+            ];
+            // return view('admin/perdimdewasa', $data);
+            // dd($dd);
+            // $this->PerdimDewasaModel->save([
+
+            // ]);
+            session()->setFlashdata('success', 'ID Print anda '.$id);
+            return view('/perdimdewasa',$data);
 
         }
     }

@@ -31,13 +31,21 @@
 <section id="content">
 	<div class="content-wrap">
 		<div class="container clearfix">
-			<div class="style-msg successmsg">
+			<!-- <div class="style-msg successmsg">
 					<div class="sb-msg"><i class="icon-check"></i><strong>Success!</strong> Klik <a href="/cetak-perdim-dewasa"><strong>di sini</strong></a> untuk print</div>
-				</div>
-			<?php if(session()->getFlashdata('success')) : ?>
+				</div> -->
+				<?php foreach ($perdimdewasa as $pd) : ?>
 				<div class="style-msg successmsg">
-					<div class="sb-msg"><i class="icon-check"></i><strong>Success!</strong> <?= session()->getFlashdata('success'); ?></div>
+					<div class="sb-msg"><i class="icon-check"></i><strong>Success! </strong> <?= session()->getFlashdata('success'); ?>. Klik <a href="/print-perdim/<?= $pd['id_perdim']; ?>"></a></div>
 				</div>
+				<?php endforeach; ?>
+
+			<?php if(session()->getFlashdata('success')) : ?>
+				<?php foreach ($perdimdewasa as $pd) : ?>
+				<div class="style-msg successmsg">
+					<div class="sb-msg"><i class="icon-check"></i><strong>Success! </strong> <?= session()->getFlashdata('success'); ?>. Klik <a href="/print-perdim/<?= $pd['id_perdim']; ?>"></a></div>
+				</div>
+				<?php endforeach; ?>
 			<?php endif; ?>
 
 			<?php if(session()->getFlashdata('error')) : ?>

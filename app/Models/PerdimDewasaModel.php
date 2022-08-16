@@ -76,36 +76,31 @@ class PerdimDewasaModel extends Model
         }
     }
     
-    public function getLatestId()
+    public function getLatestId($id)
     {
-        return $this->orderBy('id_perdim','desc')->limit(1);
-        // return $this->selectMax('id_perdim')->first();
-        // $id = $this->selectMax('id_perdim')->first();
-        // return $this->where(['id_perdim' => $id])->findAll();
-        // return $this->where(['id_perdim' => $this->selectMax('id_perdim')]);
-        // $this->db->insert_id();
-                    // ->orderBy('id_perdim')->limit(1);
+        $id = $this->db->insertID();
+        return $this->where(['id_perdim' => $id])
+                    ->first();
     }
 
-    public function getLatestBaru()
+    public function getLatestBaru($id)
     {
-        return $this->where(['jenis_permohonan' => 'Baru'])
-                    ->where(['id_perdim' => $this->getLatestId()]);
+        $id = $this->db->insertID();
+        return $this->where(['id_perdim' => $id])
+                    ->where(['jenis_permohonan' => 'Baru']);
     }
 
-    public function getLatestPenggantian()
+    public function getLatestPenggantian($id)
     {
-        return $this->where(['id_perdim' => $this->getLatestId()])
+        $id = $this->db->insertID();
+        return $this->where(['id_perdim' => $id])
                     ->where(['jenis_permohonan' => 'Penggantian']);
-        // if($id == false){
-        //     return $this->findAll();
-        // } else {
-        // }
     }
 
-    public function getLatestEndorse()
+    public function getLatestEndorse($id)
     {
-        return $this->where(['id_perdim' => $this->getLatestId()])
+        $id = $this->db->insertID();
+        return $this->where(['id_perdim' => $id])
                     ->where(['endorse' => 'Ya']);
         // if($id == false){
         //     return $this->findAll();

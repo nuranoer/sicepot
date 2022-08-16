@@ -44,7 +44,7 @@ $routes->get('/praperdim', 'Home::praperdim');
 //Pemohon Dewasa
 $routes->get('/perdimdewasa', 'PemohonDewasa::perdimdewasa');
 $routes->post('/createperdimdewasa', 'PemohonDewasa::createperdimdewasa');
-$routes->get('/cetak-perdim-dewasa', 'CetakPerdim::cetakperdim');
+$routes->get('/print-perdim/(:any)', 'PemohonDewasa::cetakperdim/$1');
 
 //Pemohon Anak
 $routes->get('/perdimanak', 'PemohonAnak::perdimanak');
