@@ -33,6 +33,7 @@ class PemohonDewasa extends BaseController
                 'no_hp' => $this->request->getVar('no_hp'),
                 'nama_ibu' => $this->request->getVar('nama_ibu'),
                 'nama_ayah' => $this->request->getVar('nama_ayah'),
+                'endorse' => $this->request->getVar('endorse'),
                 'nama_kakek' => $this->request->getVar('nama_kakek'),
                 'pekerjaan' => $this->request->getVar('pekerjaan'),
                 'status_sipil' => $this->request->getVar('status_sipil'),
@@ -64,18 +65,12 @@ class PemohonDewasa extends BaseController
 
             $this->PerdimDewasaModel->insert($data);
             $id = $this->PerdimDewasaModel->insertID();
+            return redirect()->to('/cetak-perdim-dewasa/' . $id);
 
-            $perdimdewasa = $this->PerdimDewasaModel->findAll();
-            $data = [
-                'perdimdewasa' => $perdimdewasa
-            ];
-            // return view('admin/perdimdewasa', $data);
-            // dd($dd);
-            // $this->PerdimDewasaModel->save([
-
-            // ]);
-            session()->setFlashdata('success', 'ID Print anda '.$id);
-            return view('/perdimdewasa',$data);
+            // session()->setFlashdata('success', 'ID Print anda '.$id);
+            // $perdimdewasa = $this->PerdimDewasaModel->findAll();
+            // $data = ['perdimdewasa' => $perdimdewasa];
+            // return view('/perdimdewasa',$data);
 
         }
     }

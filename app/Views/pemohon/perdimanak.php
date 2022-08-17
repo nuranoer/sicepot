@@ -31,11 +31,6 @@
 <section id="content">
 	<div class="content-wrap">
 		<div class="container clearfix">
-			<?php if(session()->getFlashdata('success')) : ?>
-				<div class="style-msg successmsg">
-					<div class="sb-msg"><i class="icon-check"></i><strong>Success!</strong> <?= session()->getFlashdata('success'); ?></div>
-				</div>
-			<?php endif; ?>
 
 			<?php if(session()->getFlashdata('error')) : ?>
 				<div class="style-msg errormsg">

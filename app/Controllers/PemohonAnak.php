@@ -20,32 +20,8 @@ class PemohonAnak extends BaseController
     }
     public function createperdimanak()
     {
-        //validate input
-        if(!$this->validate([
-            'jenis_permohonan' => 'required',
-            'nama_lengkap' => 'required',
-            'jenis_kelamin' => 'required',
-            'nik' => 'required|is_unique[perdim_anak.nik]|max_length[16]', 
-            'tempat_lahir' => 'required',
-            'tanggal_lahir' => 'required',
-            'alamat' => 'required',
-            'no_hp' => 'required|max_length[16]',
-            'tujuan' => 'required',
-            'endorse' => 'required',
-            'negara' => 'required',
-            'pekerjaan' => 'required',
-        ])) {
-            // $validation = \Config\Services::validation();
-            session()->setFlashdata('error','Mohon cek kembali data Anda!');
-            return redirect()->to('/perdimanak')->withInput();
-        } 
-        
-        else {
-            
-            if ($this->request->getVar('address_ortu')=='Ya')
-            {
-                $this->PerdimAnakModel->save([
-                    'jenis_permohonan' => $this->request->getVar('jenis_permohonan'),
+        $data = [
+            'jenis_permohonan' => $this->request->getVar('jenis_permohonan'),
                     'nama_lengkap' => $this->request->getVar('nama_lengkap'),
                     'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
                     'tempat_lahir' => $this->request->getVar('tempat_lahir'),
@@ -81,13 +57,10 @@ class PemohonAnak extends BaseController
                     'pekerjaan' => $this->request->getVar('pekerjaan'),
                     'negara' => $this->request->getVar('negara'),
                     'tujuan' => $this->request->getVar('tujuan'),
-                ]);
-            } 
-            
-            elseif ($this->request->getVar('address_ortu')=='Tidak') 
-            {
-                $this->PerdimAnakModel->save([
-                    'jenis_permohonan' => $this->request->getVar('jenis_permohonan'),
+        ];
+
+        $data2 = [
+            'jenis_permohonan' => $this->request->getVar('jenis_permohonan'),
                     'nama_lengkap' => $this->request->getVar('nama_lengkap'),
                     'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
                     'tempat_lahir' => $this->request->getVar('tempat_lahir'),
@@ -123,11 +96,43 @@ class PemohonAnak extends BaseController
                     'pekerjaan' => $this->request->getVar('pekerjaan'),
                     'negara' => $this->request->getVar('negara'),
                     'tujuan' => $this->request->getVar('tujuan'),
-                ]);
+        ];
+
+        //validate input
+        if(!$this->validate([
+            'jenis_permohonan' => 'required',
+            'nama_lengkap' => 'required',
+            'jenis_kelamin' => 'required',
+            'nik' => 'required|is_unique[perdim_anak.nik]|max_length[16]', 
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
+            'alamat' => 'required',
+            'no_hp' => 'required|max_length[16]',
+            'tujuan' => 'required',
+            'endorse' => 'required',
+            'negara' => 'required',
+            'pekerjaan' => 'required',
+        ])) {
+            session()->setFlashdata('error','Mohon cek kembali data Anda!');
+            return redirect()->to('/perdimanak')->withInput();
+        } 
+        
+        else {
+            
+            if ($this->request->getVar('address_ortu')=='Ya')
+            {
+                $this->PerdimAnakModel->insert($data);
+            } 
+            
+            elseif ($this->request->getVar('address_ortu')=='Tidak') 
+            {
+                $this->PerdimAnakModel->insert($data2);
             };
     
-            session()->setFlashdata('success', 'Data berhasil ditambahkan!');
-            return redirect()->to('/perdimanak');
+            $id = $this->PerdimAnakModel->insertID();
+            return redirect()->to('/cetak-perdim-anak/' . $id);
+            // session()->setFlashdata('success', 'Data berhasil ditambahkan!');
+            // return redirect()->to('/perdimanak');
         }
     }
 }

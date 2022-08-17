@@ -16,7 +16,7 @@ class PerdimDewasaModel extends Model
 
     protected $allowedFields = ['jenis_permohonan', 'nama_lengkap','jenis_kelamin',
     'tempat_lahir','tanggal_lahir','nik','tempat_output','alamat','no_hp','nama_ibu',
-    'nama_ayah','nama_kakek','pekerjaan','status_sipil','tujuan', 'alasan_penggantian',
+    'nama_ayah','endorse','nama_kakek','pekerjaan','status_sipil','tujuan','alasan_penggantian',
     'no_seri','no_reg'];
 
     protected $useTimestamps = true;
@@ -75,59 +75,4 @@ class PerdimDewasaModel extends Model
                         ->first();
         }
     }
-    
-    public function getLatestId($id)
-    {
-        $id = $this->db->insertID();
-        return $this->where(['id_perdim' => $id])
-                    ->first();
-    }
-
-    public function getLatestBaru($id)
-    {
-        $id = $this->db->insertID();
-        return $this->where(['id_perdim' => $id])
-                    ->where(['jenis_permohonan' => 'Baru']);
-    }
-
-    public function getLatestPenggantian($id)
-    {
-        $id = $this->db->insertID();
-        return $this->where(['id_perdim' => $id])
-                    ->where(['jenis_permohonan' => 'Penggantian']);
-    }
-
-    public function getLatestEndorse($id)
-    {
-        $id = $this->db->insertID();
-        return $this->where(['id_perdim' => $id])
-                    ->where(['endorse' => 'Ya']);
-        // if($id == false){
-        //     return $this->findAll();
-        // } else {
-        // }
-    }
-    
-    // public function getUmrohPerdim($id = false)
-    // {
-    //     if($id == false){
-    //         return $this->findAll();
-    //     } else {
-    //         return $this->where(['id_perdim' => $id])
-    //                     ->where(['tujuan' => 'Umroh'])
-    //                     ->first();
-    //     }
-    // }
-
-    // public function getHajiPerdim($id = false)
-    // {
-    //     if($id == false){
-    //         return $this->findAll();
-    //     } else {
-    //         return $this->where(['id_perdim' => $id])
-    //                     ->where(['tujuan' => 'Haji'])
-    //                     ->first();
-    //     }
-    // }
-    
 }
