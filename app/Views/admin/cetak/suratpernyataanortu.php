@@ -72,7 +72,7 @@
                 <p>Nama Ayah</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;    : <?php echo $nama_ayah ?></p>
+                <p>&emsp;    : <?php echo $nama_ayah ?></p>
               </div>
             </div>
             <div class="row">
@@ -80,7 +80,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;    : <?php echo $ttl_ayah ?></p>
+                <p>&emsp;    : <?php echo $ttl_ayah ?></p>
               </div>
             </div>
             <div class="row">
@@ -88,7 +88,7 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;    : <?php echo $alamat_ayah ?></p>
+                <p>&emsp;    : <?php echo $alamat_ayah ?></p>
               </div>
             </div>
             <div class="row pt-3">
@@ -96,7 +96,7 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang KTP No&emsp;&emsp;&emsp;  :
+                      Pemegang KTP No&emsp;&emsp;  :
                       <?php echo $no_ktp_ayah ?>
                     </p>
                   </div>
@@ -125,7 +125,7 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang Paspor No&emsp;&emsp; :
+                      Pemegang Paspor No&emsp; :
                       <?php echo $no_paspor_ayah ?>
                     </p>
                   </div>
@@ -161,7 +161,7 @@
                 <p>Nama Ibu</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;    : <?php echo $nama_ibu ?></p>
+                <p>&emsp;    : <?php echo $nama_ibu ?></p>
               </div>
             </div>
             <div class="row">
@@ -169,7 +169,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;    : <?php echo $ttl_ibu ?></p>
+                <p>&emsp;    : <?php echo $ttl_ibu ?></p>
               </div>
             </div>
             <div class="row">
@@ -177,7 +177,7 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;    : <?php echo $alamat_ibu ?></p>
+                <p>&emsp;    : <?php echo $alamat_ibu ?></p>
               </div>
             </div>
             <div class="row pt-3">
@@ -185,7 +185,7 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang KTP No&emsp;&emsp;&emsp;  :
+                      Pemegang KTP No&emsp;&emsp;  :
                       <?php echo $no_ktp_ibu ?>
                     </p>
                   </div>
@@ -214,7 +214,7 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang Paspor No&emsp;&emsp; :
+                      Pemegang Paspor No&emsp; :
                       <?php echo $no_paspor_ibu ?>
                     </p>
                   </div>
@@ -254,7 +254,7 @@
                 <p>Nama</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;   : <?php echo $nama_lengkap ?></p>
+                <p>&emsp;   : <?php echo $nama_lengkap ?></p>
               </div>
             </div>
             <div class="row">
@@ -262,7 +262,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;   : <?php echo $tempat_lahir ?>, <?php echo $tanggal_lahir ?></p>
+                <p>&emsp;   : <?php echo $tempat_lahir ?>, <?php echo $tanggal_lahir ?></p>
               </div>
             </div>
             <div class="row">
@@ -270,7 +270,7 @@
                 <p>Alamat</p>
               </div>
               <div class="col-10">
-                <p>&emsp;&emsp;   : <?php echo $alamat ?></p>
+                <p>&emsp;   : <?php echo $alamat ?></p>
               </div>
             </div>
             <div class="row pt-3">
@@ -278,8 +278,7 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang NIK No&emsp;&emsp;&emsp;  :
-                      <?php echo $nik ?>
+                      Pemegang NIK No&emsp;&emsp;  : <?php echo $nik ?>
                     </p>
                   </div>
                   <!-- <div class="col-6">
@@ -307,7 +306,7 @@
                 <div class="row">
                   <div class="col-12">
                     <p>
-                      Pemegang Paspor No&emsp;&emsp;:
+                      Pemegang Paspor No&emsp;:
                       <?php echo $no_seri ?>
                     </p>
                   </div>

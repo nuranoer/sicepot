@@ -31,6 +31,9 @@
 <section id="content">
 	<div class="content-wrap">
 		<div class="container clearfix">
+			<div class="style-msg alertmsg">
+				<div class="sb-msg"><i class="icon-warning-sign"></i><strong>Perhatian!</strong> Mohon mengisi data dengan menggunakan huruf balok atau huruf besar! Klik <strong>Caps Lock</strong> pada keyboard untuk mengaktifkan huruf besar!</div>
+			</div>
 
 			<?php if(session()->getFlashdata('error')) : ?>
 				<div class="style-msg errormsg">
@@ -55,7 +58,7 @@
 						</div>
 						<div class="col-12 form-group">
 							<label>Nama Lengkap Anak: <span class="text-danger">*</span></label>
-							<input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control <?= ($validation->hasError('nama_lengkap')) ? 'is-invalid' : '' ?> required" value="<?= old('nama_lengkap');?>" placeholder="">
+							<input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control <?= ($validation->hasError('nama_lengkap')) ? 'is-invalid' : '' ?> required" value="<?= old('nama_lengkap');?>" placeholder="e.g: DEA ANANDA">
 						</div>
 						<div class="col-12 form-group">
 							<label>Jenis Kelamin Anak: <span class="text-danger">*</span></label>
@@ -91,15 +94,15 @@
 						</div>
 						<div class="col-6 form-group">
 							<label>Tempat Lahir Anak: <span class="text-danger">*</span></label><br>
-							<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control required <?= ($validation->hasError('tempat_lahir')) ? 'is-invalid' : '' ?>" value="<?= old('tempat_lahir');?>">
+							<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control required <?= ($validation->hasError('tempat_lahir')) ? 'is-invalid' : '' ?>" value="<?= old('tempat_lahir');?>" placeholder="e.g: KEDIRI">
 						</div>
 						<div class="col-6 form-group">
 							<label>Tanggal Lahir Anak: <span class="text-danger">*</span></label>
-							<input type="text" value="" class="form-control required <?= ($validation->hasError('tanggal_lahir')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tanggal_lahir" id="tanggal_lahir" placeholder="DD-MM-YYYY">
+							<input type="text" value="<?= old('tanggal_lahir');?>" class="form-control required <?= ($validation->hasError('tanggal_lahir')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tanggal_lahir" id="tanggal_lahir" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-4 form-group">
 							<label>NIK / No. KIA: <span class="text-danger">*</span></label><br>
-							<input type="text" name="nik" id="nik" class="form-control required <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" value="<?= old('nik');?>" placeholder="">
+							<input type="text" name="nik" id="nik" class="form-control required <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" value="<?= old('nik');?>" placeholder="Masukkan 16 digit NIK anak">
 							<div class="invalid-feedback">
 								NIK harus terdiri dari 16 digit.
 							</div>
@@ -114,7 +117,7 @@
 						</div>
 						<div class="col-6 form-group form-anak">
 							<label>Alamat Anak: <span class="text-danger">*</span></label>
-							<input type="text" name="alamat" id="alamat" class="form-control required <?= ($validation->hasError('alamat')) ? 'is-invalid' : '' ?>" value="<?= old('alamat');?>">
+							<input type="text" name="alamat" id="alamat" class="form-control required <?= ($validation->hasError('alamat')) ? 'is-invalid' : '' ?>" value="<?= old('alamat');?>" placeholder="e.g: GRINGGING KEDIRI">
 						</div>
 						<div class="col-6 form-group">
 							<label>Alamat Anak Sama Dengan Alamat Orang Tua: <span class="text-danger">*</span></label>
@@ -125,28 +128,28 @@
 						</div>
 						<div class="col-6 hidden form-group form-ortu" id="address_ibu">
 							<label>Alamat Ibu:</label>
-							<input type="text" name="alamat_ibu" id="alamat_ibu" class="form-control required" value="<?= old('alamat_ibu');?>">
+							<input type="text" name="alamat_ibu" id="alamat_ibu" class="form-control required" value="<?= old('alamat_ibu');?>" placeholder="e.g: GRINGGING KEDIRI">
 						</div>
 						<div class="col-6 hidden form-group form-ortu" id="address_ayah">
 							<label>Alamat Ayah:</label>
-							<input type="text" name="alamat_ayah" id="alamat_ayah" class="form-control required" value="<?= old('alamat_ayah');?>">
+							<input type="text" name="alamat_ayah" id="alamat_ayah" class="form-control required" value="<?= old('alamat_ayah');?>" placeholder="e.g: GRINGGING KEDIRI">
 						</div>
 						<div class="col-12 form-group">
 							<label>No HP Ortu: <small>(salah satu)</small> <span class="text-danger">*</span></label>
-							<input type="text" name="no_hp" id="no_hp" class="form-control required <?= ($validation->hasError('no_hp')) ? 'is-invalid' : '' ?>" value="<?= old('no_hp');?>">
+							<input type="text" name="no_hp" id="no_hp" class="form-control required <?= ($validation->hasError('no_hp')) ? 'is-invalid' : '' ?>" placeholder="Max 13 digit" value="<?= old('no_hp');?>">
 						</div>
 						<div class="col-6 form-group">
 							<label>Nama Ibu:</label><br>
-							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control" value="<?= old('nama_ibu');?>" placeholder="">
+							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control" value="<?= old('nama_ibu');?>" placeholder="e.g: DEWI SARI">
 						</div>
 						<div class="col-6 form-group">
 							<label>Tempat/Tanggal Lahir Ibu:</label><br>
-							<input type="text" name="ttl_ibu" id="ttl_ibu" class="form-control" value="<?= old('ttl_ibu');?>" placeholder="Kediri, 03-12-1986">
+							<input type="text" name="ttl_ibu" id="ttl_ibu" class="form-control" value="<?= old('ttl_ibu');?>" placeholder="KEDIRI, 03-12-1986">
 						</div>
 						
 						<div class="col-4 form-group">
 							<label>No. KTP Ibu:</label><br>
-							<input type="text" name="no_ktp_ibu" id="no_ktp_ibu" class="form-control" value="<?= old('no_ktp_ibu');?>" placeholder="">
+							<input type="text" name="no_ktp_ibu" id="no_ktp_ibu" class="form-control" value="<?= old('no_ktp_ibu');?>" placeholder="16 DIGIT NO KTP">
 						</div>
 						<div class="col-4 form-group">
 							<label>Tgl Diberikan KTP Ibu:</label><br>
@@ -170,16 +173,16 @@
 						</div>
 						<div class="col-6 form-group">
 							<label>Nama Ayah:</label><br>
-							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control" value="<?= old('nama_ayah');?>" placeholder="">
+							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control" value="<?= old('nama_ayah');?>" placeholder="e.g: MURSIDI">
 						</div>
 						<div class="col-6 form-group">
 							<label>Tempat/Tanggal Lahir Ayah:</label><br>
-							<input type="text" name="ttl_ayah" id="ttl_ayah" class="form-control" value="<?= old('ttl_ayah');?>" placeholder="Kediri, 02-02-1985">
+							<input type="text" name="ttl_ayah" id="ttl_ayah" class="form-control" value="<?= old('ttl_ayah');?>" placeholder="KEDIRI, 02-02-1985">
 						</div>
 						
 						<div class="col-4 form-group">
 							<label>No. KTP Ayah:</label><br>
-							<input type="text" name="no_ktp_ayah" id="no_ktp_ayah" class="form-control" value="<?= old('no_ktp_ayah');?>" placeholder="">
+							<input type="text" name="no_ktp_ayah" id="no_ktp_ayah" class="form-control" value="<?= old('no_ktp_ayah');?>" placeholder="16 DIGIT NO KTP">
 						</div>
 						<div class="col-4 form-group">
 							<label>Tgl Diberikan KTP Ayah:</label><br>
@@ -227,11 +230,11 @@
 						</div>
 						<div class="col-6 form-group">
 							<label>Negara Tujuan: <span class="text-danger">*</span></label><br>
-							<input type="text" name="negara" id="negara" class="form-control required <?= ($validation->hasError('negara')) ? 'is-invalid' : '' ?>" value="" placeholder="">
+							<input type="text" name="negara" id="negara" class="form-control required <?= ($validation->hasError('negara')) ? 'is-invalid' : '' ?>" value="<?= old('negara');?>" placeholder="e.g: TURKI">
 						</div>
 						<div class="col-6 form-group">
 							<label>Pekerjaan: <span class="text-danger">*</span></label>
-							<input type="text" name="pekerjaan" id="pekerjaan" class="form-control required <?= ($validation->hasError('pekerjaan')) ? 'is-invalid' : '' ?>" value="">
+							<input type="text" name="pekerjaan" id="pekerjaan" class="form-control required <?= ($validation->hasError('pekerjaan')) ? 'is-invalid' : '' ?>" value="<?= old('pekerjaan');?>" placeholder="e.g: PELAJAR">
 						</div>
 					</div>
 				</div>
