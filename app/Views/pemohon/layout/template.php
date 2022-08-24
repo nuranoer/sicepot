@@ -32,7 +32,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Si Cepot</title>
+	<title>SICEPOT</title>
 
 </head>
 
@@ -61,7 +61,7 @@
 						<!-- Logo
                             ============================================= -->
 						<div id="logo">
-							<a href="/dashboard" class="standard-logo" data-dark-logo="HTML/images/logoimigrasi.png"><img src="HTML/images/logoimigrasi.png" alt="Imigrasi"></a>
+							<a href="/" class="standard-logo" data-dark-logo="HTML/images/logoimigrasi.png"><img src="HTML/images/logoimigrasi.png" alt="Imigrasi"></a>
 
 						</div><!-- #logo end -->
 
@@ -90,7 +90,7 @@
 
 							<ul class="menu-container">
 								<li class="menu-item">
-									<a class="menu-link" href="/dashboard">
+									<a class="menu-link" href="/">
 										<div>Home</div>
 									</a>
 								<li class="menu-item mega-menu mega-menu-small">
@@ -123,34 +123,36 @@
 				<!-- Footer Widgets
 						============================================= -->
 				<div class="footer-widgets-wrap">
-					<div class="row col-mb-50">
-						<div class="col-lg-8">
-							<div class="row col-mb-50">
-								<div class="col-md-4">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-md-1">
+									<img src="HTML/images/logo_kemenkumham.svg" alt="Logo Kemenkumham" class="footer-logo" width="100">
+								</div>
+								<div class="col-md-1">
 									<div class="widget clearfix">
-										<img src="HTML/images/logoimigrasi.png" alt="Image" class="footer-logo" width="100" />
-
-										<p>
-											Kami Siap Melayani <strong>Dengan Tulus</strong>
-										</p>
-
-										<div style="
-										background: url('images/world-map.png') no-repeat
-											center center;
-										background-size: 100%;
-										">
-											<address>
-												<strong>Alamat Kantor:</strong><br />
-												Jl. Jawa No. 135, Bedrek Selatan, Desa Grogol, Kec.Grogol, 64151<br />
-												Kab.Kediri, Jawa Timur<br />
-											</address>
-											<abbr title="Phone Number"><strong>Phone:</strong></abbr>
-											(0354) 688307<br />
-											<abbr title="Email Address"><strong>Email:</strong></abbr>
-											imigrasi.kediri@gmail.com
-										</div>
+										<img src="HTML/images/logoimigrasi.png" alt="Logo Imigrasi" class="footer-logo" width="115" />
 									</div>
 								</div>
+								<div class="col-md-5">
+									<h4>Kementerian Hukum dan Hak Asasi Manusia RI <br>
+									Kantor Imigrasi Kelas II Non TPI Kediri <br>
+									<small>"Kami Siap Melayani <strong>Dengan Tulus</strong>"</small>
+									</h4>
+								</div>
+								<div class="col-md-5">
+									<address>
+										<strong>Alamat Kantor:</strong><br />
+										Jl. Jawa No. 135, Bedrek Selatan, Desa Grogol, Kec. Grogol,
+										<br> Kab. Kediri, Jawa Timur, 64151
+									</address>
+								</div>
+								<!-- <div class="col-md-2">
+									<abbr title="Phone Number"><strong>Phone:</strong></abbr>
+									(0354) 688307<br />
+									<abbr title="Email Address"><strong>Email:</strong></abbr>
+									imigrasi.kediri@gmail.com
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -162,11 +164,8 @@
 			<div id="copyrights">
 				<div class="container">
 					<div class="row col-mb-30">
-						<div class="col-md-6 text-center text-md-start">
+						<div class="col-md-6 text-center text-md-start pt-3">
 							Copyrights &copy; Internship Imigrasi Kediri (2022)<br />
-							<div class="copyright-links">
-								<a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
-							</div>
 						</div>
 
 						<div class="col-md-6 text-center text-md-end">

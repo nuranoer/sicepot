@@ -10,13 +10,13 @@
 					<div class="col-1">
 						<img src="HTML/images/login/logo.png" alt="Logo Redi Dinanti" width="100">
 					</div>
-					<div class="col-7">
+					<div class="col-7 pt-4">
 						<h1>Formulir</h1>
 						
 					</div>
 					<div class="col-4">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
+							<li class="breadcrumb-item"><a href="/">Home</a></li>
 							<li class="breadcrumb-item active" aria-current="page">Formulir</li>
 						</ol>
 					</div>
@@ -50,7 +50,7 @@
 									<div class="bg-overlay">
 										<div class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
 											<div class="grid-icon">
-												<img src="HTML/demos/business/images/icons/doc.svg" alt="Image" width="60">
+												<img src="HTML/images/demos/doc.svg" alt="Image" width="60">
 											</div>
 											<div class="grid-content">
 												<h5 class="text-uppercase fw-medium font-body ls1 text-smaller op-07 mb-2">Pengajuan Paspor</h5>
@@ -68,7 +68,7 @@
 									<div class="bg-overlay">
 										<div class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
 											<div class="grid-icon">
-												<img src="HTML/demos/business/images/icons/doc.svg" alt="Image" width="60">
+												<img src="HTML/images/demos/doc.svg" alt="Image" width="60">
 											</div>
 											<div class="grid-content">
 											<h5 class="text-uppercase fw-medium font-body ls1 text-smaller op-07 mb-2">Pengajuan Paspor</h5>

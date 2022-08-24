@@ -5,17 +5,17 @@
         				<div class="swiper-slide dark">
         					<div class="container">
         						<div class="slider-caption slider-caption-center">
-        							<h2 data-animate="fadeInUp">Welcome to Website Si Cepot</h2>
+        							<h2 data-animate="fadeInUp">Welcome to Website Sicepot</h2>
         							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Kantor Imigrasi Kelas II Non TPI Kediri <br>Jl. Jawa No.135, Bedrek Selatan, Grogol, Kec. Grogol, Kabupaten Kediri, Jawa Timur 64151</p>
         						</div>
         					</div>
-        					<div class="swiper-slide-bg" style="background-image: url('HTML/images/slider/swiper/imigration1.jpg');"></div>
+        					<div class="swiper-slide-bg" style="background-image: url('HTML/images/imigration1.jpg');"></div>
         				</div>
         				<div class="swiper-slide dark">
         					<div class="container">
         						<div class="slider-caption slider-caption-center">
         							<h2 data-animate="fadeInUp">Mudah dan Cepat</h2>
-        							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Pemohon dapat langsung mengakses si Cepot dalam alamat website</p>
+        							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Pemohon dapat langsung mengakses SICEPOT dalam alamat website</p>
         						</div>
         					</div>
         					<div class="video-wrap">
@@ -26,14 +26,14 @@
         						<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
         					</div>
         				</div>
-        				<div class="swiper-slide">
+        				<div class="swiper-slide dark">
         					<div class="container">
         						<div class="slider-caption">
         							<h2 data-animate="fadeInUp">Im Redi DInanti</h2>
         							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Kami Siap Melayani dengan Tulus</p>
         						</div>
         					</div>
-        					<div class="swiper-slide-bg" style="background-image: url('HTML/images/slider/swiper/ok.jpg'); background-position: center top;"></div>
+        					<div class="swiper-slide-bg" style="background-image: url('HTML/images/ok.jpg'); background-position: center top;"></div>
         				</div>
         			</div>
         			<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
