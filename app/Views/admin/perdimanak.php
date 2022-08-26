@@ -26,11 +26,12 @@
                   <thead>
                     <tr>
                       <th scope="col">No.</th>
-                      <th scope="col">Id Perdim</th>
                       <th scope="col">Jenis Permohonan</th>
                       <th scope="col">Nama Lengkap</th>
                       <th scope="col">Jenis Kelamin</th>
                       <th scope="col">NIK</th>
+                      <th scope="col">Endorse</th>
+                      <th scope="col">Tanggal Upload</th>
                       <th scope="col">Aksi</th>
                     </tr>
                   </thead>
@@ -46,6 +47,7 @@
                             <td><?= $pa['nama_lengkap']; ?></td>
                             <td><?= $pa['jenis_kelamin']; ?></td>
                             <td><?= $pa['nik']; ?></td>
+                            <td><?= $pa['endorse']; ?></td>
                             <td><?= $pa['created_at']; ?></td>
                             <td>
                               <a href="/cetak-perdim-anak/<?= $pa['id_perdim']; ?>"> <button type="button" class="btn btn-primary"><i class="bi bi-printer-fill"></i></button></a>

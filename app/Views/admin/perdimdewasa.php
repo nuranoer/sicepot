@@ -31,6 +31,7 @@
                       <th scope="col">Jenis Kelamin</th>
                       <th scope="col">NIK</th>
                       <th scope="col">Tanggal Upload</th>
+                      <th scope="col">Endorse</th>
                       <th scope="col">Print</th>
                     </tr>
                   </thead>
@@ -47,6 +48,7 @@
                         <td><?= $pd['jenis_kelamin']; ?></td>
                         <td><?= $pd['nik']; ?></td>
                         <td><?= $pd['created_at']; ?></td>
+                        <td><?= $pd['endorse']; ?></td>
                         <td>
                           <a href="/cetak-perdim-dewasa/<?= $pd['id_perdim']; ?>"> <button type="button" class="btn btn-primary"><i class="bi bi-printer-fill"></i></button></a>
                         </td>
