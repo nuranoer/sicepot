@@ -13,7 +13,7 @@
 					<div class="heading-block">
 						<h1>Welcome to <br>Kantor Imigrasi Kelas II Non TPI Kediri</h1>
 					</div>
-					<p class="lead">Create a website that you are gonna be proud of. Be it Business, Portfolio, Agency, Photography, eCommerce &amp; much more.</p>
+					<p class="lead"><strong>I'm Redi Dinanti</strong> (Imigrasi Kediri, Dedikasi Melayani Dengan Sepenuh Hati)</p>
 				</div>
 
 				<div class="col-lg-7 align-self-end">

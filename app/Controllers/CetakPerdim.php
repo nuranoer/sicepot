@@ -26,16 +26,44 @@ class CetakPerdim extends BaseController
         // $permohonanUmroh = $this->PerdimDewasaModel->getUmrohPerdim($id);
         // $permohonanHaji = $this->PerdimDewasaModel->getHajiPerdim($id);
 
+        // if ($permohonanBaru) {
+        //     if ($endorse) {
+        //         echo view('admin/cetak/perdim', $cetak);
+        //         echo view('admin/cetak/perdim2', $cetak);
+        //         echo view('admin/cetak/suratpernyataanumum', $cetak);
+        //         echo view('admin/cetak/suratpernyataanendorse', $cetak);
+        //     } else {
+        //         echo view('admin/cetak/perdim', $cetak);
+        //         echo view('admin/cetak/perdim2', $cetak);
+        //         echo view('admin/cetak/suratpernyataanumum', $cetak);
+        //     }
+        // } elseif ($permohonanPenggantian) {
+        //     if ($endorse) {
+        //         echo view('admin/cetak/perdim', $cetak);
+        //         echo view('admin/cetak/perdim2', $cetak);
+        //         echo view('admin/cetak/suratpernyataanumum', $cetak);
+        //         echo view('admin/cetak/suratpernyataanganti', $cetak);
+        //         echo view('admin/cetak/suratpernyataanendorse', $cetak);
+        //     } else {
+        //         echo view('admin/cetak/perdim', $cetak);
+        //         echo view('admin/cetak/perdim2', $cetak);
+        //         echo view('admin/cetak/suratpernyataanumum', $cetak);
+        //         echo view('admin/cetak/suratpernyataanganti', $cetak);
+        //     }
+        // }
+
         if ($permohonanBaru) {
             if ($endorse) {
                 echo view('admin/cetak/perdim', $cetak);
                 echo view('admin/cetak/perdim2', $cetak);
                 echo view('admin/cetak/suratpernyataanumum', $cetak);
+                // echo view('admin/cetak/suratpernyataanortu',$cetak);
                 echo view('admin/cetak/suratpernyataanendorse', $cetak);
             } else {
                 echo view('admin/cetak/perdim', $cetak);
                 echo view('admin/cetak/perdim2', $cetak);
                 echo view('admin/cetak/suratpernyataanumum', $cetak);
+                // echo view('admin/cetak/suratpernyataanortu',$cetak);
             }
         } elseif ($permohonanPenggantian) {
             if ($endorse) {
@@ -43,12 +71,14 @@ class CetakPerdim extends BaseController
                 echo view('admin/cetak/perdim2', $cetak);
                 echo view('admin/cetak/suratpernyataanumum', $cetak);
                 echo view('admin/cetak/suratpernyataanganti', $cetak);
+                // echo view('admin/cetak/suratpernyataanortu',$cetak);
                 echo view('admin/cetak/suratpernyataanendorse', $cetak);
             } else {
                 echo view('admin/cetak/perdim', $cetak);
                 echo view('admin/cetak/perdim2', $cetak);
                 echo view('admin/cetak/suratpernyataanumum', $cetak);
                 echo view('admin/cetak/suratpernyataanganti', $cetak);
+                // echo view('admin/cetak/suratpernyataanortu',$cetak);
             }
         }
     }
