@@ -64,24 +64,24 @@
 							<label>Jenis Kelamin: <span class="text-danger">*</span></label>
 							<select class="form-select <?= ($validation->hasError('jenis_kelamin')) ? 'is-invalid' : '' ?>" name="jenis_kelamin" id="jenis_kelamin">
 								<option>-Pilih Jenis Kelamin-</option>
-								<option value="Laki-Laki">Laki-Laki</option>
-								<option value="Perempuan">Perempuan</option>
+								<option value="Laki-Laki" <?= old('jenis_kelamin') == 'Laki-Laki'? 'selected':''?>>Laki-Laki</option>
+								<option value="Perempuan" <?= old('jenis_kelamin') == 'Perempuan'? 'selected':''?>>Perempuan</option>
 							</select>
 						</div>
 						<div class="col-12 form-group">
 							<label>Jenis Permohonan Paspor: <span class="text-danger">*</span></label>
 							<select class="form-select jenis_permohonan <?= ($validation->hasError('jenis_permohonan')) ? 'is-invalid' : '' ?>" name="jenis_permohonan" id="jenis_permohonan">
 								<option>-Pilih Jenis Permohonan Paspor Anda-</option>
-								<option value="Baru">Baru</option>
-								<option value="Penggantian">Penggantian</option>
+								<option value="Baru" <?= old('jenis_permohonan') == 'Baru'? 'selected':''?>>Baru</option>
+								<option value="Penggantian" <?= old('jenis_permohonan') == 'Penggantian'? 'selected':''?>>Penggantian</option>
 							</select>
 						</div>
 						<div class="col-12 hidden form-group" id="alasan">
 							<label>Alasan Penggantian:</label>
 							<select class="form-select alasan_penggantian required" name="alasan_penggantian" id="alasan_penggantian">
 								<option value="">-Pilih Alasan Penggantian Paspor Anda-</option>
-								<option value="Habis Masa Berlaku">Habis Masa Berlaku</option>
-								<option value="Halaman Penuh">Halaman Penuh</option>
+								<option value="Habis Masa Berlaku" <?= old('alasan_penggantian') == 'Habis Masa Berlaku'? 'selected':''?>>Habis Masa Berlaku</option>
+								<option value="Halaman Penuh" <?= old('alasan_penggantian') == 'Habis Masa Berlaku'? 'selected':''?>>Halaman Penuh</option>
 							</select>
 						</div>
 						<div class="col-6 hidden form-group" id="seri_paspor">
@@ -102,11 +102,11 @@
 						</div>
 						<div class="col-6 form-group">
 							<label>NIK / No. KTP: <span class="text-danger">*</span></label><br>
-							<input type="text" name="nik" id="nik" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" value="<?= old('nik');?>" placeholder="Masukkan 16 digit NIK anda">
+							<input type="text" name="nik" id="nik" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" pattern="[0-9]{16}" value="<?= old('nik');?>" placeholder="Masukkan 16 digit NIK anda">
 						</div>
 						<div class="col-6 form-group">
-							<label>Tempat Dikeluarkan KTP: <span class="text-danger">*</span></label><br>
-							<input type="text" value="<?= old('tempat_output');?>" class="form-control <?= ($validation->hasError('tempat_output')) ? 'is-invalid' : '' ?>" name="tempat_output" id="tempat_output" placeholder="e.g: KEDIRI">
+							<label>Tanggal Dikeluarkan KTP: <span class="text-danger">*</span></label><br>
+							<input type="text" value="<?= old('tempat_output');?>" class="form-control <?= ($validation->hasError('tempat_output')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tempat_output" id="tempat_output" placeholder="e.g: 10-12-2009">
 						</div>
 						<div class="col-12 form-group">
 							<label>Alamat: <small>(tanpa koma)</small><span class="text-danger">*</span></label>
@@ -128,21 +128,21 @@
 							<label>Tujuan Pengajuan Paspor: <span class="text-danger">*</span></label>
 							<select class="form-select tujuan <?= ($validation->hasError('tujuan')) ? 'is-invalid' : '' ?>" name="tujuan" id="tujuan">
 								<option>-Pilih Tujuan Anda-</option>
-								<option value="Bekerja">Bekerja</option>
-								<option value="Belajar">Belajar</option>
-								<option value="Berobat">Berobat</option>
-								<option value="Haji">Haji</option>
-								<option value="Kunjungan">Kunjungan</option>
-								<option value="Umroh">Umroh</option>
-								<option value="Wisata">Wisata</option>
+								<option value="Bekerja" <?= old('tujuan') == 'Bekerja'? 'selected':''?>>Bekerja</option>
+								<option value="Belajar" <?= old('tujuan') == 'Belajar'? 'selected':''?>>Belajar</option>
+								<option value="Berobat" <?= old('tujuan') == 'Berobat'? 'selected':''?>>Berobat</option>
+								<option value="Haji" <?= old('tujuan') == 'Haji'? 'selected':''?>>Haji</option>
+								<option value="Kunjungan" <?= old('tujuan') == 'Kunjungan'? 'selected':''?>>Kunjungan</option>
+								<option value="Umroh" <?= old('tujuan') == 'Umroh'? 'selected':''?>>Umroh</option>
+								<option value="Wisata" <?= old('tujuan') == 'Wisata'? 'selected':''?>>Wisata</option>
 							</select>
 						</div>
 						<div class="col-4 form-group">
 							<label>Ingin Tambah (Endorse) Nama? <span class="text-danger">*</span></label>
 							<select class="form-select endorse" name="endorse" id="endorse">
 								<option>-Pilihan Anda-</option>
-								<option value="Ya">Ya</option>
-								<option value="Tidak">Tidak</option>
+								<option value="Ya" <?= old('endorse') == 'Ya'? 'selected':''?>>Ya</option>
+								<option value="Tidak" <?= old('endorse') == 'Tidak'? 'selected':''?>>Tidak</option>
 							</select>
 						</div>
 						<div class="col-4 hidden form-group" id="endorse_nama">
@@ -153,10 +153,10 @@
 							<label>Status Sipil: <span class="text-danger">*</span></label>
 							<select class="form-select tujuan <?= ($validation->hasError('status_sipil')) ? 'is-invalid' : '' ?>" name="status_sipil" id="status_sipil">
 								<option>-Pilih Status Sipil Anda-</option>
-								<option value="Kawin">Kawin</option>
-								<option value="Belum Kawin">Belum Kawin</option>
-								<option value="Cerai Hidup">Cerai Hidup</option>
-								<option value="Cerai Mati">Cerai Mati</option>
+								<option value="Kawin" <?= old('status_sipil') == 'Kawin'? 'selected':''?>>Kawin</option>
+								<option value="Belum Kawin" <?= old('status_sipil') == 'Belum Kawin'? 'selected':''?>>Belum Kawin</option>
+								<option value="Cerai Hidup" <?= old('status_sipil') == 'Cerai Hidup'? 'selected':''?>>Cerai Hidup</option>
+								<option value="Cerai Mati" <?= old('status_sipil') == 'Cerai Mati'? 'selected':''?>>Cerai Mati</option>
 							</select>
 						</div>
 						<div class="col-12 form-group">
@@ -166,11 +166,8 @@
 					</div>
 				</div>
 				<div class="col-12 center">
-					<!-- <a href="/cetak-perdim-dewasa" type="submit" class="button button-rounded button-reveal button-large button-dirtygreen"><i class="icon-map-marker2"></i><span>Dirty Green</span></a> -->
 					<br>
 					<button type="submit" class="button button-rounded button-reveal button-large button-blue" href="/cetak-perdim-dewasa" type="submit"><i class="icon-print2"></i><span>print perdim</span></button>
-					<!-- <a class="btn btn-secondary btn-lg"></a> -->
-					<!-- <input type="hidden" name="prefix" value="checkout-form-"> -->
 				</div>
 			</form>
 		</div>

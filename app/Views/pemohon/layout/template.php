@@ -60,7 +60,6 @@
 							<a href="/" class="standard-logo" data-dark-logo="HTML/images/logoimigrasi.png"><img src="HTML/images/logoimigrasi.png" alt="Imigrasi"></a>
 						</div>
 						<!-- #logo end -->
-
 						
 						<div class="header-misc">
 							<!-- Top Admin  -->
@@ -225,6 +224,7 @@
 	<script src="HTML/js/plugins.min.js"></script>
 
 	<script src="HTML/js/form.js"></script>
+	<script src="HTML/js/name-restricted.js"></script>
 
 	<!-- Date & Time Picker JS -->
 	<script src="HTML/js/components/moment.js"></script>

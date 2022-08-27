@@ -64,24 +64,24 @@
 							<label>Jenis Kelamin Anak: <span class="text-danger">*</span></label>
 							<select class="form-select <?= ($validation->hasError('jenis_kelamin')) ? 'is-invalid' : '' ?> required" name="jenis_kelamin" id="jenis_kelamin">
 								<option>-PILIH JENIS KELAMIN-</option>
-								<option value="Laki-Laki">Laki-Laki</option>
-								<option value="Perempuan">Perempuan</option>
+								<option value="Laki-Laki" <?= old('jenis_kelamin') == 'Laki-Laki'? 'selected':''?>>Laki-Laki</option>
+								<option value="Perempuan" <?= old('jenis_kelamin') == 'Perempuan'? 'selected':''?>>Perempuan</option>
 							</select>
 						</div>
 						<div class="col-12 form-group">
 							<label>Jenis Permohonan Paspor: <span class="text-danger">*</span></label>
 							<select class="form-select jenis_permohonan <?= ($validation->hasError('jenis_permohonan')) ? 'is-invalid' : '' ?> required" name="jenis_permohonan" id="jenis_permohonan">
 								<option>-PILIH JENIS PERMOHONAN PASPOR ANDA-</option>
-								<option value="Baru">Baru</option>
-								<option value="Penggantian">Penggantian</option>
+								<option value="Baru" <?= old('jenis_permohonan') == 'Baru'? 'selected':''?>>Baru</option>
+								<option value="Penggantian"<?= old('jenis_permohonan') == 'Penggantian'? 'selected':''?>>Penggantian</option>
 							</select>
 						</div>
 						<div class="col-12 hidden form-group" id="alasan">
 							<label>Alasan Penggantian:</label>
 							<select class="form-select alasan_penggantian required" name="alasan_penggantian" id="alasan_penggantian">
 								<option value="">-PILIH ALASAN PENGGANTIAN PASPOR ANDA-</option>
-								<option value="Habis Masa Berlaku">Habis Masa Berlaku</option>
-								<option value="Halaman Penuh">Halaman Penuh</option>
+								<option value="Habis Masa Berlaku" <?= old('alasan_penggantian') == 'Habis Masa Berlaku'? 'selected':''?>>Habis Masa Berlaku</option>
+								<option value="Halaman Penuh" <?= old('alasan_penggantian') == 'Habis Masa Berlaku'? 'selected':''?>>Halaman Penuh</option>
 							</select>
 						</div>
 						<div class="col-6 hidden form-group" id="seri_paspor">
@@ -122,8 +122,8 @@
 						<div class="col-6 form-group">
 							<label>Alamat Anak Sama Dengan Alamat Orang Tua: <span class="text-danger">*</span></label>
 							<select class="form-select address_ortu required" name="address_ortu" id="address_ortu">
-								<option value="Ya">Ya, sama</option>
-								<option value="Tidak">Tidak sama</option>
+								<option value="Ya" <?= old('address_ortu') == 'Ya'? 'selected':''?>>Ya, sama</option>
+								<option value="Tidak" <?= old('address_ortu') == 'Tidak'? 'selected':''?>>Tidak sama</option>
 							</select>
 						</div>
 						<div class="col-6 hidden form-group form-ortu" id="address_ibu">
@@ -139,21 +139,21 @@
 							<input type="text" name="no_hp" id="no_hp" class="form-control required <?= ($validation->hasError('no_hp')) ? 'is-invalid' : '' ?>" placeholder="Max 13 digit" value="<?= old('no_hp');?>">
 						</div>
 						<div class="col-6 form-group">
-							<label>Nama Ibu:</label><br>
-							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control" value="<?= old('nama_ibu');?>" placeholder="e.g: DEWI SARI">
+							<label>Nama Ibu:<span class="text-danger">*</span></label><br>
+							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control <?= ($validation->hasError('nama_ibu')) ? 'is-invalid' : '' ?>" value="<?= old('nama_ibu');?>" placeholder="e.g: DEWI SARI">
 						</div>
 						<div class="col-6 form-group">
-							<label>Tempat/Tanggal Lahir Ibu:</label><br>
-							<input type="text" name="ttl_ibu" id="ttl_ibu" class="form-control" value="<?= old('ttl_ibu');?>" placeholder="KEDIRI, 03-12-1986">
+							<label>Tempat/Tanggal Lahir Ibu:<span class="text-danger">*</span></label><br>
+							<input type="text" name="ttl_ibu" id="ttl_ibu" class="form-control <?= ($validation->hasError('ttl_ibu')) ? 'is-invalid' : '' ?>" value="<?= old('ttl_ibu');?>" placeholder="KEDIRI, 03-12-1986">
 						</div>
 						
 						<div class="col-4 form-group">
-							<label>No. KTP Ibu:</label><br>
-							<input type="text" name="no_ktp_ibu" id="no_ktp_ibu" class="form-control" value="<?= old('no_ktp_ibu');?>" placeholder="16 DIGIT NO KTP">
+							<label>No. KTP Ibu:<span class="text-danger">*</span></label><br>
+							<input type="text" name="no_ktp_ibu" id="no_ktp_ibu" class="form-control <?= ($validation->hasError('no_ktp_ibu')) ? 'is-invalid' : '' ?>" value="<?= old('no_ktp_ibu');?>" placeholder="16 DIGIT NO KTP">
 						</div>
 						<div class="col-4 form-group">
-							<label>Tgl Diberikan KTP Ibu:</label><br>
-							<input type="text" name="tgl_ktp_ibu" id="tgl_ktp_ibu" class="form-control text-start component-datepicker format" value="<?= old('tgl_ktp_ibu');?>" placeholder="DD-MM-YYYY">
+							<label>Tgl Diberikan KTP Ibu:<span class="text-danger">*</span></label><br>
+							<input type="text" name="tgl_ktp_ibu" id="tgl_ktp_ibu" class="form-control text-start component-datepicker format <?= ($validation->hasError('tgl_ktp_ibu')) ? 'is-invalid' : '' ?>" value="<?= old('tgl_ktp_ibu');?>" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-4 form-group">
 							<label>Berlaku s/d:</label><br>
@@ -172,21 +172,21 @@
 							<input type="text" name="rentang_paspor_ibu" id="rentang_paspor_ibu" class="form-control text-start component-datepicker format" value="<?= old('rentang_paspor_ibu');?>" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-6 form-group">
-							<label>Nama Ayah:</label><br>
-							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control" value="<?= old('nama_ayah');?>" placeholder="e.g: MURSIDI">
+							<label>Nama Ayah:<span class="text-danger">*</span></label><br>
+							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control <?= ($validation->hasError('nama_ayah')) ? 'is-invalid' : '' ?>" value="<?= old('nama_ayah');?>" placeholder="e.g: YANTO">
 						</div>
 						<div class="col-6 form-group">
-							<label>Tempat/Tanggal Lahir Ayah:</label><br>
-							<input type="text" name="ttl_ayah" id="ttl_ayah" class="form-control" value="<?= old('ttl_ayah');?>" placeholder="KEDIRI, 02-02-1985">
+							<label>Tempat/Tanggal Lahir Ayah:<span class="text-danger">*</span></label><br>
+							<input type="text" name="ttl_ayah" id="ttl_ayah" class="form-control <?= ($validation->hasError('ttl_ayah')) ? 'is-invalid' : '' ?>" value="<?= old('ttl_ayah');?>" placeholder="KEDIRI, 02-02-1985">
 						</div>
 						
 						<div class="col-4 form-group">
-							<label>No. KTP Ayah:</label><br>
-							<input type="text" name="no_ktp_ayah" id="no_ktp_ayah" class="form-control" value="<?= old('no_ktp_ayah');?>" placeholder="16 DIGIT NO KTP">
+							<label>No. KTP Ayah:<span class="text-danger">*</span></label><br>
+							<input type="text" name="no_ktp_ayah" id="no_ktp_ayah" class="form-control <?= ($validation->hasError('no_ktp_ayah')) ? 'is-invalid' : '' ?>" value="<?= old('no_ktp_ayah');?>" placeholder="16 DIGIT NO KTP">
 						</div>
 						<div class="col-4 form-group">
-							<label>Tgl Diberikan KTP Ayah:</label><br>
-							<input type="text" name="tgl_ktp_ayah" id="tgl_ktp_ayah" class="form-control text-start component-datepicker format" value="<?= old('tgl_ktp_ayah');?>" placeholder="DD-MM-YYYY">
+							<label>Tgl Diberikan KTP Ayah:<span class="text-danger">*</span></label><br>
+							<input type="text" name="tgl_ktp_ayah" id="tgl_ktp_ayah" class="form-control text-start component-datepicker format <?= ($validation->hasError('tgl_ktp_ayah')) ? 'is-invalid' : '' ?>" value="<?= old('tgl_ktp_ayah');?>" placeholder="DD-MM-YYYY">
 						</div>
 						<div class="col-4 form-group">
 							<label>Berlaku s/d:</label><br>
@@ -208,20 +208,21 @@
 							<label>Tujuan Pengajuan Paspor: <span class="text-danger">*</span></label>
 							<select class="form-select tujuan required <?= ($validation->hasError('tujuan')) ? 'is-invalid' : '' ?>" name="tujuan" id="tujuan">
 								<option>-PILIH TUJUAN PENGAJUAN ANDA-</option>
-								<option value="Wisata" >Wisata</option>
-								<option value="Kunjungan">Kunjungan</option>
-								<option value="Belajar">Belajar</option>
-								<option value="Umroh">Umroh</option>
-								<option value="Umroh">Haji</option>
-								<option value="Bekerja Formal">Bekerja Formal</option>
+								<option value="Bekerja" <?= old('tujuan') == 'Bekerja'? 'selected':''?>>Bekerja</option>
+								<option value="Belajar" <?= old('tujuan') == 'Belajar'? 'selected':''?>>Belajar</option>
+								<option value="Berobat" <?= old('tujuan') == 'Berobat'? 'selected':''?>>Berobat</option>
+								<option value="Haji" <?= old('tujuan') == 'Haji'? 'selected':''?>>Haji</option>
+								<option value="Kunjungan" <?= old('tujuan') == 'Kunjungan'? 'selected':''?>>Kunjungan</option>
+								<option value="Umroh" <?= old('tujuan') == 'Umroh'? 'selected':''?>>Umroh</option>
+								<option value="Wisata" <?= old('tujuan') == 'Wisata'? 'selected':''?>>Wisata</option>
 							</select>
 						</div>
 						<div class="col-4 form-group">
 							<label>Ingin Tambah (Endorse) Nama? <span class="text-danger">*</span></label>
 							<select class="form-select endorse required" name="endorse" id="endorse">
 								<option>-PILIHAN ANDA-</option>
-								<option value="Ya">Ya</option>
-								<option value="Tidak">Tidak</option>
+								<option value="Ya" <?= old('endorse') == 'Ya'? 'selected':''?>>Ya</option>
+								<option value="Tidak" <?= old('endorse') == 'Tidak'? 'selected':''?>>Tidak</option>
 							</select>
 						</div>
 						<div class="col-4 hidden form-group" id="endorse_nama">
@@ -240,7 +241,8 @@
 				</div>
 				
 				<div class="col-12 center">
-					<button class="btn btn-secondary btn-lg" href="/cetak-perdim-anak/" type="submit">Submit</button>
+					<br>
+					<button class="button button-rounded button-reveal button-large button-blue" href="/cetak-perdim-anak/" type="submit"><i class="icon-print2"></i><span>print perdim</span></button>
 				</div>
 				
 			</form>

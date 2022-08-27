@@ -78,26 +78,4 @@ class PerdimAnakModel extends Model
                         ->first();
         }
     }
-
-    // public function getUmrohPerdim($id = false)
-    // {
-    //     if($id == false){
-    //         return $this->findAll();
-    //     } else {
-    //         return $this->where(['id_perdim' => $id])
-    //                     ->where(['tujuan' => 'Umroh'])
-    //                     ->first();
-    //     }
-    // }
-
-    // public function getHajiPerdim($id = false)
-    // {
-    //     if($id == false){
-    //         return $this->findAll();
-    //     } else {
-    //         return $this->where(['id_perdim' => $id])
-    //                     ->where(['tujuan' => 'Haji'])
-    //                     ->first();
-    //     }
-    // }
 }

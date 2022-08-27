@@ -49,7 +49,7 @@ class PemohonDewasa extends BaseController
             'jenis_kelamin' => 'required',
             'tanggal_lahir' => 'required',
             'tempat_lahir' => 'required',
-            'nik' => 'required|is_unique[perdim_dewasa.nik]|max_length[16]',
+            'nik' => 'required|max_length[16]',
             'tempat_output' => 'required',
             'alamat' => 'required',
             'no_hp' => 'required',
