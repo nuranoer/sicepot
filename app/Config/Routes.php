@@ -37,9 +37,9 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 
 //Main Page Sicepot
-$routes->get('/dashboard', 'Home::index');
-$routes->get('/', 'Home::index');
-$routes->get('/praperdim', 'Home::praperdim');
+$routes->get('/dashboard', 'Home::praperdim');
+$routes->get('/', 'Home::praperdim');
+// $routes->get('/praperdim', 'Home::praperdim');
 
 //Pemohon Dewasa
 $routes->get('/perdimdewasa', 'PemohonDewasa::perdimdewasa');

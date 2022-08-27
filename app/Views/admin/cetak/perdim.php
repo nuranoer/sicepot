@@ -369,7 +369,7 @@ tags will be replaced.-->
   <td class=xl1517069 width=25 style='width:19pt'></td>
   <td class=xl1517069 width=25 style='width:19pt'></td>
   <td class=xl1517069 width=25 style='width:19pt'></td>
-  <td class=xl6417069 colspan=4 width=100 style='width:76pt'>PERDIM : 11</td>
+  <td class=xl6417069 colspan=4 width=100 style='width:76pt'>PERDIM 11</td>
   <td class=xl1517069 width=35 style='width:27pt'></td>
   <td class=xl1517069 width=25 style='width:19pt'></td>
  </tr>
@@ -400,7 +400,7 @@ tags will be replaced.-->
  </tr>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
-  <td class=xl6417069 colspan=9>KANTOR IMIGRASI KELAS II KEDIRI</td>
+  <td class=xl6417069 colspan=9>KANTOR IMIGRASI KELAS II NON TPI KEDIRI</td>
   <td class=xl1517069></td>
   <td class=xl1517069></td>
   <td class=xl1517069></td>
@@ -416,7 +416,7 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <td class=xl1517069></td>
   <td class=xl1517069></td>
-  <td class=xl6417069 colspan=2>NO: 9858509 CG</td>
+  <td class=xl6417069 colspan=2>NO</td>
   <td class=xl1517069></td>
   <td class=xl1517069></td>
   <td class=xl1517069></td>

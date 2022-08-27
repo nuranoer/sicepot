@@ -30,8 +30,7 @@
 	<link rel="stylesheet" href="HTML/css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- Document Title
-	============================================= -->
+	<!-- Document Title -->
 	<title>SICEPOT</title>
 
 </head>
@@ -47,35 +46,31 @@
 
 <body class="stretched">
 
-	<!-- Document Wrapper
-	============================================= -->
+	<!-- Document Wrapper -->
 	<div id="wrapper" class="clearfix">
 
-		<!-- Navbar
-		============================================= -->
+		<!-- Navbar -->
 		<header id="header" class="full-header transparent-header" data-sticky-class="not-dark">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
 
-						<!-- Logo
-                            ============================================= -->
+						<!-- Logo -->
 						<div id="logo">
 							<a href="/" class="standard-logo" data-dark-logo="HTML/images/logoimigrasi.png"><img src="HTML/images/logoimigrasi.png" alt="Imigrasi"></a>
+						</div>
+						<!-- #logo end -->
 
-						</div><!-- #logo end -->
-
+						
 						<div class="header-misc">
-							<!-- Top Admin
-                                            ============================================= -->
+							<!-- Top Admin  -->
 							<div class="header-misc-icon">
 								<a href="/dashboardadmin">
 									<i class="icon-user-tie"></i>
 								</a>
 							</div>
-							<!-- #top-search end -->
 						</div>
-
+						
 						<div id="primary-menu-trigger">
 							<svg class="svg-trigger" viewBox="0 0 100 100">
 								<path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
@@ -83,18 +78,15 @@
 								<path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
 							</svg>
 						</div>
+						
+						<!-- <div style="font-size: 18px;"><strong>Kantor Imigrasi Kelas II Non TPI Kediri</strong></div> -->
 
-						<!-- Primary Navigation
-                            ============================================= -->
+						<!-- Primary Navigation -->
 						<nav class="primary-menu">
-
+							
 							<ul class="menu-container">
-								<li class="menu-item">
-									<a class="menu-link" href="/">
-										<div>Home</div>
-									</a>
 								<li class="menu-item mega-menu mega-menu-small">
-									<a class="menu-link" href="/praperdim">
+									<a class="menu-link" href="/">
 										<div>Formulir</div>
 									</a>
 								</li>
@@ -111,13 +103,11 @@
 		</header>
 		<!-- #Navbar end -->
 
-		<!-- Content
-		============================================= -->
+		<!-- Content -->
 		<?= $this->renderSection('content'); ?>
 		<!-- #content end -->
 
-		<!-- Footer
-		============================================= -->
+		<!-- Footer -->
 		<footer id="footer" class="dark">
 			<div class="container">
 				<!-- Footer Widgets
@@ -137,7 +127,7 @@
 								<div class="col-md-5">
 									<h4>Kementerian Hukum dan Hak Asasi Manusia RI <br>
 									Kantor Imigrasi Kelas II Non TPI Kediri <br>
-									<small>"Kami Siap Melayani <strong>Dengan Tulus</strong>"</small>
+									<small>"Dedikasi Melayani Sepenuh Hati"</small>
 									</h4>
 								</div>
 								<div class="col-md-5">
@@ -227,12 +217,10 @@
 
 	</div><!-- #wrapper end -->
 
-	<!-- Go To Top
-	============================================= -->
+	<!-- Go To Top -->
 	<div id="gotoTop" class="icon-angle-up"></div>
 
-	<!-- JavaScripts
-	============================================= -->
+	<!-- JavaScripts -->
 	<script src="HTML/js/jquery.js"></script>
 	<script src="HTML/js/plugins.min.js"></script>
 
@@ -250,8 +238,7 @@
 	<!-- Show and Hide Input Perdim -->
 	<script src="HTML/js/show-hide-input.js"></script>
 
-	<!-- Footer Scripts
-	============================================= -->
+	<!-- Footer Scripts -->
 	<script src="HTML/js/functions.js"></script>
 
 </body>

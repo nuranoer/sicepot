@@ -14,12 +14,12 @@
 						<h1>Formulir</h1>
 						
 					</div>
-					<div class="col-4">
+					<!-- <div class="col-4">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item"><a href="/">Home</a></li>
 							<li class="breadcrumb-item active" aria-current="page">Formulir</li>
 						</ol>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
@@ -28,7 +28,7 @@
         		<!-- Content
 		============================================= -->
 		<section id="content">
-			<div class="content-wrap">
+			<div class="content-wrap2">
 				<div class="container clearfix">
 					<div class="form-widget">
 						<div class="form-process">
@@ -36,6 +36,7 @@
 									<div class="css3-spinner-scaler"></div>
 							</div>
 						</div>
+						<br><br><br><br>
 						<div class="row checkout-form-billing">
 							<div class="col-12">
 								<h3>Silahkan Pilih</h3>
@@ -46,7 +47,7 @@
 						<div class="row block-card-9 col-mb-50">
 							<div class="col-md-6 min-vh-75">
 								<div class="grid-inner rounded-3 h-100">
-									<div class="grid-image lazy" data-bg="HTML/images/pemohon/card1.jpg"></div>
+									<div class="grid-image lazy" data-bg="HTML/images/pemohon/adult.jpg"></div>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
 											<div class="grid-icon">
@@ -64,7 +65,7 @@
 							</div>
 							<div class="col-md-6 min-vh-75">
 								<div class="grid-inner rounded-3 h-100">
-									<div class="grid-image lazy" data-bg="HTML/images/pemohon/kid.jpg"></div>
+									<div class="grid-image lazy" data-bg="HTML/images/pemohon/children.jpg"></div>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
 											<div class="grid-icon">
@@ -83,6 +84,43 @@
 						</div>
 						<!-- Card End -->
 
+					</div>
+				</div>
+
+				<br><br><br><br>
+				
+				<div class="section my-0">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-lg-4">
+								<i class="i-plain color i-large icon-line2-screen-desktop inline-block" style="margin-bottom: 15px;"></i>
+								<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+									<span class="before-heading">Kantor Imigrasi Kelas II Non-TPI Kediri</span>
+									<h4>Responsive</h4>
+								</div>
+								<p>Website Si Cepot dapat diakses di Web Browser Laptop maupun Handphone</p>
+							</div>
+
+							<div class="col-lg-4">
+								<i class="i-plain color i-large icon-line2-energy inline-block" style="margin-bottom: 15px;"></i>
+								<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+									<span class="before-heading">Kantor Imigrasi Kelas II Non-TPI Kediri</span>
+									<h4>Cepat & Mudah</h4>
+								</div>
+								<p>Website si cepot bisa diakses dan diisi oleh pemohon itu sendiri dan proses nya sangat praktis</p>
+							</div>
+
+							<div class="col-lg-4">
+								<i class="i-plain color i-large icon-line2-equalizer inline-block" style="margin-bottom: 15px;"></i>
+								<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+									<span class="before-heading">Kantor Imigrasi Kelas II Non-TPI Kediri</span>
+									<h4>Praktis</h4>
+								</div>
+								<p>Bisa diakses dimanapun, hanya satu kali klik, pemohon bisa langsung dapat menikmati fiturnya</p>
+							</div>
+
+						</div>
 					</div>
 				</div>
 			</div>

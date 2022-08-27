@@ -166,7 +166,9 @@
 					</div>
 				</div>
 				<div class="col-12 center">
-					<button class="btn btn-secondary btn-lg" href="/cetak-perdim-dewasa" type="submit">Submit</button>
+					<!-- <a href="/cetak-perdim-dewasa" type="submit" class="button button-rounded button-reveal button-large button-dirtygreen"><i class="icon-map-marker2"></i><span>Dirty Green</span></a> -->
+					<br>
+					<button type="submit" class="button button-rounded button-reveal button-large button-blue" href="/cetak-perdim-dewasa" type="submit"><i class="icon-print2"></i><span>print perdim</span></button>
 					<!-- <a class="btn btn-secondary btn-lg"></a> -->
 					<!-- <input type="hidden" name="prefix" value="checkout-form-"> -->
 				</div>
