@@ -55,21 +55,30 @@
 				<div class="container">
 					<div class="header-row">
 
-						<!-- Logo -->
-						<div id="logo">
-							<a href="/" class="standard-logo" data-dark-logo="HTML/images/logoimigrasi.png"><img src="HTML/images/logoimigrasi.png" alt="Imigrasi"></a>
+						<div class="me-lg-3">
+							<!-- Logo -->
+							<div id="logo">
+								<a href="/" class="standard-logo" data-dark-logo="HTML/images/logoimigrasi.png"><img src="HTML/images/logoimigrasi.png" alt="Imigrasi"></a>
+							</div>
+							<!-- #logo end -->
+
 						</div>
-						<!-- #logo end -->
 						
-						<div class="header-misc">
-							<!-- Top Admin  -->
+						<div class="me-lg-2 text-uppercase" style="font-size: 18px;">
+							<strong>Kantor Imigrasi Kelas II Non TPI Kediri</strong>
+						</div>
+						<!-- <h4 class="me-3 standard-logo">Imigrasi Kediri</h4> -->
+						
+						<!-- Admin  -->
+						<div class="header-misc d-none d-sm-block">
 							<div class="header-misc-icon">
 								<a href="/dashboardadmin">
 									<i class="icon-user-tie"></i>
 								</a>
 							</div>
 						</div>
-						
+						<!-- Admin end -->
+					
 						<div id="primary-menu-trigger">
 							<svg class="svg-trigger" viewBox="0 0 100 100">
 								<path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
@@ -78,10 +87,8 @@
 							</svg>
 						</div>
 						
-						<!-- <div style="font-size: 18px;"><strong>Kantor Imigrasi Kelas II Non TPI Kediri</strong></div> -->
-
 						<!-- Primary Navigation -->
-						<nav class="primary-menu">
+						<nav class="primary-menu ms-lg-auto">
 							
 							<ul class="menu-container">
 								<li class="menu-item mega-menu mega-menu-small">
@@ -93,7 +100,8 @@
 							</ul>
 							</li>
 							</ul>
-						</nav><!-- #primary-menu end -->
+						</nav>
+						<!-- #primary-menu end -->
 
 					</div>
 				</div>
