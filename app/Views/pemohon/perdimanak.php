@@ -57,7 +57,7 @@
 							<h3>Data Pemohon Anak</h3>
 						</div>
 						<div class="col-12 form-group">
-							<label>Nama Lengkap Anak: <span class="text-danger">*</span></label>
+							<label>Nama Lengkap Anak: <small>(tanpa simbol)</small> <span class="text-danger">*</span></label>
 							<input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control <?= ($validation->hasError('nama_lengkap')) ? 'is-invalid' : '' ?> required" value="<?= old('nama_lengkap');?>" placeholder="e.g: DEA ANANDA">
 						</div>
 						<div class="col-12 form-group">

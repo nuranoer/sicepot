@@ -38,7 +38,7 @@
 						<div class="row block-card-9 col-mb-50">
 							<div class="col-md-6 min-vh-75">
 								<div class="grid-inner rounded-3 h-100">
-									<div class="grid-image lazy" data-bg="HTML/images/pemohon/adult.jpg"></div>
+									<div class="grid-image lazy" data-bg="HTML/images/pemohon/adult2.jpg"></div>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
 											<div class="grid-icon">
