@@ -1,10 +1,8 @@
 <?= $this->extend('pemohon/layout/template'); ?>
 
 <?= $this->section('content'); ?>
-		<!-- Page Title
-		============================================= -->
+		<!-- Page Title -->
 		<section id="page-title">
-
 			<div class="container clearfix">
 				<div class="row">
 					<div class="col-1">
@@ -14,19 +12,12 @@
 						<h1>Formulir</h1>
 						
 					</div>
-					<!-- <div class="col-4">
-						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="/">Home</a></li>
-							<li class="breadcrumb-item active" aria-current="page">Formulir</li>
-						</ol>
-					</div> -->
 				</div>
 			</div>
+		</section>
+		<!-- #page-title end -->
 
-		</section><!-- #page-title end -->
-
-        		<!-- Content
-		============================================= -->
+        <!-- Content -->
 		<section id="content">
 			<div class="content-wrap2">
 				<div class="container clearfix">
@@ -99,7 +90,7 @@
 									<span class="before-heading">Kantor Imigrasi Kelas II Non-TPI Kediri</span>
 									<h4>Responsive</h4>
 								</div>
-								<p>Website Si Cepot dapat diakses di Web Browser Laptop maupun Handphone</p>
+								<p>Website Sicepot dapat diakses di Web Browser Laptop maupun Handphone</p>
 							</div>
 
 							<div class="col-lg-4">
@@ -108,7 +99,7 @@
 									<span class="before-heading">Kantor Imigrasi Kelas II Non-TPI Kediri</span>
 									<h4>Cepat & Mudah</h4>
 								</div>
-								<p>Website si cepot bisa diakses dan diisi oleh pemohon itu sendiri dan proses nya sangat praktis</p>
+								<p>Website Sicepot bisa diakses dan diisi oleh pemohon itu sendiri dan proses nya sangat praktis</p>
 							</div>
 
 							<div class="col-lg-4">
