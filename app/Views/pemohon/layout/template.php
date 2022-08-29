@@ -94,10 +94,14 @@
 							<ul class="menu-container">
 								<li class="menu-item mega-menu mega-menu-small">
 									<a class="menu-link" href="/">
-										<div>Formulir</div>
+										<div>Beranda</div>
 									</a>
 								</li>
-
+								<li class="menu-item mega-menu mega-menu-small">
+									<a class="menu-link" href="/">
+										<div>Panduan</div>
+									</a>
+								</li>
 							</ul>
 							</li>
 							</ul>
@@ -152,25 +156,11 @@
 				<div class="container">
 					<div class="row col-mb-30">
 						<div class="col-md-6 text-center text-md-start pt-3">
-							Copyrights &copy; Internship Imigrasi Kediri (2022)<br />
+							Copyrights &copy; Internship Imigrasi Kediri 2022<br />
 						</div>
 
 						<div class="col-md-6 text-center text-md-end">
 							<div class="d-flex justify-content-center justify-content-md-end">
-								<!-- <a href="#" class="social-icon si-small si-borderless si-facebook">
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a> -->
-
-								<!-- <a href="#" class="social-icon si-small si-borderless si-gplus">
-									<i class="icon-gplus"></i>
-									<i class="icon-gplus"></i>
-								</a> -->
 
 								<a href="https://kediri.imigrasi.go.id/" class="social-icon si-small si-borderless si-google">
 									<i class="icon-google"></i>
@@ -192,9 +182,9 @@
 									<i class="icon-whatsapp"></i>
 								</a>
 
-								<a href="mailto:imigrasi.kediri@gmail.com" class="social-icon si-small si-borderless si-email3">
-									<i class="icon-gmail"></i>
-									<i class="icon-gmail"></i>
+								<a href="https://www.facebook.com/kanim.kediri" class="social-icon si-small si-borderless si-facebook">
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
 								</a>
 							</div>
 

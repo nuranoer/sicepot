@@ -9,7 +9,7 @@
 						<img src="HTML/images/login/logo_si_cepot.png" alt="Logo Redi Dinanti" width="200">
 					</div> -->
 					<div class="col pt-2">
-						<h1>Formulir</h1>
+						<h1>Beranda</h1>
 					</div>
 				</div>
 			</div>
@@ -45,7 +45,7 @@
 											</div>
 											<div class="grid-content">
 												<h5 class="text-uppercase fw-medium font-body ls1 text-smaller op-07 mb-2">Pengajuan Paspor</h5>
-												<h3 class="fw-medium h2">Dewasa</h3><small><i>( sudah punya KTP )</i></small>
+												<h3 class="fw-medium h2">Dewasa</h3><small><i>( sudah memiliki KTP )</i></small>
 												<a href="/perdimdewasa" class="icon-stacked rounded-circle bg-white text-danger text-center mb-0 btn-hover h5"><i class="icon-line-arrow-right"></i></a>
 											</div>
 										</div>
@@ -87,9 +87,9 @@
 								<i class="i-plain color i-large icon-line2-screen-desktop inline-block" style="margin-bottom: 15px;"></i>
 								<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
 									<span class="before-heading">Kantor Imigrasi Kelas II Non-TPI Kediri</span>
-									<h4>menarik</h4>
+									<h4>responsif</h4>
 								</div>
-								<p>Website SI CEPOT dapat diakses di desktop dengan tampilan yang sangat menarik</p>
+								<p>Dapat diakses melalui desktop browser dan perangkat mobile</p>
 							</div>
 
 							<div class="col-lg-4">
@@ -98,7 +98,7 @@
 									<span class="before-heading">Kantor Imigrasi Kelas II Non-TPI Kediri</span>
 									<h4>Cepat & Mudah</h4>
 								</div>
-								<p>Website SI CEPOT bisa diakses dan diisi oleh pemohon itu sendiri dan prosesnya sangat praktis</p>
+								<p>Dapat diakses dan diisi oleh pemohon itu sendiri dengan cepat dan mudah</p>
 							</div>
 
 							<div class="col-lg-4">
@@ -107,7 +107,7 @@
 									<span class="before-heading">Kantor Imigrasi Kelas II Non-TPI Kediri</span>
 									<h4>Praktis</h4>
 								</div>
-								<p>Bisa diakses dimanapun, hanya satu kali klik, pemohon bisa langsung menikmati fiturnya</p>
+								<p>Dapat diakses dimanapun, hanya satu kali klik, pemohon bisa langsung menikmati fiturnya</p>
 							</div>
 
 						</div>
