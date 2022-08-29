@@ -100,21 +100,21 @@
 							<label>Tanggal Lahir Anak: <span class="text-danger">*</span></label>
 							<input type="text" value="<?= old('tanggal_lahir');?>" class="form-control required <?= ($validation->hasError('tanggal_lahir')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tanggal_lahir" id="tanggal_lahir" placeholder="DD-MM-YYYY">
 						</div>
-						<div class="col-4 form-group">
+						<div class="col-12 form-group">
 							<label>NIK / No. KIA: <span class="text-danger">*</span></label><br>
 							<input type="text" name="nik" id="nik" class="form-control required <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" value="<?= old('nik');?>" placeholder="Masukkan 16 digit NIK anak">
 							<div class="invalid-feedback">
 								NIK harus terdiri dari 16 digit.
 							</div>
 						</div>
-						<div class="col-4 form-group">
+						<!-- <div class="col-4 form-group">
 							<label>Tgl Diberikan:</label><br>
 							<input type="text" name="tempat_output" id="tempat_output" class="form-control text-start component-datepicker format" value="<?= old('tempat_output');?>" placeholder="e.g: 01-12-2012">
 						</div>
 						<div class="col-4 form-group">
 							<label>berlaku s/d:</label><br>
 							<input type="text" name="rentang_tgl_kia" id="rentang_tgl_kia" class="form-control" value="<?= old('rentang_tgl_kia');?>" placeholder="">
-						</div>
+						</div> -->
 						<div class="col-6 form-group form-anak">
 							<label>Alamat Anak: <span class="text-danger">*</span></label>
 							<input type="text" name="alamat" id="alamat" class="form-control required <?= ($validation->hasError('alamat')) ? 'is-invalid' : '' ?>" value="<?= old('alamat');?>" placeholder="e.g: GRINGGING KEDIRI">
