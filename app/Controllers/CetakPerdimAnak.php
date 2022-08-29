@@ -18,38 +18,40 @@ class CetakPerdimAnak extends BaseController {
         $cetak = $this->PerdimAnakModel->getCetakPerdimAnak($id);
 
         $permohonanBaru = $this->PerdimAnakModel->getBaruPerdim($id);
-        $permohonanPenggantian = $this->PerdimAnakModel->getPenggantianPerdim($id);
+        $permohonanHbsBerlaku = $this->PerdimAnakModel->getHbsBerlakuPerdim($id);
+        $permohonanHlmnPenuh = $this->PerdimAnakModel->getHlmnPenuhPerdim($id);
+        $permohonanRusak = $this->PerdimAnakModel->getRusakPerdim($id);
+        $permohonanHilang = $this->PerdimAnakModel->getHilangPerdim($id);
+        $permohonanUbhData = $this->PerdimAnakModel->getUbhDataPerdim($id);
         $endorse = $this->PerdimAnakModel->getEndorse($id);
-        // $permohonanUmroh = $this->PerdimAnakModel->getUmrohPerdim($id);
-        // $permohonanHaji = $this->PerdimAnakModel->getHajiPerdim($id);
 
-        if ($permohonanBaru) {
+        if ($permohonanBaru || $permohonanRusak || $permohonanHilang || $permohonanUbhData) {
             if ($endorse) {
                 echo view('admin/cetak/perdim', $cetak);
                 echo view('admin/cetak/perdim2', $cetak);
                 echo view('admin/cetak/suratpernyataanumum', $cetak);
-                echo view('admin/cetak/suratpernyataanortu',$cetak);
+                echo view('admin/cetak/suratpernyataanortu', $cetak);
                 echo view('admin/cetak/suratpernyataanendorse', $cetak);
             } else {
                 echo view('admin/cetak/perdim', $cetak);
                 echo view('admin/cetak/perdim2', $cetak);
                 echo view('admin/cetak/suratpernyataanumum', $cetak);
-                echo view('admin/cetak/suratpernyataanortu',$cetak);
+                echo view('admin/cetak/suratpernyataanortu', $cetak);
             }
-        } elseif ($permohonanPenggantian) {
+        } elseif ($permohonanHbsBerlaku || $permohonanHlmnPenuh) {
             if ($endorse) {
                 echo view('admin/cetak/perdim', $cetak);
                 echo view('admin/cetak/perdim2', $cetak);
                 echo view('admin/cetak/suratpernyataanumum', $cetak);
                 echo view('admin/cetak/suratpernyataanganti', $cetak);
-                echo view('admin/cetak/suratpernyataanortu',$cetak);
+                echo view('admin/cetak/suratpernyataanortu', $cetak);
                 echo view('admin/cetak/suratpernyataanendorse', $cetak);
             } else {
                 echo view('admin/cetak/perdim', $cetak);
                 echo view('admin/cetak/perdim2', $cetak);
                 echo view('admin/cetak/suratpernyataanumum', $cetak);
                 echo view('admin/cetak/suratpernyataanganti', $cetak);
-                echo view('admin/cetak/suratpernyataanortu',$cetak);
+                echo view('admin/cetak/suratpernyataanortu', $cetak);
             }
         }
     }

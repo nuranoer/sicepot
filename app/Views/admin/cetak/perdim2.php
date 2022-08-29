@@ -555,16 +555,16 @@ tags will be replaced.-->
   $kerja3 = "";
   $kerja4 = "";
   $kerja5 = "";
- 	if ($pekerjaan == 'PEJABAT NEGARA'){
+ 	if ($pekerjaan == 'PEJABAT NEGARA' || $pekerjaan == 'PRESIDEN' || $pekerjaan == 'Presiden' || $pekerjaan == 'presiden' || $pekerjaan == 'DPR RI' || $pekerjaan == 'MENTERI'){
  		$kerja1 = "<strong>X</strong>";
  		$lainnya = '';
  	}elseif ($pekerjaan == 'PNS' || $pekerjaan == 'Pegawai Negeri Sipil') {
  		$kerja2 = "<strong>X</strong>";
  		$lainnya = '';
- 	}elseif ($pekerjaan == 'TNI' || $pekerjaan == 'POLRI') {
+ 	}elseif ($pekerjaan == 'TNI' || $pekerjaan == 'Tentara' || $pekerjaan == 'tentara' || $pekerjaan == 'TENTARA' || $pekerjaan == 'POLRI' || $pekerjaan == 'Polri' || $pekerjaan == 'polri' || $pekerjaan == 'POLISI' || $pekerjaan == 'Polisi' || $pekerjaan == 'polisi') {
  		$kerja3 = "<strong>X</strong>";
  		$lainnya = '';
- 	}elseif ($pekerjaan == 'KARYAWAN SWASTA') {
+ 	}elseif ($pekerjaan == 'KARYAWAN SWASTA' || $pekerjaan == 'PEGAWAI SWASTA' || $pekerjaan == 'Karyawan Swasta' || $pekerjaan == 'Pegawai Swasta' || $pekerjaan == 'karyawan swasta' || $pekerjaan == 'pegawai swasta') {
  		$kerja4 = "<strong>X</strong>";
  		$lainnya = '';
  	}else {

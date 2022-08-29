@@ -139,8 +139,6 @@ class PemohonAnak extends BaseController
     
             $id = $this->PerdimAnakModel->insertID();
             return redirect()->to('/cetak-perdim-anak/' . $id);
-            // session()->setFlashdata('success', 'Data berhasil ditambahkan!');
-            // return redirect()->to('/perdimanak');
         }
     }
 }

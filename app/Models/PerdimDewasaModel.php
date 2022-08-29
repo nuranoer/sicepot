@@ -50,17 +50,62 @@ class PerdimDewasaModel extends Model
         } else {
             return $this->where(['id_perdim' => $id])
                         ->where(['jenis_permohonan' => 'Baru'])
+                        ->where(['alasan_penggantian' => ''])
                         ->first();
         }
     }
 
-    public function getPenggantianPerdim($id = false)
+    public function getHbsBerlakuPerdim($id = false)
     {
         if($id == false){
             return $this->findAll();
         } else {
             return $this->where(['id_perdim' => $id])
-                        ->where(['jenis_permohonan' => 'Penggantian'])
+                        ->where(['alasan_penggantian' => 'Habis Masa Berlaku'])
+                        ->first();
+        }
+    }
+    
+    public function getHlmnPenuhPerdim($id = false)
+    {
+        if($id == false){
+            return $this->findAll();
+        } else {
+            return $this->where(['id_perdim' => $id])
+                        ->where(['alasan_penggantian' => 'Halaman Penuh'])
+                        ->first();
+        }
+    }
+
+    public function getRusakPerdim($id = false)
+    {
+        if($id == false){
+            return $this->findAll();
+        } else {
+            return $this->where(['id_perdim' => $id])
+                        ->where(['alasan_penggantian' => 'Rusak'])
+                        ->first();
+        }
+    }
+
+    public function getHilangPerdim($id = false)
+    {
+        if($id == false){
+            return $this->findAll();
+        } else {
+            return $this->where(['id_perdim' => $id])
+                        ->where(['alasan_penggantian' => 'Hilang'])
+                        ->first();
+        }
+    }
+
+    public function getUbhDataPerdim($id = false)
+    {
+        if($id == false){
+            return $this->findAll();
+        } else {
+            return $this->where(['id_perdim' => $id])
+                        ->where(['alasan_penggantian' => 'Ubah Data'])
                         ->first();
         }
     }

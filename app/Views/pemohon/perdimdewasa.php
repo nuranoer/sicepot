@@ -7,19 +7,12 @@
 
 	<div class="container clearfix">
 		<div class="row">
-			<div class="col-1">
-				<img src="HTML/images/login/logo.png" alt="Logo Redi Dinanti" width="100">
-			</div>
-			<div class="col-7">
-				<br>
+			<!-- <div class="col-3">
+				<img src="HTML/images/login/logo_si_cepot.png" alt="Logo Redi Dinanti" width="200">	
+			</div> -->
+			<div class="col">
 				<h1>FORMULIR PEMOHON</h1>
 				<!-- <span>Forms Widget</span> -->
-			</div>
-			<div class="col-4">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Formulir</li>
-				</ol>
 			</div>
 		</div>
 	</div>
@@ -32,7 +25,7 @@
 	<div class="content-wrap">
 		<div class="container clearfix">
 			<div class="style-msg alertmsg">
-				<div class="sb-msg"><i class="icon-warning-sign"></i><strong>Perhatian!</strong> Mohon mengisi data dengan menggunakan huruf balok atau huruf besar! Klik <strong>Caps Lock</strong> pada keyboard untuk mengaktifkan huruf besar!</div>
+				<div class="sb-msg"><i class="icon-warning-sign"></i><strong>Perhatian!</strong> Mohon mengisi data dengan menggunakan huruf balok atau huruf besar! Klik <strong>Caps Lock</strong> pada keyboard untuk mengaktifkan huruf besar! Kolom bertanda (<span class="text-danger">*</span>) wajib diisi!</div>
 			</div>
 			
 			<?php if(session()->getFlashdata('error')) : ?>
@@ -58,7 +51,7 @@
 						</div>
 						<div class="col-12 form-group">
 							<label>Nama Lengkap: <small>(tanpa simbol)</small>  <span class="text-danger">*</span></label>
-							<input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control <?= ($validation->hasError('nama_lengkap')) ? 'is-invalid' : '' ?>" value="<?= old('nama_lengkap');?>" placeholder="e.g: AHMAD JAMAL">
+							<input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control <?= ($validation->hasError('nama_lengkap')) ? 'is-invalid' : '' ?>" value="<?= old('nama_lengkap');?>" placeholder="cth: AHMAD JAMAL">
 						</div>
 						<div class="col-12 form-group">
 							<label>Jenis Kelamin: <span class="text-danger">*</span></label>
@@ -81,7 +74,10 @@
 							<select class="form-select alasan_penggantian required" name="alasan_penggantian" id="alasan_penggantian">
 								<option value="">-Pilih Alasan Penggantian Paspor Anda-</option>
 								<option value="Habis Masa Berlaku" <?= old('alasan_penggantian') == 'Habis Masa Berlaku'? 'selected':''?>>Habis Masa Berlaku</option>
-								<option value="Halaman Penuh" <?= old('alasan_penggantian') == 'Habis Masa Berlaku'? 'selected':''?>>Halaman Penuh</option>
+								<option value="Halaman Penuh" <?= old('alasan_penggantian') == 'Halaman Penuh'? 'selected':''?>>Halaman Penuh</option>
+								<option value="Rusak" <?= old('alasan_penggantian') == 'Rusak'? 'selected':''?>>Rusak</option>
+								<option value="Hilang" <?= old('alasan_penggantian') == 'Hilang'? 'selected':''?>>Hilang</option>
+								<option value="Ubah Data" <?= old('alasan_penggantian') == 'Ubah Data'? 'selected':''?>>Ubah Data</option>
 							</select>
 						</div>
 						<div class="col-6 hidden form-group" id="seri_paspor">
@@ -94,7 +90,7 @@
 						</div>
 						<div class="col-6 form-group">
 							<label>Tempat Lahir: <span class="text-danger">*</span></label><br>
-							<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control <?= ($validation->hasError('tempat_lahir')) ? 'is-invalid' : '' ?>" value="<?= old('tempat_lahir');?>" placeholder="e.g: KEDIRI">
+							<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control <?= ($validation->hasError('tempat_lahir')) ? 'is-invalid' : '' ?>" value="<?= old('tempat_lahir');?>" placeholder="cth: KEDIRI">
 						</div>
 						<div class="col-6 form-group">
 							<label>Tanggal Lahir: <span class="text-danger">*</span></label>
@@ -106,11 +102,11 @@
 						</div>
 						<div class="col-6 form-group">
 							<label>Tanggal Dikeluarkan KTP: <span class="text-danger">*</span></label><br>
-							<input type="text" value="<?= old('tempat_output');?>" class="form-control <?= ($validation->hasError('tempat_output')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tempat_output" id="tempat_output" placeholder="e.g: 10-12-2009">
+							<input type="text" value="<?= old('tempat_output');?>" class="form-control <?= ($validation->hasError('tempat_output')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tempat_output" id="tempat_output" placeholder="cth: 10-12-2009">
 						</div>
 						<div class="col-12 form-group">
-							<label>Alamat: <small>(tanpa koma)</small><span class="text-danger">*</span></label>
-							<input type="text" name="alamat" id="alamat" class="form-control <?= ($validation->hasError('alamat')) ? 'is-invalid' : '' ?>" value="<?= old('alamat');?>" placeholder="e.g: GRINGGING KEDIRI">
+							<label>Alamat: <span class="text-danger">*</span></label>
+							<input type="text" name="alamat" id="alamat" class="form-control <?= ($validation->hasError('alamat')) ? 'is-invalid' : '' ?>" value="<?= old('alamat');?>" placeholder="cth: GRINGGING KEDIRI">
 						</div>
 						<div class="col-12 form-group">
 							<label>No HP: <span class="text-danger">*</span></label>
@@ -118,11 +114,11 @@
 						</div>
 						<div class="col-6 form-group">
 							<label>Nama Ibu: <span class="text-danger">*</span></label><br>
-							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control" value="<?= old('nama_ibu');?>" placeholder="e.g: ANISA">
+							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control" value="<?= old('nama_ibu');?>" placeholder="cth: ANISA">
 						</div>
 						<div class="col-6 form-group">
 							<label>Nama Ayah: <span class="text-danger">*</span></label><br>
-							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control" value="<?= old('nama_ayah');?>" placeholder="e.g: MUHAMMAD">
+							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control" value="<?= old('nama_ayah');?>" placeholder="cth: MUHAMMAD">
 						</div>
 						<div class="col-4 form-group">
 							<label>Tujuan Pengajuan Paspor: <span class="text-danger">*</span></label>
@@ -161,7 +157,7 @@
 						</div>
 						<div class="col-12 form-group">
 							<label>Pekerjaan: <span class="text-danger">*</span></label>
-							<input type="text" name="pekerjaan" id="pekerjaan" class="form-control <?= ($validation->hasError('pekerjaan')) ? 'is-invalid' : '' ?>" value="<?= old('pekerjaan');?>" placeholder="e.g: PNS">
+							<input type="text" name="pekerjaan" id="pekerjaan" class="form-control <?= ($validation->hasError('pekerjaan')) ? 'is-invalid' : '' ?>" value="<?= old('pekerjaan');?>" placeholder="cth: PNS">
 						</div>
 					</div>
 				</div>

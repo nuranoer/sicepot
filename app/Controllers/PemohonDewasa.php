@@ -66,12 +66,6 @@ class PemohonDewasa extends BaseController
             $this->PerdimDewasaModel->insert($data);
             $id = $this->PerdimDewasaModel->insertID();
             return redirect()->to('/cetak-perdim-dewasa/' . $id);
-
-            // session()->setFlashdata('success', 'ID Print anda '.$id);
-            // $perdimdewasa = $this->PerdimDewasaModel->findAll();
-            // $data = ['perdimdewasa' => $perdimdewasa];
-            // return view('/perdimdewasa',$data);
-
         }
     }
 }

@@ -31,7 +31,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Document Title -->
-	<title>SICEPOT</title>
+	<title>SI CEPOT</title>
 
 </head>
 
@@ -58,13 +58,14 @@
 						<div class="me-lg-3">
 							<!-- Logo -->
 							<div id="logo">
-								<a href="/" class="standard-logo" data-dark-logo="HTML/images/logoimigrasi.png"><img src="HTML/images/logoimigrasi.png" alt="Imigrasi"></a>
+								<a href="/" class="standard-logo" data-dark-logo="HTML/images/login/logo_si_cepot.png"><img src="HTML/images/login/logo_si_cepot.png" alt="Imigrasi"></a>
 							</div>
 							<!-- #logo end -->
 
 						</div>
 						
-						<div class="me-lg-2 text-uppercase" style="font-size: 18px;">
+						<div class="me-lg-2 text-uppercase" style="font-size: 14.5px;">
+							Aplikasi Cetak Form Paspor Otomatis (Si Cepot) <br>
 							<strong>Kantor Imigrasi Kelas II Non TPI Kediri</strong>
 						</div>
 						<!-- <h4 class="me-3 standard-logo">Imigrasi Kediri</h4> -->
@@ -123,33 +124,22 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="row">
-								<div class="col-md-1">
-									<img src="HTML/images/logo_kemenkumham.svg" alt="Logo Kemenkumham" class="footer-logo" width="100">
+								<div class="col-lg-2">
+									<img src="HTML/images/LogoFooter.png" alt="Logo Kemenkumham & Imigrasi" class="footer-logo" width="250">
 								</div>
-								<div class="col-md-1">
-									<div class="widget clearfix">
-										<img src="HTML/images/logoimigrasi.png" alt="Logo Imigrasi" class="footer-logo" width="115" />
-									</div>
-								</div>
-								<div class="col-md-5">
+								<div class="col-lg-5">
 									<h4>Kementerian Hukum dan Hak Asasi Manusia RI <br>
 									Kantor Imigrasi Kelas II Non TPI Kediri <br>
 									<small>"Dedikasi Melayani Sepenuh Hati"</small>
 									</h4>
 								</div>
-								<div class="col-md-5">
+								<div class="col-lg-5">
 									<address>
 										<strong>Alamat Kantor:</strong><br />
 										Jl. Jawa No. 135, Bedrek Selatan, Desa Grogol, Kec. Grogol,
 										<br> Kab. Kediri, Jawa Timur, 64151
 									</address>
 								</div>
-								<!-- <div class="col-md-2">
-									<abbr title="Phone Number"><strong>Phone:</strong></abbr>
-									(0354) 688307<br />
-									<abbr title="Email Address"><strong>Email:</strong></abbr>
-									imigrasi.kediri@gmail.com
-								</div> -->
 							</div>
 						</div>
 					</div>

@@ -61,7 +61,7 @@
 										</div>
 										<?php else: ?>
 										<div class="form-group">
-											<label for="login">NIP:</label>
+											<label for="login">Username:</label>
 											<input type="text" class="form-control <?php if(session('errors.login')) : ?>is-invalid<?php endif ?>"
 												name="login" placeholder="<?=lang('Auth.emailOrUsername')?>">
 											<div class="invalid-feedback">

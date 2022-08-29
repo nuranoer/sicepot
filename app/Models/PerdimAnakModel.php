@@ -16,9 +16,9 @@ class PerdimAnakModel extends Model
 
     protected $allowedFields = ['jenis_permohonan', 'nama_lengkap','jenis_kelamin',
     'tempat_lahir','tanggal_lahir','alasan_penggantian','no_seri','no_reg','nik','alamat',
-    'tempat_output','rentang_tgl_kia','no_hp','nama_ibu','alamat_ibu','ttl_ibu','no_ktp_ibu',
-    'tgl_ktp_ibu','rentang_ktp_ibu','no_paspor_ibu','tgl_paspor_ibu','rentang_paspor_ibu','nama_ayah',
-    'ttl_ayah','alamat_ayah','no_ktp_ayah','tgl_ktp_ayah','rentang_ktp_ayah','no_paspor_ayah',
+    'tempat_output','no_hp','nama_ibu','alamat_ibu','ttl_ibu','no_ktp_ibu',
+    'tgl_ktp_ibu','no_paspor_ibu','tgl_paspor_ibu','rentang_paspor_ibu','nama_ayah',
+    'ttl_ayah','alamat_ayah','no_ktp_ayah','tgl_ktp_ayah','no_paspor_ayah',
     'tgl_paspor_ayah','rentang_paspor_ayah','endorse','nama_kakek','pekerjaan','tujuan','negara'];
 
 
@@ -53,17 +53,62 @@ class PerdimAnakModel extends Model
         } else {
             return $this->where(['id_perdim' => $id])
                         ->where(['jenis_permohonan' => 'Baru'])
+                        ->where(['alasan_penggantian' => ''])
                         ->first();
         }
     }
 
-    public function getPenggantianPerdim($id = false)
+    public function getHbsBerlakuPerdim($id = false)
     {
         if($id == false){
             return $this->findAll();
         } else {
             return $this->where(['id_perdim' => $id])
-                        ->where(['jenis_permohonan' => 'Penggantian'])
+                        ->where(['alasan_penggantian' => 'Habis Masa Berlaku'])
+                        ->first();
+        }
+    }
+    
+    public function getHlmnPenuhPerdim($id = false)
+    {
+        if($id == false){
+            return $this->findAll();
+        } else {
+            return $this->where(['id_perdim' => $id])
+                        ->where(['alasan_penggantian' => 'Halaman Penuh'])
+                        ->first();
+        }
+    }
+
+    public function getRusakPerdim($id = false)
+    {
+        if($id == false){
+            return $this->findAll();
+        } else {
+            return $this->where(['id_perdim' => $id])
+                        ->where(['alasan_penggantian' => 'Rusak'])
+                        ->first();
+        }
+    }
+
+    public function getHilangPerdim($id = false)
+    {
+        if($id == false){
+            return $this->findAll();
+        } else {
+            return $this->where(['id_perdim' => $id])
+                        ->where(['alasan_penggantian' => 'Hilang'])
+                        ->first();
+        }
+    }
+
+    public function getUbhDataPerdim($id = false)
+    {
+        if($id == false){
+            return $this->findAll();
+        } else {
+            return $this->where(['id_perdim' => $id])
+                        ->where(['alasan_penggantian' => 'Ubah Data'])
                         ->first();
         }
     }

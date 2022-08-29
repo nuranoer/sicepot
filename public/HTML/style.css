@@ -6724,7 +6724,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 
 #page-title {
   position: relative;
-  padding: 3rem 0;
+  padding: 2rem 0;
   background-color: #f5f5f5;
   border-bottom: 1px solid #eee;
 }
@@ -6989,7 +6989,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 
 .content-wrap {
   position: relative;
-  padding: 80px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
