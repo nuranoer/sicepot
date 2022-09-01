@@ -96,7 +96,7 @@
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
-      </li><!-- End Dashboard Nav -->
+      </li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
@@ -114,8 +114,14 @@
             </a>
           </li>
         </ul>
-      </li><!-- End Tables Nav -->
+      </li>
 
+      <li class="nav-item">
+        <a class="nav-link" data-bs-target="#forms-nav" href="#">
+          <i class="bi bi-journal-text"></i>
+          <span>Panduan (Manual Book)</span>
+        </a>
+      </li>
     </ul>
 
   </aside><!-- End Sidebar-->

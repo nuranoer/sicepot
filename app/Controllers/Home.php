@@ -12,8 +12,14 @@ class Home extends BaseController
     {
         return view('pemohon/dashboard');
     }
+
     public function praperdim()
     {
         return view('pemohon/praperdim');
+    }
+    
+    public function internship()
+    {
+        return view('pemohon/internship');
     }
 }

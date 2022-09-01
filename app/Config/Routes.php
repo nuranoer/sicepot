@@ -39,6 +39,7 @@ $routes->set404Override();
 //Main Page Sicepot
 $routes->get('/dashboard', 'Home::praperdim');
 $routes->get('/', 'Home::praperdim');
+$routes->get('/internship', 'Home::internship');
 // $routes->get('/praperdim', 'Home::praperdim');
 
 //Pemohon Dewasa

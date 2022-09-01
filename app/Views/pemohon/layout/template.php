@@ -64,7 +64,7 @@
 
 						</div>
 						
-						<div class="me-lg-2 text-uppercase" style="font-size: 14.5px;">
+						<div class="me-lg-2 text-uppercase" style="font-size: 12.5px;">
 							Aplikasi Cetak Form Paspor Otomatis (Si Cepot) <br>
 							<strong>Kantor Imigrasi Kelas II Non TPI Kediri</strong>
 						</div>
@@ -150,39 +150,38 @@
 				</div>
 				<!-- .footer-widgets-wrap end -->
 			</div>
-			<!-- Copyrights
-				============================================= -->
+			<!-- Copyrights -->
 			<div id="copyrights">
 				<div class="container">
 					<div class="row col-mb-30">
 						<div class="col-md-6 text-center text-md-start pt-3">
-							Copyrights &copy; Internship Imigrasi Kediri 2022<br />
+							Copyrights &copy; <a href="/internship">Internship</a> Imigrasi Kediri 2022<br />
 						</div>
 
 						<div class="col-md-6 text-center text-md-end">
 							<div class="d-flex justify-content-center justify-content-md-end">
 
-								<a href="https://kediri.imigrasi.go.id/" class="social-icon si-small si-borderless si-google">
-									<i class="icon-google"></i>
-									<i class="icon-google"></i>
+								<a href="mailto:imigrasi.kediri@gmail.com" target="_blank" class="social-icon si-small si-borderless si-google">
+									<i class="icon-envelope2"></i>
+									<i class="icon-envelope2"></i>
 								</a>
 
-								<a href="https://www.instagram.com/imigrasi_kediri" class="social-icon si-small si-borderless si-instagram">
+								<a href="https://www.instagram.com/imigrasi_kediri" target="_blank" class="social-icon si-small si-borderless si-instagram">
 									<i class="icon-instagram"></i>
 									<i class="icon-instagram"></i>
 								</a>
 
-								<a href="https://www.tiktok.com/@imigrasi_kediri?_t=8V8pjPtRRgn&_r=1" class="social-icon si-small si-borderless si-tiktok">
+								<a href="https://www.tiktok.com/@imigrasi_kediri?_t=8V8pjPtRRgn&_r=1" target="_blank" class="social-icon si-small si-borderless si-tiktok">
 									<i class="icon-tiktok"></i>
 									<i class="icon-tiktok"></i>
 								</a>
 
-								<a href="https://wa.me/6281133378284" class="social-icon si-small si-borderless si-whatsapp">
+								<a href="https://wa.me/6281133378284" target="_blank" class="social-icon si-small si-borderless si-whatsapp">
 									<i class="icon-whatsapp"></i>
 									<i class="icon-whatsapp"></i>
 								</a>
 
-								<a href="https://www.facebook.com/kanim.kediri" class="social-icon si-small si-borderless si-facebook">
+								<a href="https://www.facebook.com/kanim.kediri" target="_blank" class="social-icon si-small si-borderless si-facebook">
 									<i class="icon-facebook"></i>
 									<i class="icon-facebook"></i>
 								</a>
@@ -190,9 +189,9 @@
 
 							<div class="clear"></div>
 
-							<i class="icon-envelope2"></i> imigrasi.kediri@gmail.com
+							<i class="icon-line-globe"></i> <a href="https://kediri.imigrasi.go.id/" target="_blank">https://kediri.imigrasi.go.id/</a>
 							<span class="middot">&middot;</span>
-							<i class="icon-headphones"></i> (0354) 688307
+							<i class="icon-phone3"></i> (0354) 688307
 							<span class="middot">&middot;</span>
 						</div>
 					</div>
