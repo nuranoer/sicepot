@@ -117,7 +117,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" data-bs-target="#forms-nav" href="#">
+        <a class="nav-link" target="_blank" href="pdf/(Admin)Manual_Book_Website_SiCepot.pdf" data-bs-target="#forms-nav">
           <i class="bi bi-journal-text"></i>
           <span>Panduan (Manual Book)</span>
         </a>

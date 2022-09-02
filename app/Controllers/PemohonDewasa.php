@@ -53,6 +53,8 @@ class PemohonDewasa extends BaseController
             'tempat_output' => 'required',
             'alamat' => 'required',
             'no_hp' => 'required',
+            'nama_ibu' => 'required',
+            'nama_ayah' => 'required',
             'tujuan' => 'required',
             'status_sipil' => 'required',
             'pekerjaan' => 'required',

@@ -54,17 +54,17 @@
                             <div class="team-content">
                                 <p>Eradicate invest honesty human rights accessibility theory of social change. Diversity experience in the field compassion, inspire breakthroughs planned giving.</p>
                             </div>
-                            <a href="#" class="social-icon si-rounded si-small si-forrst">
-                                <i class="icon-forrst"></i>
-                                <i class="icon-forrst"></i>
+                            <a href="https://www.linkedin.com/in/fitrizuyinanurazizah" target="_blank" class="social-icon si-rounded si-small si-linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
                             </a>
-                            <a href="#" class="social-icon si-rounded si-small si-skype">
-                                <i class="icon-skype"></i>
-                                <i class="icon-skype"></i>
+                            <a href="mailto:nuranoer7@gmail.com" target="_blank" class="social-icon si-rounded si-small si-gplus">
+                                <i class="icon-envelope-alt"></i>
+                                <i class="icon-envelope-alt"></i>
                             </a>
-                            <a href="#" class="social-icon si-rounded si-small si-flickr">
-                                <i class="icon-flickr"></i>
-                                <i class="icon-flickr"></i>
+                            <a href="https://github.com/nuranoer" target="_blank" class="social-icon si-rounded si-small si-github">
+                                <i class="icon-github"></i>
+                                <i class="icon-github"></i>
                             </a>
                         </div>
                     </div>
@@ -78,17 +78,17 @@
                             <div class="team-content">
                                 <p>Eradicate invest honesty human rights accessibility theory of social change. Diversity experience in the field compassion, inspire breakthroughs planned giving.</p>
                             </div>
-                            <a href="#" class="social-icon si-rounded si-small si-forrst">
-                                <i class="icon-forrst"></i>
-                                <i class="icon-forrst"></i>
+                            <a href="https://www.linkedin.com/in/rexana-widyadhana-agusta" target="_blank" class="social-icon si-rounded si-small si-linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
                             </a>
-                            <a href="#" class="social-icon si-rounded si-small si-skype">
-                                <i class="icon-skype"></i>
-                                <i class="icon-skype"></i>
+                            <a href="mailto:agustaxw@gmail.com" target="_blank" class="social-icon si-rounded si-small si-gplus">
+                                <i class="icon-envelope-alt"></i>
+                                <i class="icon-envelope-alt"></i>
                             </a>
-                            <a href="#" class="social-icon si-rounded si-small si-flickr">
-                                <i class="icon-flickr"></i>
-                                <i class="icon-flickr"></i>
+                            <a href="https://github.com/agustaxw" target="_blank" class="social-icon si-rounded si-small si-github">
+                                <i class="icon-github"></i>
+                                <i class="icon-github"></i>
                             </a>
                         </div>
                     </div>

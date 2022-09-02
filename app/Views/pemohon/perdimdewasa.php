@@ -1,26 +1,20 @@
 <?= $this->extend('pemohon/layout/template'); ?>
 
 <?= $this->section('content'); ?>
-<!-- Page Title
-		============================================= -->
-<section id="page-title">
 
+<!-- Page Title -->
+<section id="page-title">
 	<div class="container clearfix">
 		<div class="row">
-			<!-- <div class="col-3">
-				<img src="HTML/images/login/logo_si_cepot.png" alt="Logo Redi Dinanti" width="200">	
-			</div> -->
 			<div class="col">
 				<h1>FORMULIR PEMOHON</h1>
-				<!-- <span>Forms Widget</span> -->
 			</div>
 		</div>
 	</div>
+</section>
+<!-- #page-title end -->
 
-</section><!-- #page-title end -->
-
-<!-- Content
-		============================================= -->
+<!-- Content -->
 <section id="content">
 	<div class="content-wrap">
 		<div class="container clearfix">
@@ -114,11 +108,11 @@
 						</div>
 						<div class="col-6 form-group">
 							<label>Nama Ibu: <span class="text-danger">*</span></label><br>
-							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control" value="<?= old('nama_ibu');?>" placeholder="cth: ANISA">
+							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control <?= ($validation->hasError('nama_ibu')) ? 'is-invalid' : '' ?>" value="<?= old('nama_ibu');?>" placeholder="cth: ANISA">
 						</div>
 						<div class="col-6 form-group">
 							<label>Nama Ayah: <span class="text-danger">*</span></label><br>
-							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control" value="<?= old('nama_ayah');?>" placeholder="cth: MUHAMMAD">
+							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control <?= ($validation->hasError('nama_ayah')) ? 'is-invalid' : '' ?>" value="<?= old('nama_ayah');?>" placeholder="cth: MUHAMMAD">
 						</div>
 						<div class="col-4 form-group">
 							<label>Tujuan Pengajuan Paspor: <span class="text-danger">*</span></label>

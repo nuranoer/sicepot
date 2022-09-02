@@ -4,7 +4,6 @@
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="SemiColonWeb" />
 
 	<link rel="icon" href="HTML/images/pemohon/logoimigrasi.png" type="image/gif">
 
@@ -98,7 +97,7 @@
 									</a>
 								</li>
 								<li class="menu-item mega-menu mega-menu-small">
-									<a class="menu-link" href="/">
+									<a class="menu-link" target="_blank" href="pdf/(Pemohon)Manual_Book_Website_SiCepot.pdf">
 										<div>Panduan</div>
 									</a>
 								</li>

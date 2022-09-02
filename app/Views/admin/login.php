@@ -46,8 +46,8 @@
 									<form action="<?= route_to('login') ?>" method="post">
 										<?= csrf_field() ?>
 										<div class="center">
-											<a href="/loginadmin"><img src="HTML/images/login/logo.png" alt="Imigrasi Logo" width="130"></a>
-											<h4>Imigrasi Kediri</h4>
+											<a href="/login"><img src="HTML/images/login/logo.png" alt="Imigrasi Logo" width="130"></a>
+											<h4>Admin Imigrasi Kediri</h4>
 										</div>  
 
 										<?php if ($config->validFields === ['email']): ?>
