@@ -1001,13 +1001,13 @@ tags will be replaced.-->
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $nikpecah[20];?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $nikpecah[21];?></td>
   <td class=xl1517069></td>
-  <?php $tempatoutputpecah = str_split($tempat_output); ?>
-  <td class=xl6317069>&nbsp;<?php echo $tempatoutputpecah[0] ?></td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatoutputpecah[1] ?></td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatoutputpecah[3] ?></td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatoutputpecah[4] ?></td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatoutputpecah[8] ?></td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tempatoutputpecah[9] ?></td>
+  <?php $tgloutputpecah = str_split($tgl_output); ?>
+  <td class=xl6317069>&nbsp;<?php echo $tgloutputpecah[0] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgloutputpecah[1] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgloutputpecah[3] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgloutputpecah[4] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgloutputpecah[8] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgloutputpecah[9] ?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;</td>
  </tr>
  <tr height=19 style='height:14.5pt'>

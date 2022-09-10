@@ -90,29 +90,81 @@
 							<label>Tanggal Lahir: <span class="text-danger">*</span></label>
 							<input type="text" value="<?= old('tanggal_lahir');?>" class="form-control <?= ($validation->hasError('tanggal_lahir')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tanggal_lahir" id="tanggal_lahir" placeholder="DD-MM-YYYY">
 						</div>
-						<div class="col-6 form-group">
+						<div class="col-4 form-group">
 							<label>NIK / No. KTP: <span class="text-danger">*</span></label><br>
 							<input type="text" name="nik" id="nik" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : '' ?>" pattern="[0-9]{16}" value="<?= old('nik');?>" placeholder="Masukkan 16 digit NIK anda">
 						</div>
-						<div class="col-6 form-group">
+						<div class="col-4 form-group">
 							<label>Tanggal Dikeluarkan KTP: <span class="text-danger">*</span></label><br>
-							<input type="text" value="<?= old('tempat_output');?>" class="form-control <?= ($validation->hasError('tempat_output')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tempat_output" id="tempat_output" placeholder="cth: 10-12-2009">
+							<input type="text" value="<?= old('tgl_output');?>" class="form-control <?= ($validation->hasError('tgl_output')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tgl_output" id="tgl_output" placeholder="cth: 10-12-2009">
+						</div>
+						<div class="col-4 form-group">
+							<label>Tempat Dikeluarkan KTP: <span class="text-danger">*</span><span class="text-danger">*</span></label><br>
+							<input type="text" value="<?= old('tempat_output');?>" class="form-control <?= ($validation->hasError('tempat_output')) ? 'is-invalid' : '' ?>" name="tempat_output" id="tempat_output" placeholder="cth: KEDIRI">
 						</div>
 						<div class="col-12 form-group">
 							<label>Alamat: <span class="text-danger">*</span></label>
 							<input type="text" name="alamat" id="alamat" class="form-control <?= ($validation->hasError('alamat')) ? 'is-invalid' : '' ?>" value="<?= old('alamat');?>" placeholder="cth: GRINGGING KEDIRI">
 						</div>
-						<div class="col-12 form-group">
+						<div class="col-6 form-group">
 							<label>No HP: <span class="text-danger">*</span></label>
-							<input type="text" name="no_hp" id="no_hp" class="form-control <?= ($validation->hasError('no_hp')) ? 'is-invalid' : '' ?>" placeholder="Max 13 digit" value="<?= old('no_hp');?>">
+							<input type="text" name="no_hp" id="no_hp" class="form-control <?= ($validation->hasError('no_hp')) ? 'is-invalid' : '' ?>" value="<?= old('no_hp');?>">
+						</div>
+						<div class="col-6 form-group">
+							<label>EMAIL: </label>
+							<input type="text" name="email" id="email" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : '' ?>" placeholder="cth: abc@gmail.com" value="<?= old('email');?>">
 						</div>
 						<div class="col-6 form-group">
 							<label>Nama Ibu: <span class="text-danger">*</span></label><br>
 							<input type="text" name="nama_ibu" id="nama_ibu" class="form-control <?= ($validation->hasError('nama_ibu')) ? 'is-invalid' : '' ?>" value="<?= old('nama_ibu');?>" placeholder="cth: ANISA">
 						</div>
 						<div class="col-6 form-group">
+							<label>Kewarganegaraan Ibu: <span class="text-danger">*</span></label><br>
+							<input type="text" name="kewarganegaraan_ibu" id="kewarganegaraan_ibu" class="form-control <?= ($validation->hasError('kewarganegaraan_ibu')) ? 'is-invalid' : '' ?>" value="<?= old('kewarganegaraan_ibu');?>" placeholder="cth: INDONESIA">
+						</div>
+						<div class="col-6 form-group">
+							<label>Tempat Lahir Ibu: </label><br>
+							<input type="text" name="tempat_lhr_ibu" id="tempat_lhr_ibu" class="form-control" value="<?= old('tempat_lhr_ibu');?>" placeholder="cth: SURABAYA">
+						</div>
+						<div class="col-6 form-group">
+							<label>Tanggal Lahir Ibu: </label>
+							<input type="text" value="<?= old('tgl_lhr_ibu');?>" class="form-control <?= ($validation->hasError('tgl_lhr_ibu')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tgl_lhr_ibu" id="tgl_lhr_ibu" placeholder="DD-MM-YYYY">
+						</div>
+						<div class="col-6 form-group">
 							<label>Nama Ayah: <span class="text-danger">*</span></label><br>
 							<input type="text" name="nama_ayah" id="nama_ayah" class="form-control <?= ($validation->hasError('nama_ayah')) ? 'is-invalid' : '' ?>" value="<?= old('nama_ayah');?>" placeholder="cth: MUHAMMAD">
+						</div>
+						<div class="col-6 form-group">
+							<label>Kewarganegaraan Ayah: <span class="text-danger">*</span></label><br>
+							<input type="text" name="kewarganegaraan_ayah" id="kewarganegaraan_ayah" class="form-control <?= ($validation->hasError('kewarganegaraan_ayah')) ? 'is-invalid' : '' ?> " value="<?= old('kewarganegaraan_ayah');?>" placeholder="cth: INDONESIA">
+						</div>
+						<div class="col-6 form-group">
+							<label>Tempat Lahir Ayah: </label><br>
+							<input type="text" name="tempat_lhr_ayah" id="tempat_lhr_ayah" class="form-control" value="<?= old('tempat_lhr_ayah');?>" placeholder="cth: BANDUNG">
+						</div>
+						<div class="col-6 form-group">
+							<label>Tanggal Lahir Ayah: </label>
+							<input type="text" value="<?= old('tgl_lhr_ayah');?>" class="form-control text-start component-datepicker format" name="tgl_lhr_ayah" id="tgl_lhr_ayah" placeholder="DD-MM-YYYY">
+						</div>
+						<div class="col-12 form-group">
+							<label>Alamat ORANG TUA: <small>(salah satu)</small></label>
+							<input type="text" name="alamat_ortu" id="alamat_ortu" class="form-control <?= ($validation->hasError('alamat_ortu')) ? 'is-invalid' : '' ?>" value="<?= old('alamat_ortu');?>" placeholder="cth: GRINGGING KEDIRI">
+						</div>
+						<div class="col-6 form-group">
+							<label>Nama Suami/Istri: </label><br>
+							<input type="text" name="nama_pasangan" id="nama_pasangan" class="form-control" value="<?= old('nama_pasangan');?>">
+						</div>
+						<div class="col-6 form-group">
+							<label>Kewarganegaraan Suami/Istri: </label><br>
+							<input type="text" name="kewarganegaraan_pasangan" id="kewarganegaraan_pasangan" class="form-control" value="<?= old('kewarganegaraan_pasangan');?>">
+						</div>
+						<div class="col-6 form-group">
+							<label>Tempat Lahir Suami/Istri: </label><br>
+							<input type="text" name="tempat_lhr_pasangan" id="tempat_lhr_pasangan" class="form-control" value="<?= old('tempat_lhr_pasangan');?>">
+						</div>
+						<div class="col-6 form-group">
+							<label>Tanggal Lahir Suami/Istri: </label>
+							<input type="text" value="<?= old('tgl_lhr_pasangan');?>" class="form-control <?= ($validation->hasError('tgl_lhr_pasangan')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tgl_lhr_pasangan" id="tgl_lhr_pasangan">
 						</div>
 						<div class="col-4 form-group">
 							<label>Tujuan Pengajuan Paspor: <span class="text-danger">*</span></label>
