@@ -1036,7 +1036,7 @@ tags will be replaced.-->
   <td class=xl7017069>&nbsp;</td>
  </tr>
 
-  <?php $kotaterbitpecah = str_split($kotaterbit); ?>
+  <?php $kotaterbitpecah = str_split($tempat_output); ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
   <td class=xl6317069>&nbsp;<?php echo $kotaterbitpecah[0]; ?></td>
@@ -1280,38 +1280,39 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <td class=xl7017069>&nbsp;</td>
  </tr>
+ <?php $emailpecah = str_split($email); ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <td class=xl6317069>&nbsp;<?php echo $emailpecah[0]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[1]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[2]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[3]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[4]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[5]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[6]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[7]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[8]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[9]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[10]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[11]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[12]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[13]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[14]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[15]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[16]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[17]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[18]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[19]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[20]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[21]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[22]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[23]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[24]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[25]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[26]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[27]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[28]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $emailpecah[29]; ?></td>
  </tr>
  
  <tr height=19 style='height:14.5pt'>
@@ -1379,6 +1380,7 @@ tags will be replaced.-->
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namaibupecah[28]; ?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namaibupecah[29]; ?></td>
  </tr>
+ <?php $kewarganegaraanibupecah = str_split($kewarganegaraan_ibu); ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
   <td class=xl6917069 colspan=6>KEWARGANEGARAAN</td>
@@ -1409,36 +1411,36 @@ tags will be replaced.-->
  </tr>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <td class=xl6317069>&nbsp;<?php echo $kewarganegaraanibupecah[0]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[1]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[2]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[3]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[4]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[5]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[6]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[7]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[8]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[9]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[10]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[11]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[12]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[13]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[14]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[15]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[16]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[17]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[18]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[19]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[20]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[21]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[22]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[23]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[24]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[25]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[26]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[27]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[28]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanibupecah[29]; ?></td>
  </tr>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
@@ -1466,37 +1468,39 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <td class=xl7017069>&nbsp;</td>
  </tr>
+ <?php $tmptlhribu = str_split($tempat_lhr_ibu); ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <td class=xl6317069>&nbsp;<?php echo $tmptlhribu[0]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[1]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[2]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[3]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[4]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[5]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[6]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[7]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[8]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[9]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[10]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[11]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[12]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[13]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[14]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[15]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[16]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[17]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[18]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[19]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[20]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhribu[21]; ?></td>
   <td class=xl1517069></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <?php $tgllahiribupecah = str_split($tgl_lhr_ibu); ?>
+  <td class=xl6317069>&nbsp;<?php echo $tgllahiribupecah[0] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahiribupecah[1] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahiribupecah[3] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahiribupecah[4] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahiribupecah[8] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahiribupecah[9] ?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;</td>
  </tr>
  <tr height=19 style='height:14.5pt'>
@@ -1592,38 +1596,39 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <td class=xl7017069>&nbsp;</td>
  </tr>
- <tr height=19 style='page-break-before:always;height:14.5pt'>
+ <?php $kewarganegaraanayahpecah = str_split($kewarganegaraan_ayah); ?>
+ <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <td class=xl6317069>&nbsp;<?php echo $kewarganegaraanayahpecah[0]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[1]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[2]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[3]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[4]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[5]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[6]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[7]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[8]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[9]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[10]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[11]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[12]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[13]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[14]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[15]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[16]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[17]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[18]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[19]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[20]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[21]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[22]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[23]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[24]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[25]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[26]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[27]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[28]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanayahpecah[29]; ?></td>
  </tr>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
@@ -1651,37 +1656,39 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <td class=xl7017069>&nbsp;</td>
  </tr>
+ <?php $tmptlhrayah = str_split($tempat_lhr_ayah); ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <td class=xl6317069>&nbsp;<?php echo $tmptlhrayah[0]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[1]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[2]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[3]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[4]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[5]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[6]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[7]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[8]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[9]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[10]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[11]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[12]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[13]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[14]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[15]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[16]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[17]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[18]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[19]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[20]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrayah[21]; ?></td>
   <td class=xl1517069></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <?php $tgllahirayahpecah = str_split($tgl_lhr_ayah); ?>
+  <td class=xl6317069>&nbsp;<?php echo $tgllahirayahpecah[0] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirayahpecah[1] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirayahpecah[3] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirayahpecah[4] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirayahpecah[8] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirayahpecah[9] ?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;</td>
  </tr>
  <tr height=19 style='height:14.5pt'>
@@ -1712,38 +1719,39 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <td class=xl7017069>&nbsp;</td>
  </tr>
+ <?php $alamatortupecah = str_split($alamat_ortu); ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <td class=xl6317069>&nbsp;<?php echo $alamatortupecah[0]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[1]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[2]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[3]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[4]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[5]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[6]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[7]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[8]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[9]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[10]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[11]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[12]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[13]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[14]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[15]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[16]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[17]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[18]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[19]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[20]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[21]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[22]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[23]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[24]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[25]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[26]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[27]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[28]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $alamatortupecah[29]; ?></td>
  </tr>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
@@ -1773,38 +1781,39 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <td class=xl7017069>&nbsp;</td>
  </tr>
+ <?php $namapasangan = str_split($nama_pasangan); ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <td class=xl6317069>&nbsp;<?php echo $namapasangan[0]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[1]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[2]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[3]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[4]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[5]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[6]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[7]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[8]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[9]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[10]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[11]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[12]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[13]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[14]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[15]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[16]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[17]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[18]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[19]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[20]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[21]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[22]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[23]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[24]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[25]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[26]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[27]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[28]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $namapasangan[29]; ?></td>
  </tr>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
@@ -1834,38 +1843,39 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <td class=xl7017069>&nbsp;</td>
  </tr>
+ <?php $kewarganegaraanpasangan = str_split($kewarganegaraan_pasangan); ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <td class=xl6317069>&nbsp;<?php echo $kewarganegaraanpasangan[0]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[1]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[2]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[3]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[4]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[5]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[6]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[7]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[8]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[9]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[10]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[11]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[12]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[13]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[14]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[15]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[16]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[17]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[18]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[19]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[20]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[21]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[22]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[23]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[24]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[25]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[26]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[27]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[28]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $kewarganegaraanpasangan[29]; ?></td>
  </tr>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
@@ -1893,37 +1903,39 @@ tags will be replaced.-->
   <td class=xl1517069></td>
   <td class=xl7017069>&nbsp;</td>
  </tr>
+ <?php $tmptlhrpasangan = str_split($tempat_lhr_pasangan); ?>
  <tr height=19 style='height:14.5pt'>
   <td height=19 class=xl1517069 style='height:14.5pt'></td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl7117069>&nbsp;</td>
-  <td class=xl6317069>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
-  <td class=xl6317069 style='border-left:none'>&nbsp;</td>
+  <td class=xl6317069>&nbsp;<?php echo $tmptlhrpasangan[0]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[1]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[2]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[3]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[4]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[5]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[6]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[7]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[8]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[9]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[10]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[11]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[12]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[13]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[14]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[15]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[16]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[17]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[18]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[19]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[20]; ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tmptlhrpasangan[21]; ?></td>
+  <td class=xl1517069></td>
+  <?php $tgllahirpasangan = str_split($tgl_lhr_pasangan); ?>
+  <td class=xl6317069>&nbsp;<?php echo $tgllahirpasangan[0] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirpasangan[1] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirpasangan[3] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirpasangan[4] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirpasangan[8] ?></td>
+  <td class=xl6317069 style='border-left:none'>&nbsp;<?php echo $tgllahirpasangan[9] ?></td>
   <td class=xl6317069 style='border-left:none'>&nbsp;</td>
  </tr>
  <![if supportMisalignedColumns]>

@@ -56,10 +56,6 @@
                       </tbody>
                       <?php endforeach; ?>
                   <?php else : ?>
-                      <!-- <div class="justify-content-center text-center">
-                        <img src="assets/img/Empty-Pana.png" alt="No Records Found" width="300">
-                        <h4 class="text-center">No Records Found</h4>
-                      </div> -->
                   <?php endif; ?>
                 </table>
           <!-- End Table with stripped rows -->

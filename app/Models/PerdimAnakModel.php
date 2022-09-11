@@ -14,12 +14,7 @@ class PerdimAnakModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['jenis_permohonan', 'nama_lengkap','jenis_kelamin',
-    'tempat_lahir','tanggal_lahir','alasan_penggantian','no_seri','no_reg','nik','alamat',
-    'tempat_output','no_hp','nama_ibu','alamat_ibu','ttl_ibu','no_ktp_ibu',
-    'tgl_ktp_ibu','no_paspor_ibu','tgl_paspor_ibu','rentang_paspor_ibu','nama_ayah',
-    'ttl_ayah','alamat_ayah','no_ktp_ayah','tgl_ktp_ayah','no_paspor_ayah',
-    'tgl_paspor_ayah','rentang_paspor_ayah','endorse','nama_kakek','pekerjaan','tujuan','negara'];
+    protected $allowedFields = ['jenis_permohonan', 'nama_lengkap','jenis_kelamin','tempat_lahir','tanggal_lahir','alasan_penggantian','no_seri','no_reg','nik','alamat','no_hp','email','nama_ibu','alamat_ibu','kewarganegaraan_ibu','tempat_lhr_ibu','tgl_lhr_ibu','no_ktp_ibu', 'tgl_ktp_ibu','no_paspor_ibu','tgl_paspor_ibu','nama_ayah','kewarganegaraan_ayah','tempat_lhr_ayah','tgl_lhr_ayah','alamat_ayah','no_ktp_ayah','tgl_ktp_ayah','no_paspor_ayah', 'tgl_paspor_ayah','endorse','nama_kakek','tujuan','negara'];
 
 
     protected $useTimestamps = true;
