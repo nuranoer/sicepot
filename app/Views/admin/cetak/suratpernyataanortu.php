@@ -81,7 +81,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;    : <?php echo $ttl_ayah ?></p>
+                <p>&emsp;    : <?php echo $tempat_lhr_ayah ?>, <?php echo $tgl_lhr_ayah ?></p>
               </div>
             </div>
             <div class="row">
@@ -116,7 +116,7 @@
               <div class="col-3">
                 <div class="row">
                   <div class="col-12">
-                    <p>berlaku s/d&emsp;: <?php echo $rentang_ktp_ayah ?></p>
+                    <p>berlaku s/d&emsp;:</p>
                   </div>
                 </div>
               </div>
@@ -170,7 +170,7 @@
                 <p>Tempat/Tgl Lahir</p>
               </div>
               <div class="col-10">
-                <p>&emsp;    : <?php echo $ttl_ibu ?></p>
+                <p>&emsp;    : <?php echo $tempat_lhr_ibu ?>, <?php echo $tgl_lhr_ibu ?></p>
               </div>
             </div>
             <div class="row">
@@ -205,7 +205,7 @@
               <div class="col-3">
                 <div class="row">
                   <div class="col-12">
-                    <p>berlaku s/d&emsp;: <?php echo $rentang_ktp_ibu ?></p>
+                    <p>berlaku s/d&emsp;:</p>
                   </div>
                 </div>
               </div>
@@ -290,14 +290,14 @@
               <div class="col-4">
                 <div class="row">
                   <div class="col-12">
-                    <p>tgl diberikan&emsp;: <?php echo $tempat_output ?></p>
+                    <p>tgl diberikan&emsp;:</p>
                   </div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="row">
                   <div class="col-12">
-                    <p>berlaku s/d&emsp;: <?php echo $rentang_tgl_kia ?></p>
+                    <p>berlaku s/d&emsp;: </p>
                   </div>
                 </div>
               </div>

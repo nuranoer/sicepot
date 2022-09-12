@@ -555,7 +555,7 @@ tags will be replaced.-->
   $kerja3 = "";
   $kerja4 = "";
   $kerja5 = "";
- 	if ($pekerjaan == 'PEJABAT NEGARA' || $pekerjaan == 'PRESIDEN' || $pekerjaan == 'Presiden' || $pekerjaan == 'presiden' || $pekerjaan == 'DPR RI' || $pekerjaan == 'MENTERI'){
+ 	if ($pekerjaan == 'PEJABAT NEGARA' || $pekerjaan == 'Pejabat Negara' || $pekerjaan == 'PRESIDEN' || $pekerjaan == 'Presiden' || $pekerjaan == 'presiden' || $pekerjaan == 'DPR RI' || $pekerjaan == 'MENTERI'){
  		$kerja1 = "<strong>X</strong>";
  		$lainnya = '';
  	}elseif ($pekerjaan == 'PNS' || $pekerjaan == 'Pegawai Negeri Sipil') {

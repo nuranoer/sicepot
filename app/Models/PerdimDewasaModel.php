@@ -14,10 +14,7 @@ class PerdimDewasaModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['jenis_permohonan', 'nama_lengkap','jenis_kelamin',
-    'tempat_lahir','tanggal_lahir','nik','tgl_output','tempat_output','alamat','no_hp','email','nama_ibu',
-    'kewarganegaraan_ibu','tempat_lhr_ibu','tgl_lhr_ibu','nama_ayah','kewarganegaraan_ayah','tempat_lhr_ayah','tgl_lhr_ayah','alamat_ortu','nama_pasangan','kewarganegaraan_pasangan','tempat_lhr_pasangan','tgl_lhr_pasangan','endorse','nama_kakek','pekerjaan','status_sipil','tujuan','alasan_penggantian',
-    'no_seri','no_reg'];
+    protected $allowedFields = ['jenis_permohonan', 'nama_lengkap','jenis_kelamin','tempat_lahir','tanggal_lahir','nik','tgl_output','tempat_output','alamat','no_hp','email','nama_ibu','kewarganegaraan_ibu','tempat_lhr_ibu','tgl_lhr_ibu','nama_ayah','kewarganegaraan_ayah','tempat_lhr_ayah','tgl_lhr_ayah','alamat_ortu','nama_pasangan','kewarganegaraan_pasangan','tempat_lhr_pasangan','tgl_lhr_pasangan','endorse','nama_kakek','pekerjaan','status_sipil','tujuan','alasan_penggantian','no_seri','no_reg'];
 
     protected $useTimestamps = true;
     

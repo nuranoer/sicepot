@@ -99,7 +99,7 @@
 							<input type="text" value="<?= old('tgl_output');?>" class="form-control <?= ($validation->hasError('tgl_output')) ? 'is-invalid' : '' ?> text-start component-datepicker format" name="tgl_output" id="tgl_output" placeholder="cth: 10-12-2009">
 						</div>
 						<div class="col-4 form-group">
-							<label>Tempat Dikeluarkan KTP: <span class="text-danger">*</span><span class="text-danger">*</span></label><br>
+							<label>Tempat Dikeluarkan KTP: <span class="text-danger">*</span></label><br>
 							<input type="text" value="<?= old('tempat_output');?>" class="form-control <?= ($validation->hasError('tempat_output')) ? 'is-invalid' : '' ?>" name="tempat_output" id="tempat_output" placeholder="cth: KEDIRI">
 						</div>
 						<div class="col-12 form-group">

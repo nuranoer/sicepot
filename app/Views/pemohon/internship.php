@@ -27,9 +27,9 @@
                     <div class="team team-list row align-items-center">
                         <div class="team-desc col-sm-12">
                             <div class="team-title"><h4>Adine Pramesti Gitaswari</h4><span>Mahasiswi</span></div>
-                            <div class="team-content">
-                                <p>Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower.</p>
-                            </div>
+                            <!-- <div class="team-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus, sed, ratione mollitia unde sapiente ipsa, eius voluptatum repudiandae nisi libero. Non pariatur corporis aliquam earum id sequi recusandae dolorum.</p>
+                            </div> -->
                             <a href="https://www.linkedin.com/in/adinepramesti/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
                                 <i class="icon-linkedin"></i>
                                 <i class="icon-linkedin"></i>
@@ -51,9 +51,9 @@
                     <div class="team team-list row align-items-center">
                         <div class="team-desc col-sm-12">
                             <div class="team-title"><h4>Fitri Zuyina Nur Azizah</h4><span>Mahasiswi</span></div>
-                            <div class="team-content">
-                                <p>Eradicate invest honesty human rights accessibility theory of social change. Diversity experience in the field compassion, inspire breakthroughs planned giving.</p>
-                            </div>
+                            <!-- <div class="team-content">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nemo autem dolorum sequi debitis cum nisi sint eaque ipsa quae quia, et ab, nostrum accusamus voluptatibus ullam. Laboriosam, dignissimos exercitationem?</p>
+                            </div> -->
                             <a href="https://www.linkedin.com/in/fitrizuyinanurazizah" target="_blank" class="social-icon si-rounded si-small si-linkedin">
                                 <i class="icon-linkedin"></i>
                                 <i class="icon-linkedin"></i>
@@ -75,9 +75,9 @@
                     <div class="team team-list row align-items-center">
                         <div class="team-desc col-sm-12">
                             <div class="team-title"><h4>Rexana Widyadhana Agusta</h4><span>Mahasiswi</span></div>
-                            <div class="team-content">
-                                <p>Eradicate invest honesty human rights accessibility theory of social change. Diversity experience in the field compassion, inspire breakthroughs planned giving.</p>
-                            </div>
+                            <!-- <div class="team-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, reiciendis? Provident omnis eum voluptatibus ducimus suscipit ex officiis iure quidem atque, sequi possimus debitis odit eveniet error ad et quaerat!</p>
+                            </div> -->
                             <a href="https://www.linkedin.com/in/rexana-widyadhana-agusta" target="_blank" class="social-icon si-rounded si-small si-linkedin">
                                 <i class="icon-linkedin"></i>
                                 <i class="icon-linkedin"></i>
