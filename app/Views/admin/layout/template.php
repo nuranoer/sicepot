@@ -35,7 +35,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="/dashboardadmin" class="logo d-flex align-items-center">
+      <a href="/sicepot-dashboardadmin" class="logo d-flex align-items-center">
         <img src="HTML/images/pemohon/logoimigrasi.png" alt="">
         <span class="d-none d-lg-block">Admin Sicepot</span>
       </a>
@@ -92,7 +92,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link" href="/dashboardadmin">
+        <a class="nav-link" href="/sicepot-dashboardadmin">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -104,12 +104,12 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="/dataperdimdewasa">
+            <a href="/sicepot-dataperdimdewasa">
               <i class="bi bi-circle"></i><span>Perdim Dewasa</span>
             </a>
           </li>
           <li>
-            <a href="/dataperdimanak">
+            <a href="/sicepot-dataperdimanak">
               <i class="bi bi-circle"></i><span>Perdim Anak</span>
             </a>
           </li>

@@ -209,7 +209,7 @@
 				</div>
 				<div class="col-12 center">
 					<br>
-					<button type="submit" class="button button-rounded button-reveal button-large button-blue" href="/cetak-perdim-dewasa" type="submit"><i class="icon-print2"></i><span>print perdim</span></button>
+					<button type="submit" class="button button-rounded button-reveal button-large button-blue" href="/sicepot-cetak-perdim-dewasa" type="submit"><i class="icon-print2"></i><span>print perdim</span></button>
 				</div>
 			</form>
 		</div>

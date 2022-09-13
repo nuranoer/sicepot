@@ -91,28 +91,6 @@
 											<button type="submit" class="btn btn-dark justify-content-center text-center"><?=lang('Auth.loginAction')?></button>
 										</div>
 									</form>
-									
-									<!-- <form id="login-form" name="login-form" class="mb-0" action="#" method="post">
-											<div class="center">
-												<a href="/loginadmin"><img src="HTML/images/login/logo.png" alt="Imigrasi Logo" width="140"></a>
-												<h4>Imigrasi Kediri</h4>
-											</div>        
-											<div class="row">
-												<div class="col-12 form-group">
-													<label for="login-form-nip">NIP:</label>
-													<input type="text" id="login-form-nip" name="login-form-nip" value="" class="form-control not-dark" />
-												</div>
-
-												<div class="col-12 form-group">
-													<label for="login-form-password">Password:</label>
-													<input type="password" id="login-form-password" name="login-form-password" value="" class="form-control not-dark" />
-												</div>
-
-												<div class="col-12 form-group justify-content-center text-center">
-													<a href="/dashboardadmin" class="button button-3d button-black m-0" id="login-form-submit" name="login-form-submit" value="login">Login</a>
-												</div>
-											</div>
-									</form> -->
 									</div>
 								</div>
 								<div class="text-center dark mt-2">

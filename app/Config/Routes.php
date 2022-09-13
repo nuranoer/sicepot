@@ -37,31 +37,31 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 
 //Main Page Sicepot
-$routes->get('/dashboard', 'Home::praperdim');
-$routes->get('/', 'Home::praperdim');
-$routes->get('/internship', 'Home::internship');
+// $routes->get('/sicepot/dashboard', 'Home::praperdim');
+$routes->get('/sicepot', 'Home::praperdim');
+$routes->get('/sicepot-internship', 'Home::internship');
 // $routes->get('/praperdim', 'Home::praperdim');
 
 //Pemohon Dewasa
-$routes->get('/perdimdewasa', 'PemohonDewasa::perdimdewasa');
-$routes->post('/createperdimdewasa', 'PemohonDewasa::createperdimdewasa');
-$routes->get('/print-perdim/(:any)', 'PemohonDewasa::cetakperdim/$1');
+$routes->get('/sicepot-perdimdewasa', 'PemohonDewasa::perdimdewasa');
+$routes->post('/sicepot-createperdimdewasa', 'PemohonDewasa::createperdimdewasa');
+$routes->get('/sicepot-print-perdim/(:any)', 'PemohonDewasa::cetakperdim/$1');
 
 //Pemohon Anak
-$routes->get('/perdimanak', 'PemohonAnak::perdimanak');
-$routes->post('/createperdimanak', 'PemohonAnak::createperdimanak');
-$routes->get('/cetak-perdim-anak', 'CetakPerdim::cetakperdim');
+$routes->get('/sicepot-perdimanak', 'PemohonAnak::perdimanak');
+$routes->post('/sicepot-createperdimanak', 'PemohonAnak::createperdimanak');
+$routes->get('/sicepot-cetak-perdim-anak', 'CetakPerdim::cetakperdim');
 
 //Halaman Admin
-$routes->get('/loginadmin', 'Admin::login');
-$routes->get('/dashboardadmin', 'Admin::dashboard');
-$routes->get('/dataperdimdewasa', 'Admin::dataperdimdewasa');
-$routes->get('/dataperdimanak', 'Admin::dataperdimanak');
+$routes->get('/sicepot-loginadmin', 'Admin::login');
+$routes->get('/sicepot-dashboardadmin', 'Admin::dashboard');
+$routes->get('/sicepot-dataperdimdewasa', 'Admin::dataperdimdewasa');
+$routes->get('/sicepot-dataperdimanak', 'Admin::dataperdimanak');
 
 //Cetak
 // $routes->get('/cetak', 'Cetak1::index');
-$routes->get('/cetak-perdim-dewasa/(:any)', 'CetakPerdim::cetak/$1');
-$routes->get('/cetak-perdim-anak/(:any)', 'CetakPerdimAnak::cetak/$1');
+$routes->get('/sicepot-cetak-perdim-dewasa/(:any)', 'CetakPerdim::cetak/$1');
+$routes->get('/sicepot-cetak-perdim-anak/(:any)', 'CetakPerdimAnak::cetak/$1');
 
 
 /*

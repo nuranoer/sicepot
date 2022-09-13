@@ -236,7 +236,7 @@
 				
 				<div class="col-12 center">
 					<br>
-					<button class="button button-rounded button-reveal button-large button-blue" href="/cetak-perdim-anak/" type="submit"><i class="icon-print2"></i><span>print perdim</span></button>
+					<button class="button button-rounded button-reveal button-large button-blue" href="/sicepot-cetak-perdim-anak/" type="submit"><i class="icon-print2"></i><span>print perdim</span></button>
 				</div>
 				
 			</form>

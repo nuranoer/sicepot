@@ -175,7 +175,7 @@ class PemohonAnak extends BaseController
             'negara' => 'required',
         ])) {
             session()->setFlashdata('error','Mohon cek kembali data Anda!');
-            return redirect()->to('/perdimanak')->withInput();
+            return redirect()->to('/sicepot-perdimanak')->withInput();
         } 
         
         else {
@@ -196,7 +196,7 @@ class PemohonAnak extends BaseController
             };
     
             $id = $this->PerdimAnakModel->insertID();
-            return redirect()->to('/cetak-perdim-anak/' . $id);
+            return redirect()->to('/sicepot-cetak-perdim-anak/' . $id);
         }
     }
 }

@@ -57,7 +57,7 @@
 						<div class="me-lg-3">
 							<!-- Logo -->
 							<div id="logo">
-								<a href="/" class="standard-logo" data-dark-logo="HTML/images/login/logo_si_cepot.png"><img src="HTML/images/login/logo_si_cepot.png" alt="Imigrasi"></a>
+								<a href="/sicepot" class="standard-logo" data-dark-logo="HTML/images/login/logo_si_cepot.png"><img src="HTML/images/login/logo_si_cepot.png" alt="Imigrasi"></a>
 							</div>
 							<!-- #logo end -->
 
@@ -72,7 +72,7 @@
 						<!-- Admin  -->
 						<div class="header-misc d-none d-sm-block">
 							<div class="header-misc-icon">
-								<a href="/dashboardadmin">
+								<a href="/sicepot-dashboardadmin">
 									<i class="icon-user-tie"></i>
 								</a>
 							</div>
@@ -92,7 +92,7 @@
 							
 							<ul class="menu-container">
 								<li class="menu-item mega-menu mega-menu-small">
-									<a class="menu-link" href="/">
+									<a class="menu-link" href="/sicepot">
 										<div>Beranda</div>
 									</a>
 								</li>
@@ -154,7 +154,7 @@
 				<div class="container">
 					<div class="row col-mb-30">
 						<div class="col-md-6 text-center text-md-start pt-3">
-							Copyrights &copy; <a href="/internship">Internship</a> Imigrasi Kediri 2022<br />
+							Copyrights &copy; <a href="/sicepot-internship">Internship</a> Imigrasi Kediri 2022<br />
 						</div>
 
 						<div class="col-md-6 text-center text-md-end">

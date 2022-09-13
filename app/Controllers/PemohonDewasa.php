@@ -78,14 +78,14 @@ class PemohonDewasa extends BaseController
             'pekerjaan' => 'required',
         ])) {
             session()->setFlashdata('error','Mohon cek kembali data Anda!');
-            return redirect()->to('/perdimdewasa')->withInput();
+            return redirect()->to('/sicepot-perdimdewasa')->withInput();
         } 
 
         else{
 
             $this->PerdimDewasaModel->insert($data);
             $id = $this->PerdimDewasaModel->insertID();
-            return redirect()->to('/cetak-perdim-dewasa/' . $id);
+            return redirect()->to('/sicepot-cetak-perdim-dewasa/' . $id);
         }
     }
 }

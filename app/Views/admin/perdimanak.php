@@ -8,7 +8,7 @@
   <h1>Data Perdim Anak</h1>
   <nav>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/dashboardadmin">Home</a></li>
+      <li class="breadcrumb-item"><a href="/sicepot-dashboardadmin">Home</a></li>
       <li class="breadcrumb-item">Tables</li>
       <li class="breadcrumb-item active">Data</li>
     </ol>
@@ -50,7 +50,7 @@
                             <td><?= $pa['endorse']; ?></td>
                             <td><?= $pa['created_at']; ?></td>
                             <td>
-                              <a href="/cetak-perdim-anak/<?= $pa['id_perdim']; ?>"> <button type="button" class="btn btn-primary"><i class="bi bi-printer-fill"></i></button></a>
+                              <a href="/sicepot-cetak-perdim-anak/<?= $pa['id_perdim']; ?>"> <button type="button" class="btn btn-primary"><i class="bi bi-printer-fill"></i></button></a>
                             </td>
                         </tr>
                       </tbody>
